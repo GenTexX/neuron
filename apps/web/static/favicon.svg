@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Neuron">
+  <rect width="64" height="64" rx="14" fill="#0f1117"/>
+  <g stroke="#7aa2ff" stroke-width="3.5" stroke-linecap="round" fill="none">
+    <path d="M20 44V20l24 24V20"/>
+  </g>
+  <circle cx="20" cy="20" r="4.5" fill="#7aa2ff"/>
+  <circle cx="44" cy="44" r="4.5" fill="#7aa2ff"/>
+</svg>

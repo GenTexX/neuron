@@ -86,6 +86,18 @@ export default ts.config(
     },
   },
   {
+    files: ['apps/web/src/**/*.svelte', 'apps/web/src/**/*.svelte.ts'],
+    rules: {
+      /*
+       * `resolve()` ist nur nötig, wenn `kit.paths.base` gesetzt ist. Neuron wird
+       * unter dem Wurzelpfad ausgeliefert (die API liefert das Static-Build aus,
+       * §2), daher wären die Wrapper reines Rauschen. Wird je ein Basispfad
+       * eingeführt, muss diese Zeile entfernt und jeder Link angepasst werden.
+       */
+      'svelte/no-navigation-without-resolve': 'off',
+    },
+  },
+  {
     files: ['**/*.svelte', '**/*.svelte.ts', '**/*.svelte.js'],
     languageOptions: {
       parserOptions: {

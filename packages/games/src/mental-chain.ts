@@ -80,7 +80,9 @@ export function generateChainTrial(rng: Rng, config: MentalChainConfig): MentalC
   let prevOp: MentalChainOp | null = null;
   for (let i = 0; i < config.steps; i++) {
     // keine zwei `mul` in Folge
-    const allowed = prevOp === 'mul' ? config.ops.filter((op) => op !== 'mul') : config.ops;
+    // Explizit annotiert: sonst wird die Typinferenz über prevOp zirkulär (TS7022).
+    const allowed: readonly MentalChainOp[] =
+      prevOp === 'mul' ? config.ops.filter((op) => op !== 'mul') : config.ops;
     let step: MentalChainStep | null = null;
     if (allowed.length > 0) {
       for (let attempt = 0; attempt < MENTAL_CHAIN_STEP_ATTEMPTS; attempt++) {
@@ -89,7 +91,7 @@ export function generateChainTrial(rng: Rng, config: MentalChainConfig): MentalC
           op === 'mul'
             ? rng.nextRange(MENTAL_CHAIN_MUL_MIN, MENTAL_CHAIN_MUL_MAX)
             : rng.nextRange(1, Math.max(1, Math.floor(config.operandMax)));
-        const candidate = { op, value };
+        const candidate: MentalChainStep = { op, value };
         if (inResultRange(applyStep(current, candidate))) {
           step = candidate;
           break;

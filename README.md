@@ -33,10 +33,27 @@ pnpm lint                 # ESLint + Prettier
 pnpm check                # svelte-check + tsc
 pnpm test                 # Vitest (engine, games, web)
 cd apps/api && cargo test # Rust: Domain, Paritäts- und API-Tests (DATABASE_URL nötig)
-pnpm test:e2e             # Playwright
+
+# E2E: braucht ein gebautes Frontend, eine gebaute API und eine eigene Datenbank.
+pnpm --filter @neuron/web build
+cargo build --manifest-path apps/api/Cargo.toml
+NEURON_E2E_DATABASE_URL=postgres://neuron:neuron@localhost:5432/neuron_e2e pnpm test:e2e
 ```
 
+Die E2E-Suite läuft auf Desktop- und Mobile-Viewport (§15). In Umgebungen mit vorinstalliertem
+Chromium zeigt `PLAYWRIGHT_CHROMIUM_EXECUTABLE` auf die Binärdatei.
+
 sqlx-Offline-Daten aktualisieren (nach Query-Änderungen): `cd apps/api && cargo sqlx prepare`.
+
+## Ein Spiel ändern oder hinzufügen
+
+1. Spiellogik in `packages/games/src/<id>.ts` (rein, DOM-frei) und in `GAMES` eintragen.
+2. Simulator in `packages/games/test/simulate/<id>.ts`, Invarianten-Test in `test/<id>.spec.ts`.
+3. Generierte Dateien auffrischen:
+   `UPDATE_GAME_TABLE=1 UPDATE_FIXTURES=1 pnpm --filter @neuron/games test`
+4. Rust-Scorer in `apps/api/src/domain/scoring/<id>.rs` (Parität gegen die Fixtures).
+5. View in `apps/web/src/lib/games/<id>/View.svelte` und in `lib/games/registry.ts` eintragen.
+6. Strings in `apps/web/src/lib/i18n/de.ts`.
 
 ## Produktion
 

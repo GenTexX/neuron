@@ -14,6 +14,7 @@ const config = {
       strict: true,
     }),
     serviceWorker: {
+      // Registrierung übernimmt das Root-Layout, damit sie nur in Produktion läuft.
       register: false,
     },
   },
