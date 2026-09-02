@@ -1,0 +1,19 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "INSERT INTO trial_result (run_id, idx, response, rt_ms, presented_ms, correct)\n           SELECT $1, * FROM UNNEST($2::int[], $3::jsonb[], $4::int[], $5::int[], $6::bool[])\n           ON CONFLICT (run_id, idx) DO NOTHING",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Uuid",
+        "Int4Array",
+        "JsonbArray",
+        "Int4Array",
+        "Int4Array",
+        "BoolArray"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "be3baf14f8fba52d5e641d6255c4b14bf47b096a11697976da11e09d69e16dae"
+}

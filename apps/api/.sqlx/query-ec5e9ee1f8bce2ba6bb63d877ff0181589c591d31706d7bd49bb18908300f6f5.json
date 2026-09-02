@@ -1,0 +1,62 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "SELECT id, category, enabled, max_level FROM game ORDER BY id",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Text",
+        "origin": {
+          "Table": {
+            "table": "game",
+            "name": "id"
+          }
+        }
+      },
+      {
+        "ordinal": 1,
+        "name": "category",
+        "type_info": "Text",
+        "origin": {
+          "Table": {
+            "table": "game",
+            "name": "category"
+          }
+        }
+      },
+      {
+        "ordinal": 2,
+        "name": "enabled",
+        "type_info": "Bool",
+        "origin": {
+          "Table": {
+            "table": "game",
+            "name": "enabled"
+          }
+        }
+      },
+      {
+        "ordinal": 3,
+        "name": "max_level",
+        "type_info": "Int4",
+        "origin": {
+          "Table": {
+            "table": "game",
+            "name": "max_level"
+          }
+        }
+      }
+    ],
+    "parameters": {
+      "Left": []
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "ec5e9ee1f8bce2ba6bb63d877ff0181589c591d31706d7bd49bb18908300f6f5"
+}

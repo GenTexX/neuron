@@ -1,0 +1,94 @@
+[
+  {
+    "name": "empty-object",
+    "config": {},
+    "canonical": "{}",
+    "hash": "44136fa355b3678a"
+  },
+  {
+    "name": "stroop-l1",
+    "config": {
+      "colors": 3,
+      "congruentRate": 0.57,
+      "deadlineMs": 2110,
+      "switchRule": false,
+      "trials": 30
+    },
+    "canonical": "{\"colors\":3,\"congruentRate\":0.57,\"deadlineMs\":2110,\"switchRule\":false,\"trials\":30}",
+    "hash": "dc57d8796d4d7707"
+  },
+  {
+    "name": "key-order",
+    "config": {
+      "z": 1,
+      "a": 2,
+      "m": {
+        "y": true,
+        "b": [
+          3,
+          2,
+          1
+        ]
+      }
+    },
+    "canonical": "{\"a\":2,\"m\":{\"b\":[3,2,1],\"y\":true},\"z\":1}",
+    "hash": "aa553a1df548937a"
+  },
+  {
+    "name": "float-int",
+    "config": {
+      "a": 1,
+      "b": 2.5,
+      "c": 0.3,
+      "d": 0,
+      "e": -7,
+      "f": 1000000
+    },
+    "canonical": "{\"a\":1,\"b\":2.5,\"c\":0.3,\"d\":0,\"e\":-7,\"f\":1000000}",
+    "hash": "28a9629ab6cd2621"
+  },
+  {
+    "name": "strings",
+    "config": {
+      "ops": [
+        "add",
+        "sub",
+        "mul"
+      ],
+      "s": "Umlaut äöü ß",
+      "q": "quote \" and \\ backslash",
+      "n": "new\nline"
+    },
+    "canonical": "{\"n\":\"new\\nline\",\"ops\":[\"add\",\"sub\",\"mul\"],\"q\":\"quote \\\" and \\\\ backslash\",\"s\":\"Umlaut äöü ß\"}",
+    "hash": "d36e18fe1c84be4f"
+  },
+  {
+    "name": "nested",
+    "config": {
+      "angles": [
+        90,
+        180,
+        270
+      ],
+      "ruleKinds": [
+        "arith",
+        "geom"
+      ],
+      "deadlineMs": null
+    },
+    "canonical": "{\"angles\":[90,180,270],\"deadlineMs\":null,\"ruleKinds\":[\"arith\",\"geom\"]}",
+    "hash": "d237df68afa2281a"
+  },
+  {
+    "name": "n-back-ranked",
+    "config": {
+      "n": 2,
+      "length": 40,
+      "isiMs": 2500,
+      "alphabet": 8,
+      "targetRate": 0.3
+    },
+    "canonical": "{\"alphabet\":8,\"isiMs\":2500,\"length\":40,\"n\":2,\"targetRate\":0.3}",
+    "hash": "8a3d1bda25d4f54c"
+  }
+]

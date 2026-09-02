@@ -1,0 +1,21 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "INSERT INTO ranked_round (id, game_id, config, config_hash, seed, trial_count, starts_at, ends_at)\n           VALUES ($1,$2,$3,$4,$5,$6,$7,$8)\n           ON CONFLICT (game_id, starts_at) DO NOTHING",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Uuid",
+        "Text",
+        "Jsonb",
+        "Text",
+        "Int8",
+        "Int4",
+        "Timestamptz",
+        "Timestamptz"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "538a6da024663912555309791c705f5626b47fdac49cf8ef4e39392aa9fa482f"
+}

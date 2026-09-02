@@ -1,0 +1,46 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "WITH best AS (\n             SELECT DISTINCT ON (r.user_id) r.user_id, r.score, r.submitted_at\n             FROM run r\n             WHERE r.game_id = $1 AND r.config_hash = $2 AND r.mode = 'ranked'\n               AND r.valid AND r.submitted_at IS NOT NULL AND r.score IS NOT NULL\n               AND ($3::timestamptz IS NULL OR r.submitted_at >= $3)\n               AND ($4::timestamptz IS NULL OR r.submitted_at < $4)\n             ORDER BY r.user_id, r.score DESC, r.submitted_at ASC\n           ), ranked AS (\n             SELECT user_id, score,\n                    rank() OVER (ORDER BY score DESC, submitted_at ASC) as rnk,\n                    count(*) OVER () as total\n             FROM best\n           )\n           SELECT rnk as \"rank!\", score as \"score!\", total as \"of!\"\n           FROM ranked WHERE user_id = $5",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "rank!",
+        "type_info": "Int8",
+        "origin": "Expression"
+      },
+      {
+        "ordinal": 1,
+        "name": "score!",
+        "type_info": "Int4",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "score"
+          }
+        }
+      },
+      {
+        "ordinal": 2,
+        "name": "of!",
+        "type_info": "Int8",
+        "origin": "Expression"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Text",
+        "Text",
+        "Timestamptz",
+        "Timestamptz",
+        "Uuid"
+      ]
+    },
+    "nullable": [
+      null,
+      true,
+      null
+    ]
+  },
+  "hash": "ef249592c58d08dc436e38f0b04f774de14c8ce0e3e713cb03ef36ee81e1b319"
+}

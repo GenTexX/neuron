@@ -1,0 +1,151 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "SELECT id, game_id, mode, level, config_hash, score, correct_count, trial_count,\n                  valid, invalid_reason, submitted_at as \"submitted_at!\"\n           FROM run\n           WHERE user_id = $1\n             AND submitted_at IS NOT NULL\n             AND ($2::text IS NULL OR game_id = $2)\n             AND ($3::timestamptz IS NULL OR submitted_at < $3)\n           ORDER BY submitted_at DESC\n           LIMIT $4",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Uuid",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "id"
+          }
+        }
+      },
+      {
+        "ordinal": 1,
+        "name": "game_id",
+        "type_info": "Text",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "game_id"
+          }
+        }
+      },
+      {
+        "ordinal": 2,
+        "name": "mode",
+        "type_info": "Text",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "mode"
+          }
+        }
+      },
+      {
+        "ordinal": 3,
+        "name": "level",
+        "type_info": "Int4",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "level"
+          }
+        }
+      },
+      {
+        "ordinal": 4,
+        "name": "config_hash",
+        "type_info": "Text",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "config_hash"
+          }
+        }
+      },
+      {
+        "ordinal": 5,
+        "name": "score",
+        "type_info": "Int4",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "score"
+          }
+        }
+      },
+      {
+        "ordinal": 6,
+        "name": "correct_count",
+        "type_info": "Int4",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "correct_count"
+          }
+        }
+      },
+      {
+        "ordinal": 7,
+        "name": "trial_count",
+        "type_info": "Int4",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "trial_count"
+          }
+        }
+      },
+      {
+        "ordinal": 8,
+        "name": "valid",
+        "type_info": "Bool",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "valid"
+          }
+        }
+      },
+      {
+        "ordinal": 9,
+        "name": "invalid_reason",
+        "type_info": "Text",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "invalid_reason"
+          }
+        }
+      },
+      {
+        "ordinal": 10,
+        "name": "submitted_at!",
+        "type_info": "Timestamptz",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "submitted_at"
+          }
+        }
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Uuid",
+        "Text",
+        "Timestamptz",
+        "Int8"
+      ]
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      true,
+      false,
+      true,
+      true,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  "hash": "5b50728fc7248dc4b819517398ef4c5d07866a7cee77fb432344edd4b929e48c"
+}

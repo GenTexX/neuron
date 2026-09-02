@@ -1,0 +1,2690 @@
+[
+ {
+  "name": "level-1-seed-0",
+  "config": {
+   "ruleKinds": [
+    "arith"
+   ],
+   "shown": 5,
+   "deadlineMs": null,
+   "trials": 10
+  },
+  "configHash": "1f3aa3f7c69ec0b1",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 30000,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 30000,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": 59
+    },
+    "rt_ms": 11888,
+    "presented_ms": 11888,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 63
+    },
+    "rt_ms": 26327,
+    "presented_ms": 26327,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": -17
+    },
+    "rt_ms": 19508,
+    "presented_ms": 19508,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 7
+    },
+    "rt_ms": 16123,
+    "presented_ms": 16123,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 10
+    },
+    "rt_ms": 17980,
+    "presented_ms": 17980,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 82
+    },
+    "rt_ms": 18125,
+    "presented_ms": 18125,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": -5
+    },
+    "rt_ms": 17774,
+    "presented_ms": 17774,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": -24
+    },
+    "rt_ms": 3536,
+    "presented_ms": 3536,
+    "correct": true
+   }
+  ],
+  "expected": 768,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "level-1-seed-1",
+  "config": {
+   "ruleKinds": [
+    "arith"
+   ],
+   "shown": 5,
+   "deadlineMs": null,
+   "trials": 10
+  },
+  "configHash": "1f3aa3f7c69ec0b1",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 99
+    },
+    "rt_ms": 25815,
+    "presented_ms": 25815,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": 85
+    },
+    "rt_ms": 22403,
+    "presented_ms": 22403,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": 79
+    },
+    "rt_ms": 21516,
+    "presented_ms": 21516,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 91
+    },
+    "rt_ms": 18307,
+    "presented_ms": 18307,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 30000,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": -17
+    },
+    "rt_ms": 6056,
+    "presented_ms": 6056,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 53
+    },
+    "rt_ms": 11552,
+    "presented_ms": 11552,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": -45
+    },
+    "rt_ms": 23965,
+    "presented_ms": 23965,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": 10
+    },
+    "rt_ms": 4995,
+    "presented_ms": 4995,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": -30
+    },
+    "rt_ms": 6090,
+    "presented_ms": 6090,
+    "correct": true
+   }
+  ],
+  "expected": 929,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "level-1-seed-2",
+  "config": {
+   "ruleKinds": [
+    "arith"
+   ],
+   "shown": 5,
+   "deadlineMs": null,
+   "trials": 10
+  },
+  "configHash": "1f3aa3f7c69ec0b1",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 73
+    },
+    "rt_ms": 29532,
+    "presented_ms": 29532,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": 38
+    },
+    "rt_ms": 13654,
+    "presented_ms": 13654,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": 85
+    },
+    "rt_ms": 26087,
+    "presented_ms": 26087,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": -8
+    },
+    "rt_ms": 10447,
+    "presented_ms": 10447,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": 110
+    },
+    "rt_ms": 17606,
+    "presented_ms": 17606,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 145
+    },
+    "rt_ms": 9049,
+    "presented_ms": 9049,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": -13
+    },
+    "rt_ms": 17162,
+    "presented_ms": 17162,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 83
+    },
+    "rt_ms": 10886,
+    "presented_ms": 10886,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": 50
+    },
+    "rt_ms": 18240,
+    "presented_ms": 18240,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 121
+    },
+    "rt_ms": 15744,
+    "presented_ms": 15744,
+    "correct": true
+   }
+  ],
+  "expected": 1118,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "level-3-seed-1000",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom"
+   ],
+   "shown": 5,
+   "deadlineMs": null,
+   "trials": 10
+  },
+  "configHash": "997b5c4ed9c5b33f",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 240
+    },
+    "rt_ms": 4329,
+    "presented_ms": 4329,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": 729
+    },
+    "rt_ms": 27255,
+    "presented_ms": 27255,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 30000,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 30000,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": 1458
+    },
+    "rt_ms": 25472,
+    "presented_ms": 25472,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 2187
+    },
+    "rt_ms": 2336,
+    "presented_ms": 2336,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 384
+    },
+    "rt_ms": 21850,
+    "presented_ms": 21850,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 240
+    },
+    "rt_ms": 25778,
+    "presented_ms": 25778,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": 32
+    },
+    "rt_ms": 6450,
+    "presented_ms": 6450,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 80
+    },
+    "rt_ms": 12330,
+    "presented_ms": 12330,
+    "correct": false
+   }
+  ],
+  "expected": 578,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "level-3-seed-1001",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom"
+   ],
+   "shown": 5,
+   "deadlineMs": null,
+   "trials": 10
+  },
+  "configHash": "997b5c4ed9c5b33f",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 106
+    },
+    "rt_ms": 7834,
+    "presented_ms": 7834,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": -9
+    },
+    "rt_ms": 21447,
+    "presented_ms": 21447,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": 1701
+    },
+    "rt_ms": 15275,
+    "presented_ms": 15275,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 416
+    },
+    "rt_ms": 16486,
+    "presented_ms": 16486,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": 16
+    },
+    "rt_ms": 6830,
+    "presented_ms": 6830,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 23
+    },
+    "rt_ms": 25329,
+    "presented_ms": 25329,
+    "correct": false
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": -41
+    },
+    "rt_ms": 29574,
+    "presented_ms": 29574,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 49
+    },
+    "rt_ms": 1578,
+    "presented_ms": 1578,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": 1944
+    },
+    "rt_ms": 19671,
+    "presented_ms": 19671,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 486
+    },
+    "rt_ms": 5051,
+    "presented_ms": 5051,
+    "correct": true
+   }
+  ],
+  "expected": 935,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "level-3-seed-1002",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom"
+   ],
+   "shown": 5,
+   "deadlineMs": null,
+   "trials": 10
+  },
+  "configHash": "997b5c4ed9c5b33f",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 1701
+    },
+    "rt_ms": 18511,
+    "presented_ms": 18511,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": 107
+    },
+    "rt_ms": 25126,
+    "presented_ms": 25126,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": -24
+    },
+    "rt_ms": 23238,
+    "presented_ms": 23238,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 89
+    },
+    "rt_ms": 21784,
+    "presented_ms": 21784,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 30000,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 384
+    },
+    "rt_ms": 2473,
+    "presented_ms": 2473,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 96
+    },
+    "rt_ms": 25247,
+    "presented_ms": 25247,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 45
+    },
+    "rt_ms": 3887,
+    "presented_ms": 3887,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": 62
+    },
+    "rt_ms": 25015,
+    "presented_ms": 25015,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 128
+    },
+    "rt_ms": 21184,
+    "presented_ms": 21184,
+    "correct": true
+   }
+  ],
+  "expected": 988,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "level-6-seed-2000",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom",
+    "alternating"
+   ],
+   "shown": 5,
+   "deadlineMs": null,
+   "trials": 10
+  },
+  "configHash": "e950cb6cf4510257",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 30000,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": 39
+    },
+    "rt_ms": 23430,
+    "presented_ms": 23430,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 30000,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 243
+    },
+    "rt_ms": 23945,
+    "presented_ms": 23945,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": 106
+    },
+    "rt_ms": 12799,
+    "presented_ms": 12799,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 142
+    },
+    "rt_ms": 16328,
+    "presented_ms": 16328,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 216
+    },
+    "rt_ms": 9542,
+    "presented_ms": 9542,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": -12
+    },
+    "rt_ms": 10677,
+    "presented_ms": 10677,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": -16
+    },
+    "rt_ms": 9698,
+    "presented_ms": 9698,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 112
+    },
+    "rt_ms": 14564,
+    "presented_ms": 14564,
+    "correct": true
+   }
+  ],
+  "expected": 798,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "level-6-seed-2001",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom",
+    "alternating"
+   ],
+   "shown": 5,
+   "deadlineMs": null,
+   "trials": 10
+  },
+  "configHash": "e950cb6cf4510257",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 21
+    },
+    "rt_ms": 24737,
+    "presented_ms": 24737,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": 384
+    },
+    "rt_ms": 8771,
+    "presented_ms": 8771,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": -10
+    },
+    "rt_ms": 19820,
+    "presented_ms": 19820,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 59
+    },
+    "rt_ms": 11134,
+    "presented_ms": 11134,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": 480
+    },
+    "rt_ms": 7537,
+    "presented_ms": 7537,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 101
+    },
+    "rt_ms": 1903,
+    "presented_ms": 1903,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 58
+    },
+    "rt_ms": 23454,
+    "presented_ms": 23454,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 52
+    },
+    "rt_ms": 22105,
+    "presented_ms": 22105,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": -43
+    },
+    "rt_ms": 12874,
+    "presented_ms": 12874,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 729
+    },
+    "rt_ms": 23686,
+    "presented_ms": 23686,
+    "correct": true
+   }
+  ],
+  "expected": 1044,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "level-6-seed-2002",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom",
+    "alternating"
+   ],
+   "shown": 5,
+   "deadlineMs": null,
+   "trials": 10
+  },
+  "configHash": "e950cb6cf4510257",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": -31
+    },
+    "rt_ms": 19674,
+    "presented_ms": 19674,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": 216
+    },
+    "rt_ms": 13481,
+    "presented_ms": 13481,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": 66
+    },
+    "rt_ms": 20691,
+    "presented_ms": 20691,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": -13
+    },
+    "rt_ms": 17919,
+    "presented_ms": 17919,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": -11
+    },
+    "rt_ms": 22796,
+    "presented_ms": 22796,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 44
+    },
+    "rt_ms": 22368,
+    "presented_ms": 22368,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": -53
+    },
+    "rt_ms": 15615,
+    "presented_ms": 15615,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": -27
+    },
+    "rt_ms": 11570,
+    "presented_ms": 11570,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": -4
+    },
+    "rt_ms": 10225,
+    "presented_ms": 10225,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 729
+    },
+    "rt_ms": 19497,
+    "presented_ms": 19497,
+    "correct": true
+   }
+  ],
+  "expected": 963,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "level-14-seed-3000",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom",
+    "alternating",
+    "poly2",
+    "fib",
+    "interleaved",
+    "digitsum"
+   ],
+   "shown": 5,
+   "deadlineMs": null,
+   "trials": 10
+  },
+  "configHash": "9caff346ac2e31fe",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 47
+    },
+    "rt_ms": 26994,
+    "presented_ms": 26994,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 30000,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": 648
+    },
+    "rt_ms": 20398,
+    "presented_ms": 20398,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 69
+    },
+    "rt_ms": 12846,
+    "presented_ms": 12846,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": 648
+    },
+    "rt_ms": 7963,
+    "presented_ms": 7963,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 303
+    },
+    "rt_ms": 17204,
+    "presented_ms": 17204,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 432
+    },
+    "rt_ms": 27608,
+    "presented_ms": 27608,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 69
+    },
+    "rt_ms": 22835,
+    "presented_ms": 22835,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": -13
+    },
+    "rt_ms": 25104,
+    "presented_ms": 25104,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 151
+    },
+    "rt_ms": 20162,
+    "presented_ms": 20162,
+    "correct": true
+   }
+  ],
+  "expected": 725,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "level-14-seed-3001",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom",
+    "alternating",
+    "poly2",
+    "fib",
+    "interleaved",
+    "digitsum"
+   ],
+   "shown": 5,
+   "deadlineMs": null,
+   "trials": 10
+  },
+  "configHash": "9caff346ac2e31fe",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 320
+    },
+    "rt_ms": 9183,
+    "presented_ms": 9183,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 30000,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": -19
+    },
+    "rt_ms": 25336,
+    "presented_ms": 25336,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 14
+    },
+    "rt_ms": 9603,
+    "presented_ms": 9603,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": 21
+    },
+    "rt_ms": 14589,
+    "presented_ms": 14589,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 76
+    },
+    "rt_ms": 24144,
+    "presented_ms": 24144,
+    "correct": false
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 17
+    },
+    "rt_ms": 10197,
+    "presented_ms": 10197,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 17
+    },
+    "rt_ms": 18073,
+    "presented_ms": 18073,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": -2
+    },
+    "rt_ms": 21104,
+    "presented_ms": 21104,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 127
+    },
+    "rt_ms": 7813,
+    "presented_ms": 7813,
+    "correct": true
+   }
+  ],
+  "expected": 927,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "level-14-seed-3002",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom",
+    "alternating",
+    "poly2",
+    "fib",
+    "interleaved",
+    "digitsum"
+   ],
+   "shown": 5,
+   "deadlineMs": null,
+   "trials": 10
+  },
+  "configHash": "9caff346ac2e31fe",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 121
+    },
+    "rt_ms": 28147,
+    "presented_ms": 28147,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": 729
+    },
+    "rt_ms": 9109,
+    "presented_ms": 9109,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": 32
+    },
+    "rt_ms": 18185,
+    "presented_ms": 18185,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 405
+    },
+    "rt_ms": 18535,
+    "presented_ms": 18535,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": 119
+    },
+    "rt_ms": 21762,
+    "presented_ms": 21762,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 26
+    },
+    "rt_ms": 3245,
+    "presented_ms": 3245,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 40
+    },
+    "rt_ms": 12111,
+    "presented_ms": 12111,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 62
+    },
+    "rt_ms": 10021,
+    "presented_ms": 10021,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": 216
+    },
+    "rt_ms": 21089,
+    "presented_ms": 21089,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 63
+    },
+    "rt_ms": 16768,
+    "presented_ms": 16768,
+    "correct": true
+   }
+  ],
+  "expected": 1027,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "ranked-0-seed-4000",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom",
+    "alternating",
+    "poly2"
+   ],
+   "shown": 5,
+   "deadlineMs": 20000,
+   "trials": 10
+  },
+  "configHash": "e84f661c03c566e1",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 98
+    },
+    "rt_ms": 14770,
+    "presented_ms": 14770,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": 324
+    },
+    "rt_ms": 6708,
+    "presented_ms": 6708,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 20000,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 282
+    },
+    "rt_ms": 13828,
+    "presented_ms": 13828,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": 35
+    },
+    "rt_ms": 17841,
+    "presented_ms": 17841,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": -21
+    },
+    "rt_ms": 14445,
+    "presented_ms": 14445,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 729
+    },
+    "rt_ms": 11497,
+    "presented_ms": 11497,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 64
+    },
+    "rt_ms": 7248,
+    "presented_ms": 7248,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": 216
+    },
+    "rt_ms": 2213,
+    "presented_ms": 2213,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 20000,
+    "correct": false
+   }
+  ],
+  "expected": 872,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "ranked-0-seed-4001",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom",
+    "alternating",
+    "poly2"
+   ],
+   "shown": 5,
+   "deadlineMs": 20000,
+   "trials": 10
+  },
+  "configHash": "e84f661c03c566e1",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 648
+    },
+    "rt_ms": 6919,
+    "presented_ms": 6919,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": 75
+    },
+    "rt_ms": 2838,
+    "presented_ms": 2838,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": 31
+    },
+    "rt_ms": 18987,
+    "presented_ms": 18987,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 3
+    },
+    "rt_ms": 17640,
+    "presented_ms": 17640,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": -39
+    },
+    "rt_ms": 14245,
+    "presented_ms": 14245,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 81
+    },
+    "rt_ms": 4075,
+    "presented_ms": 4075,
+    "correct": false
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": -1
+    },
+    "rt_ms": 5802,
+    "presented_ms": 5802,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 64
+    },
+    "rt_ms": 18795,
+    "presented_ms": 18795,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": 51
+    },
+    "rt_ms": 3373,
+    "presented_ms": 3373,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": -8
+    },
+    "rt_ms": 12063,
+    "presented_ms": 12063,
+    "correct": true
+   }
+  ],
+  "expected": 578,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "ranked-0-seed-4002",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom",
+    "alternating",
+    "poly2"
+   ],
+   "shown": 5,
+   "deadlineMs": 20000,
+   "trials": 10
+  },
+  "configHash": "e84f661c03c566e1",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 1
+    },
+    "rt_ms": 3550,
+    "presented_ms": 3550,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 20000,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": 324
+    },
+    "rt_ms": 15195,
+    "presented_ms": 15195,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 1701
+    },
+    "rt_ms": 2607,
+    "presented_ms": 2607,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": 48
+    },
+    "rt_ms": 16745,
+    "presented_ms": 16745,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 243
+    },
+    "rt_ms": 16103,
+    "presented_ms": 16103,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 71
+    },
+    "rt_ms": 5040,
+    "presented_ms": 5040,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 192
+    },
+    "rt_ms": 6859,
+    "presented_ms": 6859,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": 729
+    },
+    "rt_ms": 17362,
+    "presented_ms": 17362,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 20000,
+    "correct": false
+   }
+  ],
+  "expected": 613,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "ranked-1-seed-5000",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom",
+    "alternating",
+    "poly2",
+    "fib"
+   ],
+   "shown": 5,
+   "deadlineMs": 20000,
+   "trials": 10
+  },
+  "configHash": "e257fc8dec263b6f",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 480
+    },
+    "rt_ms": 10492,
+    "presented_ms": 10492,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": 29
+    },
+    "rt_ms": 14530,
+    "presented_ms": 14530,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": 22
+    },
+    "rt_ms": 6569,
+    "presented_ms": 6569,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 64
+    },
+    "rt_ms": 13721,
+    "presented_ms": 13721,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": -22
+    },
+    "rt_ms": 4501,
+    "presented_ms": 4501,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 66
+    },
+    "rt_ms": 13709,
+    "presented_ms": 13709,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 74
+    },
+    "rt_ms": 3472,
+    "presented_ms": 3472,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 2
+    },
+    "rt_ms": 3196,
+    "presented_ms": 3196,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": 36
+    },
+    "rt_ms": 6024,
+    "presented_ms": 6024,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 56
+    },
+    "rt_ms": 12134,
+    "presented_ms": 12134,
+    "correct": true
+   }
+  ],
+  "expected": 1012,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "ranked-1-seed-5001",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom",
+    "alternating",
+    "poly2",
+    "fib"
+   ],
+   "shown": 5,
+   "deadlineMs": 20000,
+   "trials": 10
+  },
+  "configHash": "e257fc8dec263b6f",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": -52
+    },
+    "rt_ms": 11590,
+    "presented_ms": 11590,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": 110
+    },
+    "rt_ms": 17214,
+    "presented_ms": 17214,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 20000,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 116
+    },
+    "rt_ms": 10908,
+    "presented_ms": 10908,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": 64
+    },
+    "rt_ms": 8675,
+    "presented_ms": 8675,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 67
+    },
+    "rt_ms": 8971,
+    "presented_ms": 8971,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 24
+    },
+    "rt_ms": 4244,
+    "presented_ms": 4244,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 38
+    },
+    "rt_ms": 10678,
+    "presented_ms": 10678,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": 90
+    },
+    "rt_ms": 12673,
+    "presented_ms": 12673,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 41
+    },
+    "rt_ms": 9924,
+    "presented_ms": 9924,
+    "correct": true
+   }
+  ],
+  "expected": 887,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "ranked-1-seed-5002",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom",
+    "alternating",
+    "poly2",
+    "fib"
+   ],
+   "shown": 5,
+   "deadlineMs": 20000,
+   "trials": 10
+  },
+  "configHash": "e257fc8dec263b6f",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 121
+    },
+    "rt_ms": 3352,
+    "presented_ms": 3352,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": 672
+    },
+    "rt_ms": 13955,
+    "presented_ms": 13955,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": 32
+    },
+    "rt_ms": 6525,
+    "presented_ms": 6525,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 54
+    },
+    "rt_ms": 18961,
+    "presented_ms": 18961,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": 71
+    },
+    "rt_ms": 14888,
+    "presented_ms": 14888,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": -37
+    },
+    "rt_ms": 7207,
+    "presented_ms": 7207,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 20000,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 26
+    },
+    "rt_ms": 8275,
+    "presented_ms": 8275,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": 224
+    },
+    "rt_ms": 8056,
+    "presented_ms": 8056,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 384
+    },
+    "rt_ms": 12024,
+    "presented_ms": 12024,
+    "correct": true
+   }
+  ],
+  "expected": 727,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "ranked-2-seed-6000",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "alternating",
+    "poly2",
+    "interleaved"
+   ],
+   "shown": 5,
+   "deadlineMs": 20000,
+   "trials": 10
+  },
+  "configHash": "4894bf482026ff18",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 56
+    },
+    "rt_ms": 5639,
+    "presented_ms": 5639,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": -3
+    },
+    "rt_ms": 5906,
+    "presented_ms": 5906,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": 11
+    },
+    "rt_ms": 15606,
+    "presented_ms": 15606,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": -23
+    },
+    "rt_ms": 15287,
+    "presented_ms": 15287,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": -3
+    },
+    "rt_ms": 5499,
+    "presented_ms": 5499,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 16
+    },
+    "rt_ms": 5892,
+    "presented_ms": 5892,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 85
+    },
+    "rt_ms": 18599,
+    "presented_ms": 18599,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 33
+    },
+    "rt_ms": 16748,
+    "presented_ms": 16748,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": 144
+    },
+    "rt_ms": 2436,
+    "presented_ms": 2436,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 20
+    },
+    "rt_ms": 9142,
+    "presented_ms": 9142,
+    "correct": true
+   }
+  ],
+  "expected": 1113,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "ranked-2-seed-6001",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "alternating",
+    "poly2",
+    "interleaved"
+   ],
+   "shown": 5,
+   "deadlineMs": 20000,
+   "trials": 10
+  },
+  "configHash": "4894bf482026ff18",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 28
+    },
+    "rt_ms": 1999,
+    "presented_ms": 1999,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 20000,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": 45
+    },
+    "rt_ms": 17479,
+    "presented_ms": 17479,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 101
+    },
+    "rt_ms": 17391,
+    "presented_ms": 17391,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": 51
+    },
+    "rt_ms": 19100,
+    "presented_ms": 19100,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 8
+    },
+    "rt_ms": 17005,
+    "presented_ms": 17005,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 42
+    },
+    "rt_ms": 17483,
+    "presented_ms": 17483,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 20000,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": 45
+    },
+    "rt_ms": 3626,
+    "presented_ms": 3626,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 22
+    },
+    "rt_ms": 17658,
+    "presented_ms": 17658,
+    "correct": true
+   }
+  ],
+  "expected": 920,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "ranked-2-seed-6002",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "alternating",
+    "poly2",
+    "interleaved"
+   ],
+   "shown": 5,
+   "deadlineMs": 20000,
+   "trials": 10
+  },
+  "configHash": "4894bf482026ff18",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 86
+    },
+    "rt_ms": 2129,
+    "presented_ms": 2129,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": 184
+    },
+    "rt_ms": 14721,
+    "presented_ms": 14721,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": 72
+    },
+    "rt_ms": 14158,
+    "presented_ms": 14158,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": -2
+    },
+    "rt_ms": 12584,
+    "presented_ms": 12584,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": 74
+    },
+    "rt_ms": 10622,
+    "presented_ms": 10622,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 144
+    },
+    "rt_ms": 15348,
+    "presented_ms": 15348,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 36
+    },
+    "rt_ms": 16441,
+    "presented_ms": 16441,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 83
+    },
+    "rt_ms": 19725,
+    "presented_ms": 19725,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": -1
+    },
+    "rt_ms": 4214,
+    "presented_ms": 4214,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 36
+    },
+    "rt_ms": 5238,
+    "presented_ms": 5238,
+    "correct": false
+   }
+  ],
+  "expected": 961,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "ranked-3-seed-7000",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom",
+    "poly2",
+    "fib",
+    "digitsum"
+   ],
+   "shown": 5,
+   "deadlineMs": 20000,
+   "trials": 10
+  },
+  "configHash": "f04f18cdf51a5b4a",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 416
+    },
+    "rt_ms": 17657,
+    "presented_ms": 17657,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": 3
+    },
+    "rt_ms": 2146,
+    "presented_ms": 2146,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": 5
+    },
+    "rt_ms": 2010,
+    "presented_ms": 2010,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 49
+    },
+    "rt_ms": 13680,
+    "presented_ms": 13680,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": 106
+    },
+    "rt_ms": 7602,
+    "presented_ms": 7602,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 160
+    },
+    "rt_ms": 16851,
+    "presented_ms": 16851,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 122
+    },
+    "rt_ms": 14444,
+    "presented_ms": 14444,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 36
+    },
+    "rt_ms": 5000,
+    "presented_ms": 5000,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": -7
+    },
+    "rt_ms": 2945,
+    "presented_ms": 2945,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 0
+    },
+    "rt_ms": 8721,
+    "presented_ms": 8721,
+    "correct": true
+   }
+  ],
+  "expected": 1129,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "ranked-3-seed-7001",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom",
+    "poly2",
+    "fib",
+    "digitsum"
+   ],
+   "shown": 5,
+   "deadlineMs": 20000,
+   "trials": 10
+  },
+  "configHash": "f04f18cdf51a5b4a",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 122
+    },
+    "rt_ms": 12548,
+    "presented_ms": 12548,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": 2187
+    },
+    "rt_ms": 16836,
+    "presented_ms": 16836,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": 15
+    },
+    "rt_ms": 5283,
+    "presented_ms": 5283,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 152
+    },
+    "rt_ms": 7295,
+    "presented_ms": 7295,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": 0
+    },
+    "rt_ms": 18530,
+    "presented_ms": 18530,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 729
+    },
+    "rt_ms": 5955,
+    "presented_ms": 5955,
+    "correct": false
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 1458
+    },
+    "rt_ms": 4708,
+    "presented_ms": 4708,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 567
+    },
+    "rt_ms": 15251,
+    "presented_ms": 15251,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": 192
+    },
+    "rt_ms": 9952,
+    "presented_ms": 9952,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 243
+    },
+    "rt_ms": 11779,
+    "presented_ms": 11779,
+    "correct": true
+   }
+  ],
+  "expected": 603,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "ranked-3-seed-7002",
+  "config": {
+   "ruleKinds": [
+    "arith",
+    "geom",
+    "poly2",
+    "fib",
+    "digitsum"
+   ],
+   "shown": 5,
+   "deadlineMs": 20000,
+   "trials": 10
+  },
+  "configHash": "f04f18cdf51a5b4a",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "value": 115
+    },
+    "rt_ms": 3384,
+    "presented_ms": 3384,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "value": 63
+    },
+    "rt_ms": 8839,
+    "presented_ms": 8839,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "value": -40
+    },
+    "rt_ms": 7170,
+    "presented_ms": 7170,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "value": 91
+    },
+    "rt_ms": 9544,
+    "presented_ms": 9544,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "value": 122
+    },
+    "rt_ms": 2201,
+    "presented_ms": 2201,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "value": 29
+    },
+    "rt_ms": 17159,
+    "presented_ms": 17159,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "value": 64
+    },
+    "rt_ms": 19266,
+    "presented_ms": 19266,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "value": 61
+    },
+    "rt_ms": 3131,
+    "presented_ms": 3131,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": {
+     "value": 43
+    },
+    "rt_ms": 5261,
+    "presented_ms": 5261,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "value": 67
+    },
+    "rt_ms": 14456,
+    "presented_ms": 14456,
+    "correct": true
+   }
+  ],
+  "expected": 1000,
+  "theoreticalMax": 1500
+ },
+ {
+  "name": "no-responses",
+  "config": {
+   "ruleKinds": [
+    "arith"
+   ],
+   "shown": 5,
+   "deadlineMs": null,
+   "trials": 10
+  },
+  "configHash": "1f3aa3f7c69ec0b1",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 6,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 1500
+ }
+]

@@ -1,0 +1,2115 @@
+{
+  "$comment": "GENERIERT aus packages/games (test/game-table.spec.ts). Nicht von Hand bearbeiten. Rust liest diese Datei per include_str!.",
+  "games": [
+    {
+      "id": "stroop",
+      "category": "attention",
+      "inputKind": "choice",
+      "timingSensitive": true,
+      "responseModel": "discrete",
+      "maxLevel": 15,
+      "levels": [
+        {
+          "config": {
+            "colors": 3,
+            "congruentRate": 0.57,
+            "deadlineMs": 2110,
+            "switchRule": false,
+            "trials": 30
+          },
+          "configHash": "dc57d8796d4d7707",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        },
+        {
+          "config": {
+            "colors": 3,
+            "congruentRate": 0.54,
+            "deadlineMs": 2020,
+            "switchRule": false,
+            "trials": 30
+          },
+          "configHash": "1cc42b2b7a28b852",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        },
+        {
+          "config": {
+            "colors": 3,
+            "congruentRate": 0.51,
+            "deadlineMs": 1930,
+            "switchRule": false,
+            "trials": 30
+          },
+          "configHash": "7ff981cfd46c82fe",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        },
+        {
+          "config": {
+            "colors": 4,
+            "congruentRate": 0.48,
+            "deadlineMs": 1840,
+            "switchRule": false,
+            "trials": 30
+          },
+          "configHash": "3b2f1bd1a35580c5",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        },
+        {
+          "config": {
+            "colors": 4,
+            "congruentRate": 0.45,
+            "deadlineMs": 1750,
+            "switchRule": false,
+            "trials": 30
+          },
+          "configHash": "05dc74a6f44a81cf",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        },
+        {
+          "config": {
+            "colors": 4,
+            "congruentRate": 0.42,
+            "deadlineMs": 1660,
+            "switchRule": false,
+            "trials": 30
+          },
+          "configHash": "883f1c36674a6495",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        },
+        {
+          "config": {
+            "colors": 4,
+            "congruentRate": 0.39,
+            "deadlineMs": 1570,
+            "switchRule": false,
+            "trials": 30
+          },
+          "configHash": "f607b31aa04b45b1",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        },
+        {
+          "config": {
+            "colors": 5,
+            "congruentRate": 0.36,
+            "deadlineMs": 1480,
+            "switchRule": true,
+            "trials": 30
+          },
+          "configHash": "b2aeecd9cf75257a",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        },
+        {
+          "config": {
+            "colors": 5,
+            "congruentRate": 0.33,
+            "deadlineMs": 1390,
+            "switchRule": true,
+            "trials": 30
+          },
+          "configHash": "aacdb14e86df5fc2",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        },
+        {
+          "config": {
+            "colors": 5,
+            "congruentRate": 0.3,
+            "deadlineMs": 1300,
+            "switchRule": true,
+            "trials": 30
+          },
+          "configHash": "11d34d3ccb5b09ec",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        },
+        {
+          "config": {
+            "colors": 5,
+            "congruentRate": 0.27,
+            "deadlineMs": 1210,
+            "switchRule": true,
+            "trials": 30
+          },
+          "configHash": "001f83ab79d6db3d",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        },
+        {
+          "config": {
+            "colors": 5,
+            "congruentRate": 0.24,
+            "deadlineMs": 1120,
+            "switchRule": true,
+            "trials": 30
+          },
+          "configHash": "943ad1e4834c3b2d",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        },
+        {
+          "config": {
+            "colors": 5,
+            "congruentRate": 0.21,
+            "deadlineMs": 1030,
+            "switchRule": true,
+            "trials": 30
+          },
+          "configHash": "9a814f177981e96d",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        },
+        {
+          "config": {
+            "colors": 5,
+            "congruentRate": 0.2,
+            "deadlineMs": 940,
+            "switchRule": true,
+            "trials": 30
+          },
+          "configHash": "caf32e350fe7ff51",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        },
+        {
+          "config": {
+            "colors": 5,
+            "congruentRate": 0.2,
+            "deadlineMs": 900,
+            "switchRule": true,
+            "trials": 30
+          },
+          "configHash": "bd34062ba4c1279d",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        }
+      ],
+      "ranked": [
+        {
+          "config": {
+            "colors": 4,
+            "congruentRate": 0.4,
+            "deadlineMs": 1500,
+            "switchRule": false,
+            "trials": 30
+          },
+          "configHash": "fe90f785ef90e1f2",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        },
+        {
+          "config": {
+            "colors": 5,
+            "congruentRate": 0.35,
+            "deadlineMs": 1400,
+            "switchRule": false,
+            "trials": 30
+          },
+          "configHash": "adebd7235b17facc",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        },
+        {
+          "config": {
+            "colors": 4,
+            "congruentRate": 0.4,
+            "deadlineMs": 1600,
+            "switchRule": true,
+            "trials": 30
+          },
+          "configHash": "528f5bfabc4766ce",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        },
+        {
+          "config": {
+            "colors": 5,
+            "congruentRate": 0.3,
+            "deadlineMs": 1300,
+            "switchRule": true,
+            "trials": 30
+          },
+          "configHash": "11d34d3ccb5b09ec",
+          "trialCount": 30,
+          "theoreticalMax": 4800
+        }
+      ]
+    },
+    {
+      "id": "go-nogo",
+      "category": "attention",
+      "inputKind": "binary",
+      "timingSensitive": true,
+      "responseModel": "continuous",
+      "maxLevel": 12,
+      "levels": [
+        {
+          "config": {
+            "length": 43,
+            "isiMs": 1730,
+            "stimulusMs": 480,
+            "noGoRate": 0.25
+          },
+          "configHash": "714c6af4eef7e177",
+          "trialCount": 43,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "length": 46,
+            "isiMs": 1660,
+            "stimulusMs": 460,
+            "noGoRate": 0.25
+          },
+          "configHash": "cb7588bd0d09c32e",
+          "trialCount": 46,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "length": 49,
+            "isiMs": 1590,
+            "stimulusMs": 440,
+            "noGoRate": 0.25
+          },
+          "configHash": "ce3ae85cc075f72f",
+          "trialCount": 49,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "length": 52,
+            "isiMs": 1520,
+            "stimulusMs": 420,
+            "noGoRate": 0.25
+          },
+          "configHash": "888e3b240f46925f",
+          "trialCount": 52,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "length": 55,
+            "isiMs": 1450,
+            "stimulusMs": 400,
+            "noGoRate": 0.25
+          },
+          "configHash": "01ed92b24cd15a46",
+          "trialCount": 55,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "length": 58,
+            "isiMs": 1380,
+            "stimulusMs": 380,
+            "noGoRate": 0.25
+          },
+          "configHash": "12169beeca3d1626",
+          "trialCount": 58,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "length": 61,
+            "isiMs": 1310,
+            "stimulusMs": 360,
+            "noGoRate": 0.25
+          },
+          "configHash": "2b3ea6ef6b8bd129",
+          "trialCount": 61,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "length": 64,
+            "isiMs": 1240,
+            "stimulusMs": 340,
+            "noGoRate": 0.25
+          },
+          "configHash": "de3819475fedb5fb",
+          "trialCount": 64,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "length": 67,
+            "isiMs": 1170,
+            "stimulusMs": 320,
+            "noGoRate": 0.25
+          },
+          "configHash": "bd8fdc9d38ec1f1b",
+          "trialCount": 67,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "length": 70,
+            "isiMs": 1100,
+            "stimulusMs": 300,
+            "noGoRate": 0.25
+          },
+          "configHash": "1af364d9ba4b0dd8",
+          "trialCount": 70,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "length": 73,
+            "isiMs": 1030,
+            "stimulusMs": 280,
+            "noGoRate": 0.25
+          },
+          "configHash": "0ce3121ad9eece24",
+          "trialCount": 73,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "length": 76,
+            "isiMs": 960,
+            "stimulusMs": 260,
+            "noGoRate": 0.25
+          },
+          "configHash": "d0c6802fe6d80ea6",
+          "trialCount": 76,
+          "theoreticalMax": 1200
+        }
+      ],
+      "ranked": [
+        {
+          "config": {
+            "length": 60,
+            "isiMs": 1200,
+            "stimulusMs": 350,
+            "noGoRate": 0.25
+          },
+          "configHash": "f1a5dbe456d65426",
+          "trialCount": 60,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "length": 60,
+            "isiMs": 1000,
+            "stimulusMs": 300,
+            "noGoRate": 0.25
+          },
+          "configHash": "e18b9eedb2e8c2cc",
+          "trialCount": 60,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "length": 70,
+            "isiMs": 1100,
+            "stimulusMs": 320,
+            "noGoRate": 0.3
+          },
+          "configHash": "9b4f6bf8a577650f",
+          "trialCount": 70,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "length": 60,
+            "isiMs": 900,
+            "stimulusMs": 280,
+            "noGoRate": 0.25
+          },
+          "configHash": "4fd859a56e900d4e",
+          "trialCount": 60,
+          "theoreticalMax": 1200
+        }
+      ]
+    },
+    {
+      "id": "n-back",
+      "category": "working-memory",
+      "inputKind": "binary",
+      "timingSensitive": true,
+      "responseModel": "continuous",
+      "maxLevel": 12,
+      "levels": [
+        {
+          "config": {
+            "n": 1,
+            "length": 22,
+            "isiMs": 2900,
+            "alphabet": 8,
+            "targetRate": 0.3
+          },
+          "configHash": "49be649b39a81fef",
+          "trialCount": 22,
+          "theoreticalMax": 1000
+        },
+        {
+          "config": {
+            "n": 1,
+            "length": 24,
+            "isiMs": 2800,
+            "alphabet": 8,
+            "targetRate": 0.3
+          },
+          "configHash": "dcfb19ff0fc9f914",
+          "trialCount": 24,
+          "theoreticalMax": 1000
+        },
+        {
+          "config": {
+            "n": 1,
+            "length": 26,
+            "isiMs": 2700,
+            "alphabet": 8,
+            "targetRate": 0.3
+          },
+          "configHash": "a416d3a19a243c05",
+          "trialCount": 26,
+          "theoreticalMax": 1000
+        },
+        {
+          "config": {
+            "n": 1,
+            "length": 28,
+            "isiMs": 2600,
+            "alphabet": 8,
+            "targetRate": 0.3
+          },
+          "configHash": "47f855173d7e55a6",
+          "trialCount": 28,
+          "theoreticalMax": 1000
+        },
+        {
+          "config": {
+            "n": 2,
+            "length": 30,
+            "isiMs": 2500,
+            "alphabet": 8,
+            "targetRate": 0.3
+          },
+          "configHash": "1701f4c301515b48",
+          "trialCount": 30,
+          "theoreticalMax": 1250
+        },
+        {
+          "config": {
+            "n": 2,
+            "length": 32,
+            "isiMs": 2400,
+            "alphabet": 8,
+            "targetRate": 0.3
+          },
+          "configHash": "8647e5ed940fe507",
+          "trialCount": 32,
+          "theoreticalMax": 1250
+        },
+        {
+          "config": {
+            "n": 2,
+            "length": 34,
+            "isiMs": 2300,
+            "alphabet": 8,
+            "targetRate": 0.3
+          },
+          "configHash": "adc63e3e528ef29c",
+          "trialCount": 34,
+          "theoreticalMax": 1250
+        },
+        {
+          "config": {
+            "n": 2,
+            "length": 36,
+            "isiMs": 2200,
+            "alphabet": 8,
+            "targetRate": 0.3
+          },
+          "configHash": "71211573a8f9cd41",
+          "trialCount": 36,
+          "theoreticalMax": 1250
+        },
+        {
+          "config": {
+            "n": 3,
+            "length": 38,
+            "isiMs": 2100,
+            "alphabet": 8,
+            "targetRate": 0.3
+          },
+          "configHash": "d06b68f84b09b1fa",
+          "trialCount": 38,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "n": 3,
+            "length": 40,
+            "isiMs": 2000,
+            "alphabet": 8,
+            "targetRate": 0.3
+          },
+          "configHash": "77f740254c43feb6",
+          "trialCount": 40,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "n": 3,
+            "length": 42,
+            "isiMs": 1900,
+            "alphabet": 8,
+            "targetRate": 0.3
+          },
+          "configHash": "2c4cd42e23f81c9c",
+          "trialCount": 42,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "n": 3,
+            "length": 44,
+            "isiMs": 1800,
+            "alphabet": 8,
+            "targetRate": 0.3
+          },
+          "configHash": "07a03daa5d35fff5",
+          "trialCount": 44,
+          "theoreticalMax": 1500
+        }
+      ],
+      "ranked": [
+        {
+          "config": {
+            "n": 2,
+            "length": 40,
+            "isiMs": 2500,
+            "alphabet": 8,
+            "targetRate": 0.3
+          },
+          "configHash": "8a3d1bda25d4f54c",
+          "trialCount": 40,
+          "theoreticalMax": 1250
+        },
+        {
+          "config": {
+            "n": 2,
+            "length": 40,
+            "isiMs": 2200,
+            "alphabet": 8,
+            "targetRate": 0.3
+          },
+          "configHash": "d73a86a3b65b404b",
+          "trialCount": 40,
+          "theoreticalMax": 1250
+        },
+        {
+          "config": {
+            "n": 3,
+            "length": 44,
+            "isiMs": 2500,
+            "alphabet": 8,
+            "targetRate": 0.3
+          },
+          "configHash": "191d035a9ac546ad",
+          "trialCount": 44,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "n": 3,
+            "length": 44,
+            "isiMs": 2200,
+            "alphabet": 8,
+            "targetRate": 0.3
+          },
+          "configHash": "98fd55d7b35151a1",
+          "trialCount": 44,
+          "theoreticalMax": 1500
+        }
+      ]
+    },
+    {
+      "id": "mental-chain",
+      "category": "arithmetic",
+      "inputKind": "numeric",
+      "timingSensitive": true,
+      "responseModel": "discrete",
+      "maxLevel": 14,
+      "levels": [
+        {
+          "config": {
+            "steps": 2,
+            "stepMs": 1500,
+            "gapMs": 300,
+            "ops": ["add", "sub"],
+            "operandMax": 12,
+            "trials": 8
+          },
+          "configHash": "114dd991be592ed1",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "steps": 3,
+            "stepMs": 1400,
+            "gapMs": 300,
+            "ops": ["add", "sub"],
+            "operandMax": 15,
+            "trials": 8
+          },
+          "configHash": "366769916228a328",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "steps": 3,
+            "stepMs": 1300,
+            "gapMs": 300,
+            "ops": ["add", "sub"],
+            "operandMax": 18,
+            "trials": 8
+          },
+          "configHash": "fc42981d6fe2d574",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "steps": 4,
+            "stepMs": 1200,
+            "gapMs": 300,
+            "ops": ["add", "sub", "mul"],
+            "operandMax": 21,
+            "trials": 8
+          },
+          "configHash": "ba61be74228c6d5f",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "steps": 4,
+            "stepMs": 1100,
+            "gapMs": 300,
+            "ops": ["add", "sub", "mul"],
+            "operandMax": 24,
+            "trials": 8
+          },
+          "configHash": "5cf4423892f49be6",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "steps": 5,
+            "stepMs": 1000,
+            "gapMs": 300,
+            "ops": ["add", "sub", "mul"],
+            "operandMax": 27,
+            "trials": 8
+          },
+          "configHash": "847f81ab42c3d8f0",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "steps": 5,
+            "stepMs": 900,
+            "gapMs": 300,
+            "ops": ["add", "sub", "mul"],
+            "operandMax": 30,
+            "trials": 8
+          },
+          "configHash": "12ca44fd8cad66c5",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "steps": 6,
+            "stepMs": 800,
+            "gapMs": 300,
+            "ops": ["add", "sub", "mul"],
+            "operandMax": 33,
+            "trials": 8
+          },
+          "configHash": "07ed62b457be2b7b",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "steps": 6,
+            "stepMs": 700,
+            "gapMs": 300,
+            "ops": ["add", "sub", "mul"],
+            "operandMax": 36,
+            "trials": 8
+          },
+          "configHash": "f00e9e9aafb7fdd0",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "steps": 7,
+            "stepMs": 600,
+            "gapMs": 300,
+            "ops": ["add", "sub", "mul"],
+            "operandMax": 39,
+            "trials": 8
+          },
+          "configHash": "e337d25e731c8854",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "steps": 7,
+            "stepMs": 500,
+            "gapMs": 300,
+            "ops": ["add", "sub", "mul"],
+            "operandMax": 42,
+            "trials": 8
+          },
+          "configHash": "43cc1bc6e7452f42",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "steps": 8,
+            "stepMs": 500,
+            "gapMs": 300,
+            "ops": ["add", "sub", "mul"],
+            "operandMax": 45,
+            "trials": 8
+          },
+          "configHash": "83050f0698e9b5f2",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "steps": 8,
+            "stepMs": 500,
+            "gapMs": 300,
+            "ops": ["add", "sub", "mul"],
+            "operandMax": 48,
+            "trials": 8
+          },
+          "configHash": "3e79a3350d90174f",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "steps": 9,
+            "stepMs": 500,
+            "gapMs": 300,
+            "ops": ["add", "sub", "mul"],
+            "operandMax": 51,
+            "trials": 8
+          },
+          "configHash": "5efbd442d82b91dd",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        }
+      ],
+      "ranked": [
+        {
+          "config": {
+            "steps": 4,
+            "stepMs": 1000,
+            "gapMs": 300,
+            "ops": ["add", "sub", "mul"],
+            "operandMax": 24,
+            "trials": 8
+          },
+          "configHash": "78257569d8e7b3c9",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "steps": 5,
+            "stepMs": 900,
+            "gapMs": 300,
+            "ops": ["add", "sub"],
+            "operandMax": 30,
+            "trials": 8
+          },
+          "configHash": "a5a55eb915595bcf",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "steps": 4,
+            "stepMs": 800,
+            "gapMs": 250,
+            "ops": ["add", "sub", "mul"],
+            "operandMax": 27,
+            "trials": 8
+          },
+          "configHash": "1087d1e1e6c2efed",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        },
+        {
+          "config": {
+            "steps": 5,
+            "stepMs": 900,
+            "gapMs": 300,
+            "ops": ["add", "sub", "mul"],
+            "operandMax": 24,
+            "trials": 8
+          },
+          "configHash": "8f806f8de55e500d",
+          "trialCount": 8,
+          "theoreticalMax": 1200
+        }
+      ]
+    },
+    {
+      "id": "number-sequence",
+      "category": "logic",
+      "inputKind": "numeric",
+      "timingSensitive": false,
+      "responseModel": "discrete",
+      "maxLevel": 14,
+      "levels": [
+        {
+          "config": {
+            "ruleKinds": ["arith"],
+            "shown": 5,
+            "deadlineMs": null,
+            "trials": 10
+          },
+          "configHash": "1f3aa3f7c69ec0b1",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "ruleKinds": ["arith"],
+            "shown": 5,
+            "deadlineMs": null,
+            "trials": 10
+          },
+          "configHash": "1f3aa3f7c69ec0b1",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "ruleKinds": ["arith", "geom"],
+            "shown": 5,
+            "deadlineMs": null,
+            "trials": 10
+          },
+          "configHash": "997b5c4ed9c5b33f",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "ruleKinds": ["arith", "geom"],
+            "shown": 5,
+            "deadlineMs": null,
+            "trials": 10
+          },
+          "configHash": "997b5c4ed9c5b33f",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "ruleKinds": ["arith", "geom", "alternating"],
+            "shown": 5,
+            "deadlineMs": null,
+            "trials": 10
+          },
+          "configHash": "e950cb6cf4510257",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "ruleKinds": ["arith", "geom", "alternating"],
+            "shown": 5,
+            "deadlineMs": null,
+            "trials": 10
+          },
+          "configHash": "e950cb6cf4510257",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "ruleKinds": ["arith", "geom", "alternating", "poly2"],
+            "shown": 5,
+            "deadlineMs": null,
+            "trials": 10
+          },
+          "configHash": "1a0c933e93ec153f",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "ruleKinds": ["arith", "geom", "alternating", "poly2"],
+            "shown": 5,
+            "deadlineMs": null,
+            "trials": 10
+          },
+          "configHash": "1a0c933e93ec153f",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "ruleKinds": ["arith", "geom", "alternating", "poly2", "fib"],
+            "shown": 5,
+            "deadlineMs": null,
+            "trials": 10
+          },
+          "configHash": "849b8e01aa2c0bac",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "ruleKinds": ["arith", "geom", "alternating", "poly2", "fib"],
+            "shown": 5,
+            "deadlineMs": null,
+            "trials": 10
+          },
+          "configHash": "849b8e01aa2c0bac",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "ruleKinds": ["arith", "geom", "alternating", "poly2", "fib", "interleaved"],
+            "shown": 5,
+            "deadlineMs": null,
+            "trials": 10
+          },
+          "configHash": "68818e4226375b6f",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "ruleKinds": ["arith", "geom", "alternating", "poly2", "fib", "interleaved"],
+            "shown": 5,
+            "deadlineMs": null,
+            "trials": 10
+          },
+          "configHash": "68818e4226375b6f",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "ruleKinds": [
+              "arith",
+              "geom",
+              "alternating",
+              "poly2",
+              "fib",
+              "interleaved",
+              "digitsum"
+            ],
+            "shown": 5,
+            "deadlineMs": null,
+            "trials": 10
+          },
+          "configHash": "9caff346ac2e31fe",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "ruleKinds": [
+              "arith",
+              "geom",
+              "alternating",
+              "poly2",
+              "fib",
+              "interleaved",
+              "digitsum"
+            ],
+            "shown": 5,
+            "deadlineMs": null,
+            "trials": 10
+          },
+          "configHash": "9caff346ac2e31fe",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        }
+      ],
+      "ranked": [
+        {
+          "config": {
+            "ruleKinds": ["arith", "geom", "alternating", "poly2"],
+            "shown": 5,
+            "deadlineMs": 20000,
+            "trials": 10
+          },
+          "configHash": "e84f661c03c566e1",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "ruleKinds": ["arith", "geom", "alternating", "poly2", "fib"],
+            "shown": 5,
+            "deadlineMs": 20000,
+            "trials": 10
+          },
+          "configHash": "e257fc8dec263b6f",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "ruleKinds": ["arith", "alternating", "poly2", "interleaved"],
+            "shown": 5,
+            "deadlineMs": 20000,
+            "trials": 10
+          },
+          "configHash": "4894bf482026ff18",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        },
+        {
+          "config": {
+            "ruleKinds": ["arith", "geom", "poly2", "fib", "digitsum"],
+            "shown": 5,
+            "deadlineMs": 20000,
+            "trials": 10
+          },
+          "configHash": "f04f18cdf51a5b4a",
+          "trialCount": 10,
+          "theoreticalMax": 1500
+        }
+      ]
+    },
+    {
+      "id": "corsi",
+      "category": "working-memory",
+      "inputKind": "grid",
+      "timingSensitive": false,
+      "responseModel": "discrete",
+      "maxLevel": 12,
+      "levels": [
+        {
+          "config": {
+            "blocks": 9,
+            "startLength": 2,
+            "flashMs": 860,
+            "gapMs": 250,
+            "reverse": false,
+            "trials": 10
+          },
+          "configHash": "057c23bc090b5858",
+          "trialCount": 10,
+          "theoreticalMax": 1800
+        },
+        {
+          "config": {
+            "blocks": 9,
+            "startLength": 2,
+            "flashMs": 820,
+            "gapMs": 250,
+            "reverse": false,
+            "trials": 10
+          },
+          "configHash": "0358c370b1456c4d",
+          "trialCount": 10,
+          "theoreticalMax": 1800
+        },
+        {
+          "config": {
+            "blocks": 9,
+            "startLength": 3,
+            "flashMs": 780,
+            "gapMs": 250,
+            "reverse": false,
+            "trials": 10
+          },
+          "configHash": "501082e7dfa799db",
+          "trialCount": 10,
+          "theoreticalMax": 2700
+        },
+        {
+          "config": {
+            "blocks": 9,
+            "startLength": 3,
+            "flashMs": 740,
+            "gapMs": 250,
+            "reverse": false,
+            "trials": 10
+          },
+          "configHash": "e63fc9556d23d4f1",
+          "trialCount": 10,
+          "theoreticalMax": 2700
+        },
+        {
+          "config": {
+            "blocks": 9,
+            "startLength": 3,
+            "flashMs": 700,
+            "gapMs": 250,
+            "reverse": false,
+            "trials": 10
+          },
+          "configHash": "808af9e340a51130",
+          "trialCount": 10,
+          "theoreticalMax": 2700
+        },
+        {
+          "config": {
+            "blocks": 9,
+            "startLength": 4,
+            "flashMs": 660,
+            "gapMs": 250,
+            "reverse": false,
+            "trials": 10
+          },
+          "configHash": "8405f39c55deedd3",
+          "trialCount": 10,
+          "theoreticalMax": 3800
+        },
+        {
+          "config": {
+            "blocks": 9,
+            "startLength": 4,
+            "flashMs": 620,
+            "gapMs": 250,
+            "reverse": true,
+            "trials": 10
+          },
+          "configHash": "2dd939edb32d1106",
+          "trialCount": 10,
+          "theoreticalMax": 3800
+        },
+        {
+          "config": {
+            "blocks": 9,
+            "startLength": 4,
+            "flashMs": 580,
+            "gapMs": 250,
+            "reverse": true,
+            "trials": 10
+          },
+          "configHash": "ce71d3c2f97c4f25",
+          "trialCount": 10,
+          "theoreticalMax": 3800
+        },
+        {
+          "config": {
+            "blocks": 9,
+            "startLength": 5,
+            "flashMs": 540,
+            "gapMs": 250,
+            "reverse": true,
+            "trials": 10
+          },
+          "configHash": "20c804bf8d9ee249",
+          "trialCount": 10,
+          "theoreticalMax": 5100
+        },
+        {
+          "config": {
+            "blocks": 9,
+            "startLength": 5,
+            "flashMs": 500,
+            "gapMs": 250,
+            "reverse": true,
+            "trials": 10
+          },
+          "configHash": "e6eee4df4bd6a2e7",
+          "trialCount": 10,
+          "theoreticalMax": 5100
+        },
+        {
+          "config": {
+            "blocks": 9,
+            "startLength": 5,
+            "flashMs": 460,
+            "gapMs": 250,
+            "reverse": true,
+            "trials": 10
+          },
+          "configHash": "8bc3eb70a61eac50",
+          "trialCount": 10,
+          "theoreticalMax": 5100
+        },
+        {
+          "config": {
+            "blocks": 9,
+            "startLength": 6,
+            "flashMs": 420,
+            "gapMs": 250,
+            "reverse": true,
+            "trials": 10
+          },
+          "configHash": "54933ccf161cfe7f",
+          "trialCount": 10,
+          "theoreticalMax": 6600
+        }
+      ],
+      "ranked": [
+        {
+          "config": {
+            "blocks": 9,
+            "startLength": 3,
+            "flashMs": 700,
+            "gapMs": 250,
+            "reverse": false,
+            "trials": 10
+          },
+          "configHash": "808af9e340a51130",
+          "trialCount": 10,
+          "theoreticalMax": 2700
+        },
+        {
+          "config": {
+            "blocks": 9,
+            "startLength": 3,
+            "flashMs": 600,
+            "gapMs": 250,
+            "reverse": false,
+            "trials": 10
+          },
+          "configHash": "6e35bba8c7302ed2",
+          "trialCount": 10,
+          "theoreticalMax": 2700
+        },
+        {
+          "config": {
+            "blocks": 9,
+            "startLength": 3,
+            "flashMs": 700,
+            "gapMs": 250,
+            "reverse": true,
+            "trials": 10
+          },
+          "configHash": "a18031dba0a95e24",
+          "trialCount": 10,
+          "theoreticalMax": 2700
+        },
+        {
+          "config": {
+            "blocks": 9,
+            "startLength": 4,
+            "flashMs": 600,
+            "gapMs": 250,
+            "reverse": false,
+            "trials": 10
+          },
+          "configHash": "8d52d2b9b7f4ef4b",
+          "trialCount": 10,
+          "theoreticalMax": 3800
+        }
+      ]
+    },
+    {
+      "id": "schulte",
+      "category": "attention",
+      "inputKind": "grid",
+      "timingSensitive": true,
+      "responseModel": "continuous",
+      "maxLevel": 14,
+      "levels": [
+        {
+          "config": {
+            "size": 3,
+            "mode": "numbers",
+            "rotating": false
+          },
+          "configHash": "52c8b132188fe5f6",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 3,
+            "mode": "numbers",
+            "rotating": false
+          },
+          "configHash": "52c8b132188fe5f6",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 3,
+            "mode": "numbers",
+            "rotating": false
+          },
+          "configHash": "52c8b132188fe5f6",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 4,
+            "mode": "numbers",
+            "rotating": false
+          },
+          "configHash": "fc4b458ad37c7bf5",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 4,
+            "mode": "alternating",
+            "rotating": false
+          },
+          "configHash": "fdfa6395da5b1673",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 4,
+            "mode": "alternating",
+            "rotating": false
+          },
+          "configHash": "fdfa6395da5b1673",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 4,
+            "mode": "alternating",
+            "rotating": false
+          },
+          "configHash": "fdfa6395da5b1673",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 5,
+            "mode": "alternating",
+            "rotating": false
+          },
+          "configHash": "d9f374a0dd10bb02",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 5,
+            "mode": "alternating",
+            "rotating": false
+          },
+          "configHash": "d9f374a0dd10bb02",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 5,
+            "mode": "alternating",
+            "rotating": true
+          },
+          "configHash": "dc2bc2c45e05d2b0",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 5,
+            "mode": "alternating",
+            "rotating": true
+          },
+          "configHash": "dc2bc2c45e05d2b0",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 6,
+            "mode": "alternating",
+            "rotating": true
+          },
+          "configHash": "8f5dc3ceca49f2d1",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 6,
+            "mode": "alternating",
+            "rotating": true
+          },
+          "configHash": "8f5dc3ceca49f2d1",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 6,
+            "mode": "alternating",
+            "rotating": true
+          },
+          "configHash": "8f5dc3ceca49f2d1",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        }
+      ],
+      "ranked": [
+        {
+          "config": {
+            "size": 5,
+            "mode": "numbers",
+            "rotating": false
+          },
+          "configHash": "df1e06439ee2c0d9",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 5,
+            "mode": "alternating",
+            "rotating": false
+          },
+          "configHash": "d9f374a0dd10bb02",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 6,
+            "mode": "numbers",
+            "rotating": false
+          },
+          "configHash": "f96f17fc7ecc001f",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 5,
+            "mode": "descending",
+            "rotating": false
+          },
+          "configHash": "89aefd2d79e2a6c7",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        }
+      ]
+    },
+    {
+      "id": "lights-out",
+      "category": "logic",
+      "inputKind": "grid",
+      "timingSensitive": false,
+      "responseModel": "continuous",
+      "maxLevel": 15,
+      "levels": [
+        {
+          "config": {
+            "size": 3,
+            "scrambleMoves": 3,
+            "moveLimit": null
+          },
+          "configHash": "d146b5e6e9271d88",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 3,
+            "scrambleMoves": 4,
+            "moveLimit": null
+          },
+          "configHash": "2cb27e2e1b9d873a",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 3,
+            "scrambleMoves": 5,
+            "moveLimit": null
+          },
+          "configHash": "f983b9842eb9eefe",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 3,
+            "scrambleMoves": 6,
+            "moveLimit": null
+          },
+          "configHash": "7dfbbc61b4f20a22",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 4,
+            "scrambleMoves": 7,
+            "moveLimit": null
+          },
+          "configHash": "c91fa4204061c43a",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 4,
+            "scrambleMoves": 8,
+            "moveLimit": null
+          },
+          "configHash": "79762e36f317e384",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 4,
+            "scrambleMoves": 9,
+            "moveLimit": null
+          },
+          "configHash": "1efb796ff8906d66",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 4,
+            "scrambleMoves": 10,
+            "moveLimit": null
+          },
+          "configHash": "8f2c7c39f2689f2c",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 4,
+            "scrambleMoves": 11,
+            "moveLimit": null
+          },
+          "configHash": "d15e84650fc22d4d",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 5,
+            "scrambleMoves": 12,
+            "moveLimit": null
+          },
+          "configHash": "bd85ef9a3853e410",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 5,
+            "scrambleMoves": 13,
+            "moveLimit": null
+          },
+          "configHash": "fb57b80ef94e6ec7",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 5,
+            "scrambleMoves": 14,
+            "moveLimit": null
+          },
+          "configHash": "11608655dc17c697",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 5,
+            "scrambleMoves": 15,
+            "moveLimit": null
+          },
+          "configHash": "324040c0803de711",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 5,
+            "scrambleMoves": 16,
+            "moveLimit": null
+          },
+          "configHash": "4c17f23a727e65b6",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 6,
+            "scrambleMoves": 17,
+            "moveLimit": null
+          },
+          "configHash": "d031c4978189d926",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        }
+      ],
+      "ranked": [
+        {
+          "config": {
+            "size": 4,
+            "scrambleMoves": 6,
+            "moveLimit": null
+          },
+          "configHash": "62e2ca01d262c0fe",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 4,
+            "scrambleMoves": 8,
+            "moveLimit": null
+          },
+          "configHash": "79762e36f317e384",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 5,
+            "scrambleMoves": 8,
+            "moveLimit": null
+          },
+          "configHash": "6eebd7e645b6f0d5",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        },
+        {
+          "config": {
+            "size": 5,
+            "scrambleMoves": 10,
+            "moveLimit": null
+          },
+          "configHash": "c5084c147d389b2f",
+          "trialCount": 1,
+          "theoreticalMax": 600
+        }
+      ]
+    },
+    {
+      "id": "anagram",
+      "category": "language",
+      "inputKind": "text",
+      "timingSensitive": false,
+      "responseModel": "discrete",
+      "maxLevel": 12,
+      "levels": [
+        {
+          "config": {
+            "minLen": 4,
+            "maxLen": 6,
+            "deadlineMs": 38500,
+            "trials": 10
+          },
+          "configHash": "8db33d0583075556",
+          "trialCount": 10,
+          "theoreticalMax": 2300
+        },
+        {
+          "config": {
+            "minLen": 4,
+            "maxLen": 6,
+            "deadlineMs": 37000,
+            "trials": 10
+          },
+          "configHash": "8cb1a53ac782de50",
+          "trialCount": 10,
+          "theoreticalMax": 2300
+        },
+        {
+          "config": {
+            "minLen": 4,
+            "maxLen": 6,
+            "deadlineMs": 35500,
+            "trials": 10
+          },
+          "configHash": "d9a887bf841aefac",
+          "trialCount": 10,
+          "theoreticalMax": 2300
+        },
+        {
+          "config": {
+            "minLen": 5,
+            "maxLen": 7,
+            "deadlineMs": 34000,
+            "trials": 10
+          },
+          "configHash": "e88ded99c96238dd",
+          "trialCount": 10,
+          "theoreticalMax": 2450
+        },
+        {
+          "config": {
+            "minLen": 5,
+            "maxLen": 7,
+            "deadlineMs": 32500,
+            "trials": 10
+          },
+          "configHash": "543119edca3ff47a",
+          "trialCount": 10,
+          "theoreticalMax": 2450
+        },
+        {
+          "config": {
+            "minLen": 5,
+            "maxLen": 7,
+            "deadlineMs": 31000,
+            "trials": 10
+          },
+          "configHash": "fe50bca676b5e368",
+          "trialCount": 10,
+          "theoreticalMax": 2450
+        },
+        {
+          "config": {
+            "minLen": 5,
+            "maxLen": 7,
+            "deadlineMs": 29500,
+            "trials": 10
+          },
+          "configHash": "b844226c3de7eec6",
+          "trialCount": 10,
+          "theoreticalMax": 2450
+        },
+        {
+          "config": {
+            "minLen": 6,
+            "maxLen": 8,
+            "deadlineMs": 28000,
+            "trials": 10
+          },
+          "configHash": "4b22fc0ef4074885",
+          "trialCount": 10,
+          "theoreticalMax": 2600
+        },
+        {
+          "config": {
+            "minLen": 6,
+            "maxLen": 8,
+            "deadlineMs": 26500,
+            "trials": 10
+          },
+          "configHash": "6af9bdf00ff39783",
+          "trialCount": 10,
+          "theoreticalMax": 2600
+        },
+        {
+          "config": {
+            "minLen": 6,
+            "maxLen": 8,
+            "deadlineMs": 25000,
+            "trials": 10
+          },
+          "configHash": "ca4b928df0aa330e",
+          "trialCount": 10,
+          "theoreticalMax": 2600
+        },
+        {
+          "config": {
+            "minLen": 6,
+            "maxLen": 8,
+            "deadlineMs": 23500,
+            "trials": 10
+          },
+          "configHash": "f362401368cc0be8",
+          "trialCount": 10,
+          "theoreticalMax": 2600
+        },
+        {
+          "config": {
+            "minLen": 7,
+            "maxLen": 9,
+            "deadlineMs": 22000,
+            "trials": 10
+          },
+          "configHash": "70ccb75bb90e65be",
+          "trialCount": 10,
+          "theoreticalMax": 2750
+        }
+      ],
+      "ranked": [
+        {
+          "config": {
+            "minLen": 5,
+            "maxLen": 7,
+            "deadlineMs": 30000,
+            "trials": 10
+          },
+          "configHash": "b2df3e72a3b87aad",
+          "trialCount": 10,
+          "theoreticalMax": 2450
+        },
+        {
+          "config": {
+            "minLen": 6,
+            "maxLen": 8,
+            "deadlineMs": 30000,
+            "trials": 10
+          },
+          "configHash": "76ceacc46ae76fc1",
+          "trialCount": 10,
+          "theoreticalMax": 2600
+        },
+        {
+          "config": {
+            "minLen": 5,
+            "maxLen": 7,
+            "deadlineMs": 25000,
+            "trials": 10
+          },
+          "configHash": "cd72d9caf7414a93",
+          "trialCount": 10,
+          "theoreticalMax": 2450
+        },
+        {
+          "config": {
+            "minLen": 6,
+            "maxLen": 8,
+            "deadlineMs": 25000,
+            "trials": 10
+          },
+          "configHash": "ca4b928df0aa330e",
+          "trialCount": 10,
+          "theoreticalMax": 2600
+        }
+      ]
+    },
+    {
+      "id": "mental-rotation",
+      "category": "spatial",
+      "inputKind": "canvas",
+      "timingSensitive": true,
+      "responseModel": "discrete",
+      "maxLevel": 12,
+      "levels": [
+        {
+          "config": {
+            "cells": 4,
+            "angles": [90, 180, 270],
+            "mirrorRate": 0.5,
+            "deadlineMs": 7700,
+            "trials": 20
+          },
+          "configHash": "41bba0bb3a728018",
+          "trialCount": 20,
+          "theoreticalMax": 3600
+        },
+        {
+          "config": {
+            "cells": 4,
+            "angles": [90, 180, 270],
+            "mirrorRate": 0.5,
+            "deadlineMs": 7400,
+            "trials": 20
+          },
+          "configHash": "e76ae2955a7f6769",
+          "trialCount": 20,
+          "theoreticalMax": 3600
+        },
+        {
+          "config": {
+            "cells": 5,
+            "angles": [90, 180, 270],
+            "mirrorRate": 0.5,
+            "deadlineMs": 7100,
+            "trials": 20
+          },
+          "configHash": "26fc69d0a29ec1ed",
+          "trialCount": 20,
+          "theoreticalMax": 3600
+        },
+        {
+          "config": {
+            "cells": 5,
+            "angles": [90, 180, 270],
+            "mirrorRate": 0.5,
+            "deadlineMs": 6800,
+            "trials": 20
+          },
+          "configHash": "472b57aab43d5ea5",
+          "trialCount": 20,
+          "theoreticalMax": 3600
+        },
+        {
+          "config": {
+            "cells": 5,
+            "angles": [90, 180, 270],
+            "mirrorRate": 0.5,
+            "deadlineMs": 6500,
+            "trials": 20
+          },
+          "configHash": "053fd9c217e7c206",
+          "trialCount": 20,
+          "theoreticalMax": 3600
+        },
+        {
+          "config": {
+            "cells": 6,
+            "angles": [45, 90, 135, 180, 225, 270, 315],
+            "mirrorRate": 0.5,
+            "deadlineMs": 6200,
+            "trials": 20
+          },
+          "configHash": "b2786130d48fd296",
+          "trialCount": 20,
+          "theoreticalMax": 3600
+        },
+        {
+          "config": {
+            "cells": 6,
+            "angles": [45, 90, 135, 180, 225, 270, 315],
+            "mirrorRate": 0.5,
+            "deadlineMs": 5900,
+            "trials": 20
+          },
+          "configHash": "07d18c95f704b660",
+          "trialCount": 20,
+          "theoreticalMax": 3600
+        },
+        {
+          "config": {
+            "cells": 6,
+            "angles": [45, 90, 135, 180, 225, 270, 315],
+            "mirrorRate": 0.5,
+            "deadlineMs": 5600,
+            "trials": 20
+          },
+          "configHash": "1cfb2f202bd1089f",
+          "trialCount": 20,
+          "theoreticalMax": 3600
+        },
+        {
+          "config": {
+            "cells": 7,
+            "angles": [45, 90, 135, 180, 225, 270, 315],
+            "mirrorRate": 0.5,
+            "deadlineMs": 5300,
+            "trials": 20
+          },
+          "configHash": "fdbff74abd15ee13",
+          "trialCount": 20,
+          "theoreticalMax": 3600
+        },
+        {
+          "config": {
+            "cells": 7,
+            "angles": [45, 90, 135, 180, 225, 270, 315],
+            "mirrorRate": 0.5,
+            "deadlineMs": 5000,
+            "trials": 20
+          },
+          "configHash": "2e9a1438d8da9e13",
+          "trialCount": 20,
+          "theoreticalMax": 3600
+        },
+        {
+          "config": {
+            "cells": 7,
+            "angles": [45, 90, 135, 180, 225, 270, 315],
+            "mirrorRate": 0.5,
+            "deadlineMs": 4700,
+            "trials": 20
+          },
+          "configHash": "52603449d1e500bf",
+          "trialCount": 20,
+          "theoreticalMax": 3600
+        },
+        {
+          "config": {
+            "cells": 8,
+            "angles": [45, 90, 135, 180, 225, 270, 315],
+            "mirrorRate": 0.5,
+            "deadlineMs": 4400,
+            "trials": 20
+          },
+          "configHash": "310cbdc7c1fcff66",
+          "trialCount": 20,
+          "theoreticalMax": 3600
+        }
+      ],
+      "ranked": [
+        {
+          "config": {
+            "cells": 6,
+            "angles": [90, 180, 270],
+            "mirrorRate": 0.5,
+            "deadlineMs": 6000,
+            "trials": 20
+          },
+          "configHash": "f3b040b9647cbdc0",
+          "trialCount": 20,
+          "theoreticalMax": 3600
+        },
+        {
+          "config": {
+            "cells": 7,
+            "angles": [45, 90, 135, 180, 225, 270, 315],
+            "mirrorRate": 0.5,
+            "deadlineMs": 6000,
+            "trials": 20
+          },
+          "configHash": "4f52f8628d497277",
+          "trialCount": 20,
+          "theoreticalMax": 3600
+        },
+        {
+          "config": {
+            "cells": 6,
+            "angles": [45, 90, 135, 180, 225, 270, 315],
+            "mirrorRate": 0.5,
+            "deadlineMs": 5000,
+            "trials": 20
+          },
+          "configHash": "4bc5204b9d2a55a9",
+          "trialCount": 20,
+          "theoreticalMax": 3600
+        },
+        {
+          "config": {
+            "cells": 7,
+            "angles": [90, 180, 270],
+            "mirrorRate": 0.5,
+            "deadlineMs": 5000,
+            "trials": 20
+          },
+          "configHash": "276cc5b1ee33805b",
+          "trialCount": 20,
+          "theoreticalMax": 3600
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "WITH tz AS (SELECT timezone FROM app_user WHERE id = $1)\n           INSERT INTO daily_activity (user_id, local_day, run_count)\n           SELECT $1, ($2 AT TIME ZONE tz.timezone)::date, 1 FROM tz\n           ON CONFLICT (user_id, local_day)\n             DO UPDATE SET run_count = daily_activity.run_count + 1\n           RETURNING local_day",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "local_day",
+        "type_info": "Date",
+        "origin": {
+          "Table": {
+            "table": "daily_activity",
+            "name": "local_day"
+          }
+        }
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Uuid",
+        "Timestamptz"
+      ]
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "0fa8c2e0140fd112232d42fb1f813fc49872fb29abef763c95d28e6d9e52c685"
+}

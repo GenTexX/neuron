@@ -1,0 +1,47 @@
+[package]
+name = "neuron-api"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.94"
+publish = false
+
+[lib]
+name = "neuron_api"
+path = "src/lib.rs"
+
+[[bin]]
+name = "neuron-api"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+argon2 = { version = "0.5", features = ["std"] }
+axum = { version = "0.8", features = ["macros", "json", "tokio", "http1"] }
+axum-extra = { version = "0.10", features = ["cookie", "typed-header"] }
+base64 = "0.22"
+chrono = { version = "0.4", features = ["serde"] }
+chrono-tz = "0.10"
+figment = { version = "0.10", features = ["env"] }
+jsonwebtoken = "9"
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+sha2 = "0.10"
+sqlx = { version = "0.9", default-features = false, features = ["runtime-tokio", "tls-rustls", "postgres", "macros", "migrate", "uuid", "chrono", "json"] }
+thiserror = "2"
+time = { version = "0.3.55", default-features = false }
+tokio = { version = "1", features = ["full"] }
+tower = "0.5"
+tower-http = { version = "0.6", features = ["cors", "fs", "trace", "compression-gzip", "set-header"] }
+tower_governor = "0.7"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json", "fmt"] }
+uuid = { version = "1", features = ["v7", "serde"] }
+
+[dev-dependencies]
+tower = { version = "0.5", features = ["util"] }
+http-body-util = "0.1"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

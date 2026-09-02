@@ -1,0 +1,112 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "SELECT id, game_id, config, config_hash, seed, trial_count, starts_at, ends_at\n           FROM ranked_round WHERE id = $1",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Uuid",
+        "origin": {
+          "Table": {
+            "table": "ranked_round",
+            "name": "id"
+          }
+        }
+      },
+      {
+        "ordinal": 1,
+        "name": "game_id",
+        "type_info": "Text",
+        "origin": {
+          "Table": {
+            "table": "ranked_round",
+            "name": "game_id"
+          }
+        }
+      },
+      {
+        "ordinal": 2,
+        "name": "config",
+        "type_info": "Jsonb",
+        "origin": {
+          "Table": {
+            "table": "ranked_round",
+            "name": "config"
+          }
+        }
+      },
+      {
+        "ordinal": 3,
+        "name": "config_hash",
+        "type_info": "Text",
+        "origin": {
+          "Table": {
+            "table": "ranked_round",
+            "name": "config_hash"
+          }
+        }
+      },
+      {
+        "ordinal": 4,
+        "name": "seed",
+        "type_info": "Int8",
+        "origin": {
+          "Table": {
+            "table": "ranked_round",
+            "name": "seed"
+          }
+        }
+      },
+      {
+        "ordinal": 5,
+        "name": "trial_count",
+        "type_info": "Int4",
+        "origin": {
+          "Table": {
+            "table": "ranked_round",
+            "name": "trial_count"
+          }
+        }
+      },
+      {
+        "ordinal": 6,
+        "name": "starts_at",
+        "type_info": "Timestamptz",
+        "origin": {
+          "Table": {
+            "table": "ranked_round",
+            "name": "starts_at"
+          }
+        }
+      },
+      {
+        "ordinal": 7,
+        "name": "ends_at",
+        "type_info": "Timestamptz",
+        "origin": {
+          "Table": {
+            "table": "ranked_round",
+            "name": "ends_at"
+          }
+        }
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Uuid"
+      ]
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "57f897457dbd7dae76df346a069d4060bbc19048c24cc6e0339e8b5ebaebc82c"
+}

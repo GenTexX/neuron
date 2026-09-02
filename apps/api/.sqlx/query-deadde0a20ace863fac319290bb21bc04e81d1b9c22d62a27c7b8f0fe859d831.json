@@ -1,0 +1,15 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "UPDATE run SET valid = false, invalid_reason = $2 WHERE id = $1",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Uuid",
+        "Text"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "deadde0a20ace863fac319290bb21bc04e81d1b9c22d62a27c7b8f0fe859d831"
+}

@@ -1,0 +1,3566 @@
+[
+ {
+  "name": "level-1-seed-0",
+  "config": {
+   "size": 3,
+   "mode": "numbers",
+   "rotating": false
+  },
+  "configHash": "52c8b132188fe5f6",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 1298,
+     "wrongTaps": 0,
+     "completed": false,
+     "taps": [
+      {
+       "cell": 5,
+       "rtMs": 637,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 1298,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 1298,
+    "presented_ms": 1298,
+    "correct": false
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "level-1-seed-1",
+  "config": {
+   "size": 3,
+   "mode": "numbers",
+   "rotating": false
+  },
+  "configHash": "52c8b132188fe5f6",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 5122,
+     "wrongTaps": 2,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 3,
+       "rtMs": 247,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 989,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 1208,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 1620,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 2185,
+       "correct": false
+      },
+      {
+       "cell": 6,
+       "rtMs": 3046,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 3597,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 4150,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 4616,
+       "correct": false
+      },
+      {
+       "cell": 8,
+       "rtMs": 4822,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 5122,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 5122,
+    "presented_ms": 5122,
+    "correct": true
+   }
+  ],
+  "expected": 19,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "level-1-seed-2",
+  "config": {
+   "size": 3,
+   "mode": "numbers",
+   "rotating": false
+  },
+  "configHash": "52c8b132188fe5f6",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 5028,
+     "wrongTaps": 0,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 2,
+       "rtMs": 232,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 976,
+       "correct": true
+      },
+      {
+       "cell": 8,
+       "rtMs": 1270,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 1848,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 2516,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 2924,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 3820,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 4292,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 5028,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 5028,
+    "presented_ms": 5028,
+    "correct": true
+   }
+  ],
+  "expected": 60,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "level-3-seed-1000",
+  "config": {
+   "size": 3,
+   "mode": "numbers",
+   "rotating": false
+  },
+  "configHash": "52c8b132188fe5f6",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 6162,
+     "wrongTaps": 1,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 8,
+       "rtMs": 546,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 1187,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 1354,
+       "correct": false
+      },
+      {
+       "cell": 2,
+       "rtMs": 1897,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 2685,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 3623,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 4551,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 5065,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 5283,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 6162,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 6162,
+    "presented_ms": 6162,
+    "correct": true
+   }
+  ],
+  "expected": 29,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "level-3-seed-1001",
+  "config": {
+   "size": 3,
+   "mode": "numbers",
+   "rotating": false
+  },
+  "configHash": "52c8b132188fe5f6",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 5140,
+     "wrongTaps": 1,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 8,
+       "rtMs": 303,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 690,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 1066,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 1657,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 2488,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 3412,
+       "correct": true
+      },
+      {
+       "cell": 8,
+       "rtMs": 3704,
+       "correct": false
+      },
+      {
+       "cell": 1,
+       "rtMs": 3904,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 4637,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 5140,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 5140,
+    "presented_ms": 5140,
+    "correct": true
+   }
+  ],
+  "expected": 38,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "level-3-seed-1002",
+  "config": {
+   "size": 3,
+   "mode": "numbers",
+   "rotating": false
+  },
+  "configHash": "52c8b132188fe5f6",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 4488,
+     "wrongTaps": 0,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 8,
+       "rtMs": 885,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 1173,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 1966,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 2513,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 3361,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 3698,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 3905,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 4244,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 4488,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 4488,
+    "presented_ms": 4488,
+    "correct": true
+   }
+  ],
+  "expected": 67,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "level-6-seed-2000",
+  "config": {
+   "size": 4,
+   "mode": "alternating",
+   "rotating": false
+  },
+  "configHash": "fdfa6395da5b1673",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 3262,
+     "wrongTaps": 0,
+     "completed": false,
+     "taps": [
+      {
+       "cell": 15,
+       "rtMs": 438,
+       "correct": true
+      },
+      {
+       "cell": 14,
+       "rtMs": 1123,
+       "correct": true
+      },
+      {
+       "cell": 9,
+       "rtMs": 1344,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 2185,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 3262,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 3262,
+    "presented_ms": 3262,
+    "correct": false
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "level-6-seed-2001",
+  "config": {
+   "size": 4,
+   "mode": "alternating",
+   "rotating": false
+  },
+  "configHash": "fdfa6395da5b1673",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 11148,
+     "wrongTaps": 0,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 9,
+       "rtMs": 791,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 1218,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 1846,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 2884,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 3253,
+       "correct": true
+      },
+      {
+       "cell": 10,
+       "rtMs": 3700,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 4102,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 5174,
+       "correct": true
+      },
+      {
+       "cell": 13,
+       "rtMs": 6138,
+       "correct": true
+      },
+      {
+       "cell": 12,
+       "rtMs": 6807,
+       "correct": true
+      },
+      {
+       "cell": 8,
+       "rtMs": 7430,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 8262,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 8810,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 9496,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 10244,
+       "correct": true
+      },
+      {
+       "cell": 14,
+       "rtMs": 11148,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 11148,
+    "presented_ms": 11148,
+    "correct": true
+   }
+  ],
+  "expected": 27,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "level-6-seed-2002",
+  "config": {
+   "size": 4,
+   "mode": "alternating",
+   "rotating": false
+  },
+  "configHash": "fdfa6395da5b1673",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 11159,
+     "wrongTaps": 2,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 8,
+       "rtMs": 153,
+       "correct": false
+      },
+      {
+       "cell": 0,
+       "rtMs": 421,
+       "correct": true
+      },
+      {
+       "cell": 9,
+       "rtMs": 1212,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 1910,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 2244,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 3110,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 3922,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 4520,
+       "correct": false
+      },
+      {
+       "cell": 12,
+       "rtMs": 5390,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 5799,
+       "correct": true
+      },
+      {
+       "cell": 10,
+       "rtMs": 6840,
+       "correct": true
+      },
+      {
+       "cell": 13,
+       "rtMs": 7394,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 7602,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 8378,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 8983,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 9575,
+       "correct": true
+      },
+      {
+       "cell": 14,
+       "rtMs": 10159,
+       "correct": true
+      },
+      {
+       "cell": 8,
+       "rtMs": 11159,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 11159,
+    "presented_ms": 11159,
+    "correct": true
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "level-14-seed-3000",
+  "config": {
+   "size": 6,
+   "mode": "alternating",
+   "rotating": true
+  },
+  "configHash": "8f5dc3ceca49f2d1",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 32847,
+     "wrongTaps": 5,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 10,
+       "rtMs": 833,
+       "correct": true
+      },
+      {
+       "cell": 33,
+       "rtMs": 1224,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 1419,
+       "correct": false
+      },
+      {
+       "cell": 12,
+       "rtMs": 2244,
+       "correct": true
+      },
+      {
+       "cell": 29,
+       "rtMs": 2687,
+       "correct": false
+      },
+      {
+       "cell": 7,
+       "rtMs": 3290,
+       "correct": true
+      },
+      {
+       "cell": 27,
+       "rtMs": 4472,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 5608,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 6480,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 7439,
+       "correct": true
+      },
+      {
+       "cell": 24,
+       "rtMs": 8415,
+       "correct": true
+      },
+      {
+       "cell": 20,
+       "rtMs": 8974,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 9703,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 10090,
+       "correct": false
+      },
+      {
+       "cell": 13,
+       "rtMs": 11128,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 12104,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 12316,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 13326,
+       "correct": true
+      },
+      {
+       "cell": 31,
+       "rtMs": 14509,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 14764,
+       "correct": false
+      },
+      {
+       "cell": 28,
+       "rtMs": 16006,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 17014,
+       "correct": true
+      },
+      {
+       "cell": 34,
+       "rtMs": 18259,
+       "correct": true
+      },
+      {
+       "cell": 23,
+       "rtMs": 18928,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 19253,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 20289,
+       "correct": true
+      },
+      {
+       "cell": 17,
+       "rtMs": 20692,
+       "correct": true
+      },
+      {
+       "cell": 21,
+       "rtMs": 21705,
+       "correct": true
+      },
+      {
+       "cell": 30,
+       "rtMs": 22281,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 22756,
+       "correct": false
+      },
+      {
+       "cell": 29,
+       "rtMs": 23700,
+       "correct": true
+      },
+      {
+       "cell": 9,
+       "rtMs": 24200,
+       "correct": true
+      },
+      {
+       "cell": 35,
+       "rtMs": 25583,
+       "correct": true
+      },
+      {
+       "cell": 16,
+       "rtMs": 26363,
+       "correct": true
+      },
+      {
+       "cell": 22,
+       "rtMs": 26800,
+       "correct": true
+      },
+      {
+       "cell": 32,
+       "rtMs": 28170,
+       "correct": true
+      },
+      {
+       "cell": 19,
+       "rtMs": 29236,
+       "correct": true
+      },
+      {
+       "cell": 25,
+       "rtMs": 29867,
+       "correct": true
+      },
+      {
+       "cell": 8,
+       "rtMs": 30436,
+       "correct": true
+      },
+      {
+       "cell": 14,
+       "rtMs": 31715,
+       "correct": true
+      },
+      {
+       "cell": 26,
+       "rtMs": 32847,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 32847,
+    "presented_ms": 32847,
+    "correct": true
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "level-14-seed-3001",
+  "config": {
+   "size": 6,
+   "mode": "alternating",
+   "rotating": true
+  },
+  "configHash": "8f5dc3ceca49f2d1",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 30116,
+     "wrongTaps": 6,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 30,
+       "rtMs": 406,
+       "correct": true
+      },
+      {
+       "cell": 35,
+       "rtMs": 791,
+       "correct": true
+      },
+      {
+       "cell": 22,
+       "rtMs": 1281,
+       "correct": true
+      },
+      {
+       "cell": 28,
+       "rtMs": 2288,
+       "correct": true
+      },
+      {
+       "cell": 33,
+       "rtMs": 3429,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 3706,
+       "correct": false
+      },
+      {
+       "cell": 13,
+       "rtMs": 4494,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 5441,
+       "correct": true
+      },
+      {
+       "cell": 24,
+       "rtMs": 6006,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 6568,
+       "correct": true
+      },
+      {
+       "cell": 24,
+       "rtMs": 6881,
+       "correct": false
+      },
+      {
+       "cell": 10,
+       "rtMs": 7844,
+       "correct": true
+      },
+      {
+       "cell": 19,
+       "rtMs": 8196,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 9293,
+       "correct": true
+      },
+      {
+       "cell": 29,
+       "rtMs": 10434,
+       "correct": true
+      },
+      {
+       "cell": 17,
+       "rtMs": 10716,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 11480,
+       "correct": true
+      },
+      {
+       "cell": 20,
+       "rtMs": 12019,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 12400,
+       "correct": true
+      },
+      {
+       "cell": 34,
+       "rtMs": 13607,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 13830,
+       "correct": false
+      },
+      {
+       "cell": 8,
+       "rtMs": 14097,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 14435,
+       "correct": false
+      },
+      {
+       "cell": 31,
+       "rtMs": 15078,
+       "correct": true
+      },
+      {
+       "cell": 16,
+       "rtMs": 15283,
+       "correct": false
+      },
+      {
+       "cell": 0,
+       "rtMs": 15665,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 16794,
+       "correct": true
+      },
+      {
+       "cell": 21,
+       "rtMs": 17858,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 18808,
+       "correct": true
+      },
+      {
+       "cell": 14,
+       "rtMs": 19185,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 19634,
+       "correct": false
+      },
+      {
+       "cell": 27,
+       "rtMs": 20928,
+       "correct": true
+      },
+      {
+       "cell": 32,
+       "rtMs": 21904,
+       "correct": true
+      },
+      {
+       "cell": 26,
+       "rtMs": 23277,
+       "correct": true
+      },
+      {
+       "cell": 25,
+       "rtMs": 24161,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 24376,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 25487,
+       "correct": true
+      },
+      {
+       "cell": 9,
+       "rtMs": 26116,
+       "correct": true
+      },
+      {
+       "cell": 23,
+       "rtMs": 26829,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 27876,
+       "correct": true
+      },
+      {
+       "cell": 12,
+       "rtMs": 29130,
+       "correct": true
+      },
+      {
+       "cell": 16,
+       "rtMs": 30116,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 30116,
+    "presented_ms": 30116,
+    "correct": true
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "level-14-seed-3002",
+  "config": {
+   "size": 6,
+   "mode": "alternating",
+   "rotating": true
+  },
+  "configHash": "8f5dc3ceca49f2d1",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 28329,
+     "wrongTaps": 1,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 11,
+       "rtMs": 340,
+       "correct": true
+      },
+      {
+       "cell": 35,
+       "rtMs": 995,
+       "correct": true
+      },
+      {
+       "cell": 8,
+       "rtMs": 1324,
+       "correct": true
+      },
+      {
+       "cell": 33,
+       "rtMs": 1744,
+       "correct": true
+      },
+      {
+       "cell": 26,
+       "rtMs": 3125,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 4267,
+       "correct": true
+      },
+      {
+       "cell": 9,
+       "rtMs": 5203,
+       "correct": true
+      },
+      {
+       "cell": 24,
+       "rtMs": 5697,
+       "correct": true
+      },
+      {
+       "cell": 29,
+       "rtMs": 6368,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 7723,
+       "correct": true
+      },
+      {
+       "cell": 27,
+       "rtMs": 8025,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 8485,
+       "correct": true
+      },
+      {
+       "cell": 20,
+       "rtMs": 9556,
+       "correct": true
+      },
+      {
+       "cell": 34,
+       "rtMs": 10160,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 10822,
+       "correct": true
+      },
+      {
+       "cell": 30,
+       "rtMs": 11169,
+       "correct": true
+      },
+      {
+       "cell": 16,
+       "rtMs": 11852,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 13032,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 14250,
+       "correct": true
+      },
+      {
+       "cell": 13,
+       "rtMs": 15213,
+       "correct": true
+      },
+      {
+       "cell": 17,
+       "rtMs": 16094,
+       "correct": true
+      },
+      {
+       "cell": 12,
+       "rtMs": 17461,
+       "correct": true
+      },
+      {
+       "cell": 23,
+       "rtMs": 18177,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 19549,
+       "correct": true
+      },
+      {
+       "cell": 10,
+       "rtMs": 20334,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 20614,
+       "correct": true
+      },
+      {
+       "cell": 28,
+       "rtMs": 21617,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 22104,
+       "correct": true
+      },
+      {
+       "cell": 21,
+       "rtMs": 22356,
+       "correct": true
+      },
+      {
+       "cell": 31,
+       "rtMs": 22878,
+       "correct": true
+      },
+      {
+       "cell": 32,
+       "rtMs": 23534,
+       "correct": true
+      },
+      {
+       "cell": 22,
+       "rtMs": 24628,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 25221,
+       "correct": false
+      },
+      {
+       "cell": 1,
+       "rtMs": 25721,
+       "correct": true
+      },
+      {
+       "cell": 19,
+       "rtMs": 27039,
+       "correct": true
+      },
+      {
+       "cell": 25,
+       "rtMs": 27516,
+       "correct": true
+      },
+      {
+       "cell": 14,
+       "rtMs": 28329,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 28329,
+    "presented_ms": 28329,
+    "correct": true
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "ranked-0-seed-4000",
+  "config": {
+   "size": 5,
+   "mode": "numbers",
+   "rotating": false
+  },
+  "configHash": "df1e06439ee2c0d9",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 21302,
+     "wrongTaps": 6,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 12,
+       "rtMs": 397,
+       "correct": false
+      },
+      {
+       "cell": 24,
+       "rtMs": 1302,
+       "correct": true
+      },
+      {
+       "cell": 13,
+       "rtMs": 2542,
+       "correct": true
+      },
+      {
+       "cell": 17,
+       "rtMs": 3406,
+       "correct": true
+      },
+      {
+       "cell": 12,
+       "rtMs": 3592,
+       "correct": false
+      },
+      {
+       "cell": 19,
+       "rtMs": 4823,
+       "correct": true
+      },
+      {
+       "cell": 16,
+       "rtMs": 5148,
+       "correct": true
+      },
+      {
+       "cell": 8,
+       "rtMs": 5735,
+       "correct": true
+      },
+      {
+       "cell": 20,
+       "rtMs": 6301,
+       "correct": false
+      },
+      {
+       "cell": 14,
+       "rtMs": 7346,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 8019,
+       "correct": true
+      },
+      {
+       "cell": 12,
+       "rtMs": 8534,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 8740,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 9329,
+       "correct": true
+      },
+      {
+       "cell": 16,
+       "rtMs": 9925,
+       "correct": false
+      },
+      {
+       "cell": 20,
+       "rtMs": 10396,
+       "correct": true
+      },
+      {
+       "cell": 21,
+       "rtMs": 11174,
+       "correct": true
+      },
+      {
+       "cell": 19,
+       "rtMs": 11650,
+       "correct": false
+      },
+      {
+       "cell": 9,
+       "rtMs": 12411,
+       "correct": true
+      },
+      {
+       "cell": 22,
+       "rtMs": 12729,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 13661,
+       "correct": true
+      },
+      {
+       "cell": 23,
+       "rtMs": 14193,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 14781,
+       "correct": false
+      },
+      {
+       "cell": 10,
+       "rtMs": 15567,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 16763,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 17506,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 18293,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 19193,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 19757,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 20587,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 21302,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 21302,
+    "presented_ms": 21302,
+    "correct": true
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "ranked-0-seed-4001",
+  "config": {
+   "size": 5,
+   "mode": "numbers",
+   "rotating": false
+  },
+  "configHash": "df1e06439ee2c0d9",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 16329,
+     "wrongTaps": 0,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 9,
+       "rtMs": 1007,
+       "correct": true
+      },
+      {
+       "cell": 22,
+       "rtMs": 1530,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 2708,
+       "correct": true
+      },
+      {
+       "cell": 17,
+       "rtMs": 3295,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 3920,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 4581,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 5159,
+       "correct": true
+      },
+      {
+       "cell": 21,
+       "rtMs": 5931,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 6160,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 6579,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 6851,
+       "correct": true
+      },
+      {
+       "cell": 19,
+       "rtMs": 7977,
+       "correct": true
+      },
+      {
+       "cell": 14,
+       "rtMs": 8441,
+       "correct": true
+      },
+      {
+       "cell": 12,
+       "rtMs": 9540,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 10208,
+       "correct": true
+      },
+      {
+       "cell": 20,
+       "rtMs": 11344,
+       "correct": true
+      },
+      {
+       "cell": 24,
+       "rtMs": 11752,
+       "correct": true
+      },
+      {
+       "cell": 8,
+       "rtMs": 11970,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 13070,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 13301,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 13867,
+       "correct": true
+      },
+      {
+       "cell": 23,
+       "rtMs": 14468,
+       "correct": true
+      },
+      {
+       "cell": 10,
+       "rtMs": 15512,
+       "correct": true
+      },
+      {
+       "cell": 16,
+       "rtMs": 16121,
+       "correct": true
+      },
+      {
+       "cell": 13,
+       "rtMs": 16329,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 16329,
+    "presented_ms": 16329,
+    "correct": true
+   }
+  ],
+  "expected": 18,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "ranked-0-seed-4002",
+  "config": {
+   "size": 5,
+   "mode": "numbers",
+   "rotating": false
+  },
+  "configHash": "df1e06439ee2c0d9",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 20781,
+     "wrongTaps": 2,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 12,
+       "rtMs": 686,
+       "correct": true
+      },
+      {
+       "cell": 23,
+       "rtMs": 1638,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 2367,
+       "correct": true
+      },
+      {
+       "cell": 13,
+       "rtMs": 3341,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 3580,
+       "correct": true
+      },
+      {
+       "cell": 8,
+       "rtMs": 4479,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 4763,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 5722,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 6657,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 7071,
+       "correct": true
+      },
+      {
+       "cell": 23,
+       "rtMs": 7281,
+       "correct": false
+      },
+      {
+       "cell": 16,
+       "rtMs": 8208,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 8675,
+       "correct": true
+      },
+      {
+       "cell": 14,
+       "rtMs": 9516,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 10475,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 11636,
+       "correct": true
+      },
+      {
+       "cell": 21,
+       "rtMs": 12549,
+       "correct": true
+      },
+      {
+       "cell": 20,
+       "rtMs": 13093,
+       "correct": true
+      },
+      {
+       "cell": 22,
+       "rtMs": 13691,
+       "correct": true
+      },
+      {
+       "cell": 17,
+       "rtMs": 14704,
+       "correct": true
+      },
+      {
+       "cell": 9,
+       "rtMs": 15537,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 16587,
+       "correct": true
+      },
+      {
+       "cell": 10,
+       "rtMs": 17603,
+       "correct": true
+      },
+      {
+       "cell": 19,
+       "rtMs": 18515,
+       "correct": true
+      },
+      {
+       "cell": 20,
+       "rtMs": 19096,
+       "correct": false
+      },
+      {
+       "cell": 0,
+       "rtMs": 19990,
+       "correct": true
+      },
+      {
+       "cell": 24,
+       "rtMs": 20781,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 20781,
+    "presented_ms": 20781,
+    "correct": true
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "ranked-1-seed-5000",
+  "config": {
+   "size": 5,
+   "mode": "alternating",
+   "rotating": false
+  },
+  "configHash": "d9f374a0dd10bb02",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 18087,
+     "wrongTaps": 4,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 21,
+       "rtMs": 550,
+       "correct": true
+      },
+      {
+       "cell": 8,
+       "rtMs": 975,
+       "correct": true
+      },
+      {
+       "cell": 21,
+       "rtMs": 1235,
+       "correct": false
+      },
+      {
+       "cell": 18,
+       "rtMs": 1619,
+       "correct": true
+      },
+      {
+       "cell": 20,
+       "rtMs": 2535,
+       "correct": true
+      },
+      {
+       "cell": 16,
+       "rtMs": 3761,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 4473,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 5711,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 6682,
+       "correct": true
+      },
+      {
+       "cell": 23,
+       "rtMs": 7245,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 7711,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 7971,
+       "correct": true
+      },
+      {
+       "cell": 24,
+       "rtMs": 8719,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 9720,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 10112,
+       "correct": true
+      },
+      {
+       "cell": 19,
+       "rtMs": 10501,
+       "correct": true
+      },
+      {
+       "cell": 14,
+       "rtMs": 11193,
+       "correct": true
+      },
+      {
+       "cell": 9,
+       "rtMs": 11400,
+       "correct": false
+      },
+      {
+       "cell": 22,
+       "rtMs": 11914,
+       "correct": true
+      },
+      {
+       "cell": 9,
+       "rtMs": 12517,
+       "correct": true
+      },
+      {
+       "cell": 13,
+       "rtMs": 13184,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 13401,
+       "correct": false
+      },
+      {
+       "cell": 17,
+       "rtMs": 14629,
+       "correct": true
+      },
+      {
+       "cell": 12,
+       "rtMs": 14947,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 15816,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 16785,
+       "correct": true
+      },
+      {
+       "cell": 10,
+       "rtMs": 17222,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 17636,
+       "correct": false
+      },
+      {
+       "cell": 3,
+       "rtMs": 18087,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 18087,
+    "presented_ms": 18087,
+    "correct": true
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "ranked-1-seed-5001",
+  "config": {
+   "size": 5,
+   "mode": "alternating",
+   "rotating": false
+  },
+  "configHash": "d9f374a0dd10bb02",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 17818,
+     "wrongTaps": 1,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 5,
+       "rtMs": 819,
+       "correct": true
+      },
+      {
+       "cell": 13,
+       "rtMs": 1734,
+       "correct": true
+      },
+      {
+       "cell": 20,
+       "rtMs": 2515,
+       "correct": true
+      },
+      {
+       "cell": 12,
+       "rtMs": 3150,
+       "correct": true
+      },
+      {
+       "cell": 22,
+       "rtMs": 4191,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 4545,
+       "correct": true
+      },
+      {
+       "cell": 9,
+       "rtMs": 5382,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 6104,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 7012,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 8016,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 9256,
+       "correct": true
+      },
+      {
+       "cell": 17,
+       "rtMs": 9463,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 9912,
+       "correct": true
+      },
+      {
+       "cell": 24,
+       "rtMs": 10438,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 11656,
+       "correct": true
+      },
+      {
+       "cell": 10,
+       "rtMs": 12109,
+       "correct": true
+      },
+      {
+       "cell": 16,
+       "rtMs": 12483,
+       "correct": true
+      },
+      {
+       "cell": 23,
+       "rtMs": 12836,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 13226,
+       "correct": true
+      },
+      {
+       "cell": 21,
+       "rtMs": 14284,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 14804,
+       "correct": true
+      },
+      {
+       "cell": 23,
+       "rtMs": 15073,
+       "correct": false
+      },
+      {
+       "cell": 14,
+       "rtMs": 16191,
+       "correct": true
+      },
+      {
+       "cell": 8,
+       "rtMs": 16806,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 17367,
+       "correct": true
+      },
+      {
+       "cell": 19,
+       "rtMs": 17818,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 17818,
+    "presented_ms": 17818,
+    "correct": true
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "ranked-1-seed-5002",
+  "config": {
+   "size": 5,
+   "mode": "alternating",
+   "rotating": false
+  },
+  "configHash": "d9f374a0dd10bb02",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 14863,
+     "wrongTaps": 1,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 15,
+       "rtMs": 252,
+       "correct": true
+      },
+      {
+       "cell": 8,
+       "rtMs": 1353,
+       "correct": true
+      },
+      {
+       "cell": 13,
+       "rtMs": 2126,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 2533,
+       "correct": true
+      },
+      {
+       "cell": 24,
+       "rtMs": 2764,
+       "correct": true
+      },
+      {
+       "cell": 16,
+       "rtMs": 2969,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 3300,
+       "correct": true
+      },
+      {
+       "cell": 22,
+       "rtMs": 4033,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 4573,
+       "correct": false
+      },
+      {
+       "cell": 6,
+       "rtMs": 4796,
+       "correct": true
+      },
+      {
+       "cell": 10,
+       "rtMs": 5319,
+       "correct": true
+      },
+      {
+       "cell": 20,
+       "rtMs": 5788,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 6361,
+       "correct": true
+      },
+      {
+       "cell": 9,
+       "rtMs": 7508,
+       "correct": true
+      },
+      {
+       "cell": 19,
+       "rtMs": 8166,
+       "correct": true
+      },
+      {
+       "cell": 12,
+       "rtMs": 8530,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 9359,
+       "correct": true
+      },
+      {
+       "cell": 14,
+       "rtMs": 10271,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 11262,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 11893,
+       "correct": true
+      },
+      {
+       "cell": 21,
+       "rtMs": 12277,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 12577,
+       "correct": true
+      },
+      {
+       "cell": 17,
+       "rtMs": 13043,
+       "correct": true
+      },
+      {
+       "cell": 23,
+       "rtMs": 13256,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 13846,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 14863,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 14863,
+    "presented_ms": 14863,
+    "correct": true
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "ranked-2-seed-6000",
+  "config": {
+   "size": 6,
+   "mode": "numbers",
+   "rotating": false
+  },
+  "configHash": "f96f17fc7ecc001f",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 35626,
+     "wrongTaps": 6,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 4,
+       "rtMs": 234,
+       "correct": false
+      },
+      {
+       "cell": 3,
+       "rtMs": 1557,
+       "correct": true
+      },
+      {
+       "cell": 25,
+       "rtMs": 1815,
+       "correct": false
+      },
+      {
+       "cell": 5,
+       "rtMs": 3008,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 3476,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 4634,
+       "correct": true
+      },
+      {
+       "cell": 23,
+       "rtMs": 5082,
+       "correct": true
+      },
+      {
+       "cell": 19,
+       "rtMs": 6427,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 7204,
+       "correct": true
+      },
+      {
+       "cell": 13,
+       "rtMs": 8433,
+       "correct": true
+      },
+      {
+       "cell": 22,
+       "rtMs": 9133,
+       "correct": true
+      },
+      {
+       "cell": 21,
+       "rtMs": 9593,
+       "correct": true
+      },
+      {
+       "cell": 17,
+       "rtMs": 10021,
+       "correct": true
+      },
+      {
+       "cell": 16,
+       "rtMs": 10531,
+       "correct": true
+      },
+      {
+       "cell": 31,
+       "rtMs": 11861,
+       "correct": true
+      },
+      {
+       "cell": 29,
+       "rtMs": 12759,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 13179,
+       "correct": true
+      },
+      {
+       "cell": 26,
+       "rtMs": 13977,
+       "correct": true
+      },
+      {
+       "cell": 24,
+       "rtMs": 15134,
+       "correct": true
+      },
+      {
+       "cell": 20,
+       "rtMs": 15558,
+       "correct": false
+      },
+      {
+       "cell": 8,
+       "rtMs": 16590,
+       "correct": true
+      },
+      {
+       "cell": 33,
+       "rtMs": 17082,
+       "correct": false
+      },
+      {
+       "cell": 32,
+       "rtMs": 18476,
+       "correct": true
+      },
+      {
+       "cell": 14,
+       "rtMs": 19469,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 20697,
+       "correct": true
+      },
+      {
+       "cell": 10,
+       "rtMs": 21580,
+       "correct": true
+      },
+      {
+       "cell": 9,
+       "rtMs": 22794,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 23596,
+       "correct": true
+      },
+      {
+       "cell": 35,
+       "rtMs": 24309,
+       "correct": true
+      },
+      {
+       "cell": 34,
+       "rtMs": 24547,
+       "correct": false
+      },
+      {
+       "cell": 0,
+       "rtMs": 25189,
+       "correct": true
+      },
+      {
+       "cell": 28,
+       "rtMs": 25883,
+       "correct": true
+      },
+      {
+       "cell": 33,
+       "rtMs": 27179,
+       "correct": true
+      },
+      {
+       "cell": 25,
+       "rtMs": 28538,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 29091,
+       "correct": false
+      },
+      {
+       "cell": 34,
+       "rtMs": 29949,
+       "correct": true
+      },
+      {
+       "cell": 20,
+       "rtMs": 30867,
+       "correct": true
+      },
+      {
+       "cell": 27,
+       "rtMs": 32126,
+       "correct": true
+      },
+      {
+       "cell": 30,
+       "rtMs": 32779,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 34158,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 35100,
+       "correct": true
+      },
+      {
+       "cell": 12,
+       "rtMs": 35626,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 35626,
+    "presented_ms": 35626,
+    "correct": true
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "ranked-2-seed-6001",
+  "config": {
+   "size": 6,
+   "mode": "numbers",
+   "rotating": false
+  },
+  "configHash": "f96f17fc7ecc001f",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 28402,
+     "wrongTaps": 4,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 22,
+       "rtMs": 326,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 541,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 760,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 993,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 1623,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 2346,
+       "correct": true
+      },
+      {
+       "cell": 10,
+       "rtMs": 2735,
+       "correct": false
+      },
+      {
+       "cell": 19,
+       "rtMs": 3861,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 5071,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 5353,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 5672,
+       "correct": false
+      },
+      {
+       "cell": 32,
+       "rtMs": 6116,
+       "correct": true
+      },
+      {
+       "cell": 34,
+       "rtMs": 6630,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 7642,
+       "correct": true
+      },
+      {
+       "cell": 17,
+       "rtMs": 8945,
+       "correct": true
+      },
+      {
+       "cell": 8,
+       "rtMs": 10331,
+       "correct": true
+      },
+      {
+       "cell": 30,
+       "rtMs": 10550,
+       "correct": true
+      },
+      {
+       "cell": 14,
+       "rtMs": 11331,
+       "correct": true
+      },
+      {
+       "cell": 16,
+       "rtMs": 12466,
+       "correct": true
+      },
+      {
+       "cell": 25,
+       "rtMs": 13131,
+       "correct": true
+      },
+      {
+       "cell": 27,
+       "rtMs": 13375,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 14431,
+       "correct": true
+      },
+      {
+       "cell": 35,
+       "rtMs": 15512,
+       "correct": true
+      },
+      {
+       "cell": 10,
+       "rtMs": 16199,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 17139,
+       "correct": true
+      },
+      {
+       "cell": 29,
+       "rtMs": 17698,
+       "correct": true
+      },
+      {
+       "cell": 33,
+       "rtMs": 18945,
+       "correct": true
+      },
+      {
+       "cell": 21,
+       "rtMs": 19173,
+       "correct": false
+      },
+      {
+       "cell": 13,
+       "rtMs": 20230,
+       "correct": true
+      },
+      {
+       "cell": 20,
+       "rtMs": 20779,
+       "correct": true
+      },
+      {
+       "cell": 31,
+       "rtMs": 22048,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 22955,
+       "correct": true
+      },
+      {
+       "cell": 28,
+       "rtMs": 23210,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 23778,
+       "correct": false
+      },
+      {
+       "cell": 9,
+       "rtMs": 24552,
+       "correct": true
+      },
+      {
+       "cell": 26,
+       "rtMs": 25697,
+       "correct": true
+      },
+      {
+       "cell": 21,
+       "rtMs": 26678,
+       "correct": true
+      },
+      {
+       "cell": 12,
+       "rtMs": 26985,
+       "correct": true
+      },
+      {
+       "cell": 24,
+       "rtMs": 27967,
+       "correct": true
+      },
+      {
+       "cell": 23,
+       "rtMs": 28402,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 28402,
+    "presented_ms": 28402,
+    "correct": true
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "ranked-2-seed-6002",
+  "config": {
+   "size": 6,
+   "mode": "numbers",
+   "rotating": false
+  },
+  "configHash": "f96f17fc7ecc001f",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 30932,
+     "wrongTaps": 2,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 31,
+       "rtMs": 472,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 1377,
+       "correct": true
+      },
+      {
+       "cell": 14,
+       "rtMs": 2120,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 3119,
+       "correct": true
+      },
+      {
+       "cell": 20,
+       "rtMs": 4368,
+       "correct": true
+      },
+      {
+       "cell": 9,
+       "rtMs": 5109,
+       "correct": true
+      },
+      {
+       "cell": 24,
+       "rtMs": 6134,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 7064,
+       "correct": true
+      },
+      {
+       "cell": 33,
+       "rtMs": 7355,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 8602,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 9761,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 10807,
+       "correct": true
+      },
+      {
+       "cell": 21,
+       "rtMs": 12025,
+       "correct": true
+      },
+      {
+       "cell": 27,
+       "rtMs": 12482,
+       "correct": false
+      },
+      {
+       "cell": 26,
+       "rtMs": 13264,
+       "correct": true
+      },
+      {
+       "cell": 16,
+       "rtMs": 13881,
+       "correct": true
+      },
+      {
+       "cell": 28,
+       "rtMs": 15105,
+       "correct": true
+      },
+      {
+       "cell": 8,
+       "rtMs": 15562,
+       "correct": true
+      },
+      {
+       "cell": 25,
+       "rtMs": 16950,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 17199,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 18262,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 19103,
+       "correct": true
+      },
+      {
+       "cell": 10,
+       "rtMs": 20436,
+       "correct": true
+      },
+      {
+       "cell": 23,
+       "rtMs": 21682,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 21887,
+       "correct": false
+      },
+      {
+       "cell": 17,
+       "rtMs": 22353,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 22572,
+       "correct": true
+      },
+      {
+       "cell": 30,
+       "rtMs": 23405,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 23998,
+       "correct": true
+      },
+      {
+       "cell": 27,
+       "rtMs": 24747,
+       "correct": true
+      },
+      {
+       "cell": 13,
+       "rtMs": 26083,
+       "correct": true
+      },
+      {
+       "cell": 32,
+       "rtMs": 26941,
+       "correct": true
+      },
+      {
+       "cell": 34,
+       "rtMs": 27458,
+       "correct": true
+      },
+      {
+       "cell": 19,
+       "rtMs": 28100,
+       "correct": true
+      },
+      {
+       "cell": 29,
+       "rtMs": 28454,
+       "correct": true
+      },
+      {
+       "cell": 12,
+       "rtMs": 28864,
+       "correct": true
+      },
+      {
+       "cell": 35,
+       "rtMs": 30106,
+       "correct": true
+      },
+      {
+       "cell": 22,
+       "rtMs": 30932,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 30932,
+    "presented_ms": 30932,
+    "correct": true
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "ranked-3-seed-7000",
+  "config": {
+   "size": 5,
+   "mode": "descending",
+   "rotating": false
+  },
+  "configHash": "89aefd2d79e2a6c7",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 20351,
+     "wrongTaps": 4,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 2,
+       "rtMs": 179,
+       "correct": false
+      },
+      {
+       "cell": 20,
+       "rtMs": 474,
+       "correct": true
+      },
+      {
+       "cell": 10,
+       "rtMs": 1022,
+       "correct": false
+      },
+      {
+       "cell": 9,
+       "rtMs": 1521,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 2666,
+       "correct": true
+      },
+      {
+       "cell": 16,
+       "rtMs": 3242,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 3808,
+       "correct": true
+      },
+      {
+       "cell": 14,
+       "rtMs": 5045,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 6140,
+       "correct": true
+      },
+      {
+       "cell": 19,
+       "rtMs": 7308,
+       "correct": true
+      },
+      {
+       "cell": 12,
+       "rtMs": 7582,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 8441,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 8764,
+       "correct": true
+      },
+      {
+       "cell": 22,
+       "rtMs": 9205,
+       "correct": false
+      },
+      {
+       "cell": 21,
+       "rtMs": 9676,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 10000,
+       "correct": true
+      },
+      {
+       "cell": 10,
+       "rtMs": 11160,
+       "correct": true
+      },
+      {
+       "cell": 23,
+       "rtMs": 11915,
+       "correct": true
+      },
+      {
+       "cell": 22,
+       "rtMs": 12975,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 13483,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 14149,
+       "correct": true
+      },
+      {
+       "cell": 17,
+       "rtMs": 15052,
+       "correct": true
+      },
+      {
+       "cell": 17,
+       "rtMs": 15228,
+       "correct": false
+      },
+      {
+       "cell": 11,
+       "rtMs": 15585,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 16362,
+       "correct": true
+      },
+      {
+       "cell": 24,
+       "rtMs": 17171,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 18178,
+       "correct": true
+      },
+      {
+       "cell": 13,
+       "rtMs": 19401,
+       "correct": true
+      },
+      {
+       "cell": 8,
+       "rtMs": 20351,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 20351,
+    "presented_ms": 20351,
+    "correct": true
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "ranked-3-seed-7001",
+  "config": {
+   "size": 5,
+   "mode": "descending",
+   "rotating": false
+  },
+  "configHash": "89aefd2d79e2a6c7",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 18580,
+     "wrongTaps": 4,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 3,
+       "rtMs": 412,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 1560,
+       "correct": true
+      },
+      {
+       "cell": 20,
+       "rtMs": 1947,
+       "correct": true
+      },
+      {
+       "cell": 19,
+       "rtMs": 2851,
+       "correct": true
+      },
+      {
+       "cell": 22,
+       "rtMs": 3707,
+       "correct": true
+      },
+      {
+       "cell": 14,
+       "rtMs": 4110,
+       "correct": true
+      },
+      {
+       "cell": 12,
+       "rtMs": 5217,
+       "correct": true
+      },
+      {
+       "cell": 13,
+       "rtMs": 5803,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 6199,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 6694,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 7074,
+       "correct": true
+      },
+      {
+       "cell": 21,
+       "rtMs": 7848,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 8247,
+       "correct": false
+      },
+      {
+       "cell": 17,
+       "rtMs": 8888,
+       "correct": true
+      },
+      {
+       "cell": 10,
+       "rtMs": 9376,
+       "correct": true
+      },
+      {
+       "cell": 8,
+       "rtMs": 9891,
+       "correct": true
+      },
+      {
+       "cell": 22,
+       "rtMs": 10340,
+       "correct": false
+      },
+      {
+       "cell": 7,
+       "rtMs": 11291,
+       "correct": true
+      },
+      {
+       "cell": 16,
+       "rtMs": 11809,
+       "correct": true
+      },
+      {
+       "cell": 9,
+       "rtMs": 12609,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 13602,
+       "correct": true
+      },
+      {
+       "cell": 24,
+       "rtMs": 14275,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 14777,
+       "correct": true
+      },
+      {
+       "cell": 22,
+       "rtMs": 15164,
+       "correct": false
+      },
+      {
+       "cell": 5,
+       "rtMs": 16106,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 16327,
+       "correct": false
+      },
+      {
+       "cell": 1,
+       "rtMs": 17060,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 17576,
+       "correct": true
+      },
+      {
+       "cell": 23,
+       "rtMs": 18580,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 18580,
+    "presented_ms": 18580,
+    "correct": true
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "ranked-3-seed-7002",
+  "config": {
+   "size": 5,
+   "mode": "descending",
+   "rotating": false
+  },
+  "configHash": "89aefd2d79e2a6c7",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "totalMs": 20224,
+     "wrongTaps": 2,
+     "completed": true,
+     "taps": [
+      {
+       "cell": 0,
+       "rtMs": 830,
+       "correct": true
+      },
+      {
+       "cell": 23,
+       "rtMs": 1348,
+       "correct": true
+      },
+      {
+       "cell": 11,
+       "rtMs": 2194,
+       "correct": true
+      },
+      {
+       "cell": 19,
+       "rtMs": 3226,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 3746,
+       "correct": true
+      },
+      {
+       "cell": 4,
+       "rtMs": 4592,
+       "correct": true
+      },
+      {
+       "cell": 10,
+       "rtMs": 5306,
+       "correct": true
+      },
+      {
+       "cell": 5,
+       "rtMs": 6522,
+       "correct": true
+      },
+      {
+       "cell": 17,
+       "rtMs": 7651,
+       "correct": true
+      },
+      {
+       "cell": 24,
+       "rtMs": 8262,
+       "correct": true
+      },
+      {
+       "cell": 1,
+       "rtMs": 9256,
+       "correct": true
+      },
+      {
+       "cell": 8,
+       "rtMs": 10416,
+       "correct": true
+      },
+      {
+       "cell": 15,
+       "rtMs": 10761,
+       "correct": true
+      },
+      {
+       "cell": 13,
+       "rtMs": 11935,
+       "correct": true
+      },
+      {
+       "cell": 22,
+       "rtMs": 13013,
+       "correct": true
+      },
+      {
+       "cell": 0,
+       "rtMs": 13211,
+       "correct": false
+      },
+      {
+       "cell": 20,
+       "rtMs": 13754,
+       "correct": true
+      },
+      {
+       "cell": 9,
+       "rtMs": 13968,
+       "correct": true
+      },
+      {
+       "cell": 18,
+       "rtMs": 14244,
+       "correct": false
+      },
+      {
+       "cell": 21,
+       "rtMs": 15217,
+       "correct": true
+      },
+      {
+       "cell": 3,
+       "rtMs": 15492,
+       "correct": true
+      },
+      {
+       "cell": 6,
+       "rtMs": 15747,
+       "correct": true
+      },
+      {
+       "cell": 12,
+       "rtMs": 16563,
+       "correct": true
+      },
+      {
+       "cell": 7,
+       "rtMs": 17640,
+       "correct": true
+      },
+      {
+       "cell": 2,
+       "rtMs": 18771,
+       "correct": true
+      },
+      {
+       "cell": 16,
+       "rtMs": 19306,
+       "correct": true
+      },
+      {
+       "cell": 14,
+       "rtMs": 20224,
+       "correct": true
+      }
+     ]
+    },
+    "rt_ms": 20224,
+    "presented_ms": 20224,
+    "correct": true
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ },
+ {
+  "name": "no-responses",
+  "config": {
+   "size": 3,
+   "mode": "numbers",
+   "rotating": false
+  },
+  "configHash": "52c8b132188fe5f6",
+  "trialCount": 1,
+  "rows": [
+   {
+    "idx": 0,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 600
+ }
+]

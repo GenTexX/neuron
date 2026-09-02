@@ -1,0 +1,32 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "WITH best AS (\n             SELECT max(score) as score FROM run\n             WHERE game_id = $1 AND config_hash = $2 AND mode = 'ranked'\n               AND valid AND submitted_at IS NOT NULL AND score IS NOT NULL\n             GROUP BY user_id\n           )\n           SELECT count(*) FILTER (WHERE score < $3) as \"below!\", count(*) as \"total!\" FROM best",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "below!",
+        "type_info": "Int8",
+        "origin": "Expression"
+      },
+      {
+        "ordinal": 1,
+        "name": "total!",
+        "type_info": "Int8",
+        "origin": "Expression"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Text",
+        "Text",
+        "Int4"
+      ]
+    },
+    "nullable": [
+      null,
+      null
+    ]
+  },
+  "hash": "a9f10f9fbff4dbad0d9b141c2b34c6fe18a58d2aa3ce42e584d972895551c41a"
+}

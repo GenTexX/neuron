@@ -1,0 +1,11 @@
+node_modules
+dist
+build
+.svelte-kit
+target
+pnpm-lock.yaml
+apps/api
+packages/games/data/words-de.json
+packages/engine/test/golden
+packages/games/test/fixtures
+apps/web/static/icons

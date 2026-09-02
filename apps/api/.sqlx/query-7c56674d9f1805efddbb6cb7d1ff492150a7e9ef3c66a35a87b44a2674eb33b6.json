@@ -1,0 +1,19 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "INSERT INTO personal_best (user_id, game_id, config_hash, score, run_id, achieved_at)\n               VALUES ($1,$2,$3,$4,$5,$6)\n               ON CONFLICT (user_id, game_id, config_hash) DO UPDATE\n                 SET score = EXCLUDED.score, run_id = EXCLUDED.run_id,\n                     achieved_at = EXCLUDED.achieved_at",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Uuid",
+        "Text",
+        "Text",
+        "Int4",
+        "Uuid",
+        "Timestamptz"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "7c56674d9f1805efddbb6cb7d1ff492150a7e9ef3c66a35a87b44a2674eb33b6"
+}

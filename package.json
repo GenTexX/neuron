@@ -1,0 +1,32 @@
+{
+  "name": "neuron",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Neuron – Brain-Training-Plattform (Monorepo)",
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @neuron/web dev",
+    "build": "pnpm -r build",
+    "check": "pnpm -r --if-present check",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write .",
+    "test": "pnpm -r --if-present test",
+    "test:e2e": "pnpm --filter @neuron/web test:e2e"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.1.8",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-svelte": "^3.23.0",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.6",
+    "prettier-plugin-svelte": "^4.1.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.69.0",
+    "vitest": "^4.1.11"
+  }
+}

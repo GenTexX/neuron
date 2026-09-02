@@ -1,0 +1,66 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "SELECT submitted_at as \"submitted_at!\", score as \"score!\", mode, config_hash\n           FROM run\n           WHERE user_id = $1 AND game_id = $2 AND valid\n             AND submitted_at IS NOT NULL AND score IS NOT NULL\n           ORDER BY submitted_at DESC LIMIT $3",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "submitted_at!",
+        "type_info": "Timestamptz",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "submitted_at"
+          }
+        }
+      },
+      {
+        "ordinal": 1,
+        "name": "score!",
+        "type_info": "Int4",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "score"
+          }
+        }
+      },
+      {
+        "ordinal": 2,
+        "name": "mode",
+        "type_info": "Text",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "mode"
+          }
+        }
+      },
+      {
+        "ordinal": 3,
+        "name": "config_hash",
+        "type_info": "Text",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "config_hash"
+          }
+        }
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Uuid",
+        "Text",
+        "Int8"
+      ]
+    },
+    "nullable": [
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  "hash": "c4c63807db5a50aa61aabab552a64f3f63696d4776736d96c5a1b50420b010b6"
+}

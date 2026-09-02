@@ -1,0 +1,123 @@
+{
+  "$comment": "Ranked-Configs je Spiel (§10.3). Wöchentliche Rotation: index = isoWeek % list.length. Gemeinsame Datenquelle für TS (packages/games/src/ranked.ts) und Rust (include_str!).",
+  "stroop": [
+    { "colors": 4, "congruentRate": 0.4, "deadlineMs": 1500, "switchRule": false, "trials": 30 },
+    { "colors": 5, "congruentRate": 0.35, "deadlineMs": 1400, "switchRule": false, "trials": 30 },
+    { "colors": 4, "congruentRate": 0.4, "deadlineMs": 1600, "switchRule": true, "trials": 30 },
+    { "colors": 5, "congruentRate": 0.3, "deadlineMs": 1300, "switchRule": true, "trials": 30 }
+  ],
+  "go-nogo": [
+    { "length": 60, "isiMs": 1200, "stimulusMs": 350, "noGoRate": 0.25 },
+    { "length": 60, "isiMs": 1000, "stimulusMs": 300, "noGoRate": 0.25 },
+    { "length": 70, "isiMs": 1100, "stimulusMs": 320, "noGoRate": 0.3 },
+    { "length": 60, "isiMs": 900, "stimulusMs": 280, "noGoRate": 0.25 }
+  ],
+  "n-back": [
+    { "n": 2, "length": 40, "isiMs": 2500, "alphabet": 8, "targetRate": 0.3 },
+    { "n": 2, "length": 40, "isiMs": 2200, "alphabet": 8, "targetRate": 0.3 },
+    { "n": 3, "length": 44, "isiMs": 2500, "alphabet": 8, "targetRate": 0.3 },
+    { "n": 3, "length": 44, "isiMs": 2200, "alphabet": 8, "targetRate": 0.3 }
+  ],
+  "mental-chain": [
+    {
+      "steps": 4,
+      "stepMs": 1000,
+      "gapMs": 300,
+      "ops": ["add", "sub", "mul"],
+      "operandMax": 24,
+      "trials": 8
+    },
+    {
+      "steps": 5,
+      "stepMs": 900,
+      "gapMs": 300,
+      "ops": ["add", "sub"],
+      "operandMax": 30,
+      "trials": 8
+    },
+    {
+      "steps": 4,
+      "stepMs": 800,
+      "gapMs": 250,
+      "ops": ["add", "sub", "mul"],
+      "operandMax": 27,
+      "trials": 8
+    },
+    {
+      "steps": 5,
+      "stepMs": 900,
+      "gapMs": 300,
+      "ops": ["add", "sub", "mul"],
+      "operandMax": 24,
+      "trials": 8
+    }
+  ],
+  "corsi": [
+    { "blocks": 9, "startLength": 3, "flashMs": 700, "gapMs": 250, "reverse": false, "trials": 10 },
+    { "blocks": 9, "startLength": 3, "flashMs": 600, "gapMs": 250, "reverse": false, "trials": 10 },
+    { "blocks": 9, "startLength": 3, "flashMs": 700, "gapMs": 250, "reverse": true, "trials": 10 },
+    { "blocks": 9, "startLength": 4, "flashMs": 600, "gapMs": 250, "reverse": false, "trials": 10 }
+  ],
+  "schulte": [
+    { "size": 5, "mode": "numbers", "rotating": false },
+    { "size": 5, "mode": "alternating", "rotating": false },
+    { "size": 6, "mode": "numbers", "rotating": false },
+    { "size": 5, "mode": "descending", "rotating": false }
+  ],
+  "mental-rotation": [
+    { "cells": 6, "angles": [90, 180, 270], "mirrorRate": 0.5, "deadlineMs": 6000, "trials": 20 },
+    {
+      "cells": 7,
+      "angles": [45, 90, 135, 180, 225, 270, 315],
+      "mirrorRate": 0.5,
+      "deadlineMs": 6000,
+      "trials": 20
+    },
+    {
+      "cells": 6,
+      "angles": [45, 90, 135, 180, 225, 270, 315],
+      "mirrorRate": 0.5,
+      "deadlineMs": 5000,
+      "trials": 20
+    },
+    { "cells": 7, "angles": [90, 180, 270], "mirrorRate": 0.5, "deadlineMs": 5000, "trials": 20 }
+  ],
+  "number-sequence": [
+    {
+      "ruleKinds": ["arith", "geom", "alternating", "poly2"],
+      "shown": 5,
+      "deadlineMs": 20000,
+      "trials": 10
+    },
+    {
+      "ruleKinds": ["arith", "geom", "alternating", "poly2", "fib"],
+      "shown": 5,
+      "deadlineMs": 20000,
+      "trials": 10
+    },
+    {
+      "ruleKinds": ["arith", "alternating", "poly2", "interleaved"],
+      "shown": 5,
+      "deadlineMs": 20000,
+      "trials": 10
+    },
+    {
+      "ruleKinds": ["arith", "geom", "poly2", "fib", "digitsum"],
+      "shown": 5,
+      "deadlineMs": 20000,
+      "trials": 10
+    }
+  ],
+  "anagram": [
+    { "minLen": 5, "maxLen": 7, "deadlineMs": 30000, "trials": 10 },
+    { "minLen": 6, "maxLen": 8, "deadlineMs": 30000, "trials": 10 },
+    { "minLen": 5, "maxLen": 7, "deadlineMs": 25000, "trials": 10 },
+    { "minLen": 6, "maxLen": 8, "deadlineMs": 25000, "trials": 10 }
+  ],
+  "lights-out": [
+    { "size": 4, "scrambleMoves": 6, "moveLimit": null },
+    { "size": 4, "scrambleMoves": 8, "moveLimit": null },
+    { "size": 5, "scrambleMoves": 8, "moveLimit": null },
+    { "size": 5, "scrambleMoves": 10, "moveLimit": null }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "INSERT INTO game (id, category, max_level, enabled)\n               VALUES ($1, $2, $3, true)\n               ON CONFLICT (id) DO UPDATE SET category = EXCLUDED.category,\n                                              max_level = EXCLUDED.max_level",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Text",
+        "Text",
+        "Int4"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "cfecebcec396367389a01249fba5cec63bbbf69880cfa1fe58a55d9fb89267f6"
+}

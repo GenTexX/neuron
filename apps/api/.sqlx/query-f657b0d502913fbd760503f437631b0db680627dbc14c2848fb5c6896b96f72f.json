@@ -1,0 +1,75 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "WITH best AS (\n             SELECT DISTINCT ON (r.user_id) r.user_id, r.score, r.submitted_at\n             FROM run r\n             WHERE r.game_id = $1 AND r.config_hash = $2 AND r.mode = 'ranked'\n               AND r.valid AND r.submitted_at IS NOT NULL AND r.score IS NOT NULL\n               AND ($3::timestamptz IS NULL OR r.submitted_at >= $3)\n               AND ($4::timestamptz IS NULL OR r.submitted_at < $4)\n             ORDER BY r.user_id, r.score DESC, r.submitted_at ASC\n           )\n           SELECT rank() OVER (ORDER BY b.score DESC, b.submitted_at ASC) as \"rank!\",\n                  b.user_id, u.display_name, b.score as \"score!\", b.submitted_at as \"submitted_at!\"\n           FROM best b JOIN app_user u ON u.id = b.user_id\n           ORDER BY b.score DESC, b.submitted_at ASC\n           LIMIT $5",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "rank!",
+        "type_info": "Int8",
+        "origin": "Expression"
+      },
+      {
+        "ordinal": 1,
+        "name": "user_id",
+        "type_info": "Uuid",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "user_id"
+          }
+        }
+      },
+      {
+        "ordinal": 2,
+        "name": "display_name",
+        "type_info": "Text",
+        "origin": {
+          "Table": {
+            "table": "app_user",
+            "name": "display_name"
+          }
+        }
+      },
+      {
+        "ordinal": 3,
+        "name": "score!",
+        "type_info": "Int4",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "score"
+          }
+        }
+      },
+      {
+        "ordinal": 4,
+        "name": "submitted_at!",
+        "type_info": "Timestamptz",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "submitted_at"
+          }
+        }
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Text",
+        "Text",
+        "Timestamptz",
+        "Timestamptz",
+        "Int8"
+      ]
+    },
+    "nullable": [
+      null,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  "hash": "f657b0d502913fbd760503f437631b0db680627dbc14c2848fb5c6896b96f72f"
+}

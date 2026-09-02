@@ -1,0 +1,196 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "SELECT id, user_id, game_id, mode, ranked_round_id, level, config, config_hash,\n                  seed, trial_count, nonce, server_started_at, submitted_at, score, valid\n           FROM run WHERE id = $1 FOR UPDATE",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Uuid",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "id"
+          }
+        }
+      },
+      {
+        "ordinal": 1,
+        "name": "user_id",
+        "type_info": "Uuid",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "user_id"
+          }
+        }
+      },
+      {
+        "ordinal": 2,
+        "name": "game_id",
+        "type_info": "Text",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "game_id"
+          }
+        }
+      },
+      {
+        "ordinal": 3,
+        "name": "mode",
+        "type_info": "Text",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "mode"
+          }
+        }
+      },
+      {
+        "ordinal": 4,
+        "name": "ranked_round_id",
+        "type_info": "Uuid",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "ranked_round_id"
+          }
+        }
+      },
+      {
+        "ordinal": 5,
+        "name": "level",
+        "type_info": "Int4",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "level"
+          }
+        }
+      },
+      {
+        "ordinal": 6,
+        "name": "config",
+        "type_info": "Jsonb",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "config"
+          }
+        }
+      },
+      {
+        "ordinal": 7,
+        "name": "config_hash",
+        "type_info": "Text",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "config_hash"
+          }
+        }
+      },
+      {
+        "ordinal": 8,
+        "name": "seed",
+        "type_info": "Int8",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "seed"
+          }
+        }
+      },
+      {
+        "ordinal": 9,
+        "name": "trial_count",
+        "type_info": "Int4",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "trial_count"
+          }
+        }
+      },
+      {
+        "ordinal": 10,
+        "name": "nonce",
+        "type_info": "Bytea",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "nonce"
+          }
+        }
+      },
+      {
+        "ordinal": 11,
+        "name": "server_started_at",
+        "type_info": "Timestamptz",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "server_started_at"
+          }
+        }
+      },
+      {
+        "ordinal": 12,
+        "name": "submitted_at",
+        "type_info": "Timestamptz",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "submitted_at"
+          }
+        }
+      },
+      {
+        "ordinal": 13,
+        "name": "score",
+        "type_info": "Int4",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "score"
+          }
+        }
+      },
+      {
+        "ordinal": 14,
+        "name": "valid",
+        "type_info": "Bool",
+        "origin": {
+          "Table": {
+            "table": "run",
+            "name": "valid"
+          }
+        }
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Uuid"
+      ]
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  "hash": "0dc049d08b9f3bb72e84343314b4c4074e50e8147c93ef669260987833b7ac8d"
+}

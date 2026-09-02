@@ -1,0 +1,30 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "SELECT score FROM personal_best\n           WHERE user_id = $1 AND game_id = $2 AND config_hash = $3",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "score",
+        "type_info": "Int4",
+        "origin": {
+          "Table": {
+            "table": "personal_best",
+            "name": "score"
+          }
+        }
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Uuid",
+        "Text",
+        "Text"
+      ]
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "80ca7c5da243d0b3d8d067060dba613fe1014aad9a956d1f18c78438db0af3c8"
+}

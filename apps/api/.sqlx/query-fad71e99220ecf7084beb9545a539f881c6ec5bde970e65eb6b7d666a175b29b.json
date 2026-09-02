@@ -1,0 +1,53 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "SELECT level, consecutive_up, runs_played FROM user_game_state\n           WHERE user_id = $1 AND game_id = $2",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "level",
+        "type_info": "Int4",
+        "origin": {
+          "Table": {
+            "table": "user_game_state",
+            "name": "level"
+          }
+        }
+      },
+      {
+        "ordinal": 1,
+        "name": "consecutive_up",
+        "type_info": "Int4",
+        "origin": {
+          "Table": {
+            "table": "user_game_state",
+            "name": "consecutive_up"
+          }
+        }
+      },
+      {
+        "ordinal": 2,
+        "name": "runs_played",
+        "type_info": "Int4",
+        "origin": {
+          "Table": {
+            "table": "user_game_state",
+            "name": "runs_played"
+          }
+        }
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Uuid",
+        "Text"
+      ]
+    },
+    "nullable": [
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "fad71e99220ecf7084beb9545a539f881c6ec5bde970e65eb6b7d666a175b29b"
+}

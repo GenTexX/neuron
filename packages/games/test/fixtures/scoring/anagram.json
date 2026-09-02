@@ -1,0 +1,2575 @@
+[
+ {
+  "name": "level-1-seed-0",
+  "config": {
+   "minLen": 4,
+   "maxLen": 6,
+   "deadlineMs": 38500,
+   "trials": 10
+  },
+  "configHash": "8db33d0583075556",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "baaufu"
+    },
+    "rt_ms": 42088,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "  BUDGET "
+    },
+    "rt_ms": 31921,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "  TURM "
+    },
+    "rt_ms": 34979,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "amhco"
+    },
+    "rt_ms": 36831,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "kanu"
+    },
+    "rt_ms": 14045,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "kern"
+    },
+    "rt_ms": 15328,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "pyjama"
+    },
+    "rt_ms": 10408,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "mantel"
+    },
+    "rt_ms": 36758,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "matrix"
+    },
+    "rt_ms": 18000,
+    "presented_ms": null,
+    "correct": true
+   }
+  ],
+  "expected": 1268,
+  "theoreticalMax": 2300
+ },
+ {
+  "name": "level-1-seed-1",
+  "config": {
+   "minLen": 4,
+   "maxLen": 6,
+   "deadlineMs": 38500,
+   "trials": 10
+  },
+  "configHash": "8db33d0583075556",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "rache"
+    },
+    "rt_ms": 26114,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "  ORAKEL "
+    },
+    "rt_ms": 27508,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "  LOCKE "
+    },
+    "rt_ms": 32298,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "dunkel"
+    },
+    "rt_ms": 9747,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "  BUDE "
+    },
+    "rt_ms": 11078,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "puck"
+    },
+    "rt_ms": 34574,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "wehr"
+    },
+    "rt_ms": 8645,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "kauf"
+    },
+    "rt_ms": 5000,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "erzbua"
+    },
+    "rt_ms": 17426,
+    "presented_ms": null,
+    "correct": false
+   }
+  ],
+  "expected": 1449,
+  "theoreticalMax": 2300
+ },
+ {
+  "name": "level-1-seed-2",
+  "config": {
+   "minLen": 4,
+   "maxLen": 6,
+   "deadlineMs": 38500,
+   "trials": 10
+  },
+  "configHash": "8db33d0583075556",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "ferkel"
+    },
+    "rt_ms": 18440,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "villa"
+    },
+    "rt_ms": 33797,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "boxer"
+    },
+    "rt_ms": 9670,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "elch"
+    },
+    "rt_ms": 14607,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "krug"
+    },
+    "rt_ms": 24266,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "umab"
+    },
+    "rt_ms": 10664,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "pkuaze"
+    },
+    "rt_ms": 9791,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "zorn"
+    },
+    "rt_ms": 18635,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "  MIENE "
+    },
+    "rt_ms": 42293,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "dnki"
+    },
+    "rt_ms": 42682,
+    "presented_ms": null,
+    "correct": false
+   }
+  ],
+  "expected": 1228,
+  "theoreticalMax": 2300
+ },
+ {
+  "name": "level-3-seed-1000",
+  "config": {
+   "minLen": 4,
+   "maxLen": 6,
+   "deadlineMs": 35500,
+   "trials": 10
+  },
+  "configHash": "d9a887bf841aefac",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "gwmeu"
+    },
+    "rt_ms": 4732,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "lotus"
+    },
+    "rt_ms": 19775,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "rireef"
+    },
+    "rt_ms": 32509,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "dach"
+    },
+    "rt_ms": 11921,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "speer"
+    },
+    "rt_ms": 22890,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "necehs"
+    },
+    "rt_ms": 14656,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "ecuqli"
+    },
+    "rt_ms": 5266,
+    "presented_ms": null,
+    "correct": false
+   }
+  ],
+  "expected": 538,
+  "theoreticalMax": 2300
+ },
+ {
+  "name": "level-3-seed-1001",
+  "config": {
+   "minLen": 4,
+   "maxLen": 6,
+   "deadlineMs": 35500,
+   "trials": 10
+  },
+  "configHash": "d9a887bf841aefac",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "kchar"
+    },
+    "rt_ms": 37811,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "pille"
+    },
+    "rt_ms": 20292,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "muster"
+    },
+    "rt_ms": 28109,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "  OBST "
+    },
+    "rt_ms": 21808,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "ciehe"
+    },
+    "rt_ms": 27271,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "toast"
+    },
+    "rt_ms": 11428,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "list"
+    },
+    "rt_ms": 8139,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "trick"
+    },
+    "rt_ms": 35199,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "bleibe"
+    },
+    "rt_ms": 27919,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "outfit"
+    },
+    "rt_ms": 32413,
+    "presented_ms": null,
+    "correct": true
+   }
+  ],
+  "expected": 1422,
+  "theoreticalMax": 2300
+ },
+ {
+  "name": "level-3-seed-1002",
+  "config": {
+   "minLen": 4,
+   "maxLen": 6,
+   "deadlineMs": 35500,
+   "trials": 10
+  },
+  "configHash": "d9a887bf841aefac",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "horde"
+    },
+    "rt_ms": 35270,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "topf"
+    },
+    "rt_ms": 37449,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "eemar"
+    },
+    "rt_ms": 39919,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "lade"
+    },
+    "rt_ms": 24051,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "zement"
+    },
+    "rt_ms": 6373,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "teig"
+    },
+    "rt_ms": 35023,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "stock"
+    },
+    "rt_ms": 26128,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "kult"
+    },
+    "rt_ms": 18424,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "  ZUFALL "
+    },
+    "rt_ms": 9721,
+    "presented_ms": null,
+    "correct": true
+   }
+  ],
+  "expected": 1368,
+  "theoreticalMax": 2300
+ },
+ {
+  "name": "level-6-seed-2000",
+  "config": {
+   "minLen": 5,
+   "maxLen": 7,
+   "deadlineMs": 31000,
+   "trials": 10
+  },
+  "configHash": "fe50bca676b5e368",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "terror"
+    },
+    "rt_ms": 28742,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "eatlli"
+    },
+    "rt_ms": 17901,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "almypoi"
+    },
+    "rt_ms": 12032,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "reklame"
+    },
+    "rt_ms": 22826,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "uvism"
+    },
+    "rt_ms": 25611,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "rente"
+    },
+    "rt_ms": 29171,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "vorhang"
+    },
+    "rt_ms": 32985,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "kuckuck"
+    },
+    "rt_ms": 31893,
+    "presented_ms": null,
+    "correct": true
+   }
+  ],
+  "expected": 904,
+  "theoreticalMax": 2450
+ },
+ {
+  "name": "level-6-seed-2001",
+  "config": {
+   "minLen": 5,
+   "maxLen": 7,
+   "deadlineMs": 31000,
+   "trials": 10
+  },
+  "configHash": "fe50bca676b5e368",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "  BLICK "
+    },
+    "rt_ms": 14055,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "hocker"
+    },
+    "rt_ms": 29714,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "parade"
+    },
+    "rt_ms": 11946,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "gisdne"
+    },
+    "rt_ms": 20978,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "kotze"
+    },
+    "rt_ms": 10359,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "lesbe"
+    },
+    "rt_ms": 28558,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "wiege"
+    },
+    "rt_ms": 32222,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "brkes"
+    },
+    "rt_ms": 27353,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "hangar"
+    },
+    "rt_ms": 28534,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "tduechs"
+    },
+    "rt_ms": 18869,
+    "presented_ms": null,
+    "correct": false
+   }
+  ],
+  "expected": 1252,
+  "theoreticalMax": 2450
+ },
+ {
+  "name": "level-6-seed-2002",
+  "config": {
+   "minLen": 5,
+   "maxLen": 7,
+   "deadlineMs": 31000,
+   "trials": 10
+  },
+  "configHash": "fe50bca676b5e368",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "recht"
+    },
+    "rt_ms": 20069,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "schwan"
+    },
+    "rt_ms": 26573,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "  ZEBRA "
+    },
+    "rt_ms": 28214,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "  BARACKE "
+    },
+    "rt_ms": 21779,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "feier"
+    },
+    "rt_ms": 28739,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "terror"
+    },
+    "rt_ms": 21608,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "level"
+    },
+    "rt_ms": 34565,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "drang"
+    },
+    "rt_ms": 11120,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "umgang"
+    },
+    "rt_ms": 19670,
+    "presented_ms": null,
+    "correct": true
+   }
+  ],
+  "expected": 1605,
+  "theoreticalMax": 2450
+ },
+ {
+  "name": "level-12-seed-3000",
+  "config": {
+   "minLen": 7,
+   "maxLen": 9,
+   "deadlineMs": 22000,
+   "trials": 10
+  },
+  "configHash": "70ccb75bb90e65be",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "pfirsich"
+    },
+    "rt_ms": 12029,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "  SPENDER "
+    },
+    "rt_ms": 11042,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "agueknbln"
+    },
+    "rt_ms": 16249,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "negativ"
+    },
+    "rt_ms": 20604,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "aussicht"
+    },
+    "rt_ms": 14177,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "strudel"
+    },
+    "rt_ms": 19091,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "erineilt"
+    },
+    "rt_ms": 25548,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "  EPIDEMIE "
+    },
+    "rt_ms": 9672,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "  BISCHOF "
+    },
+    "rt_ms": 13963,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "hznglaeub"
+    },
+    "rt_ms": 25842,
+    "presented_ms": null,
+    "correct": false
+   }
+  ],
+  "expected": 1486,
+  "theoreticalMax": 2750
+ },
+ {
+  "name": "level-12-seed-3001",
+  "config": {
+   "minLen": 7,
+   "maxLen": 9,
+   "deadlineMs": 22000,
+   "trials": 10
+  },
+  "configHash": "70ccb75bb90e65be",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "  HALTUNG "
+    },
+    "rt_ms": 16498,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "  KRATZER "
+    },
+    "rt_ms": 18935,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "  EINKAUF "
+    },
+    "rt_ms": 17314,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "  MEINUNG "
+    },
+    "rt_ms": 14119,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "gymnasium"
+    },
+    "rt_ms": 13822,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "slmguanm"
+    },
+    "rt_ms": 22154,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "bereich"
+    },
+    "rt_ms": 11387,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "senator"
+    },
+    "rt_ms": 20280,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "dummheit"
+    },
+    "rt_ms": 22409,
+    "presented_ms": null,
+    "correct": true
+   }
+  ],
+  "expected": 1638,
+  "theoreticalMax": 2750
+ },
+ {
+  "name": "level-12-seed-3002",
+  "config": {
+   "minLen": 7,
+   "maxLen": 9,
+   "deadlineMs": 22000,
+   "trials": 10
+  },
+  "configHash": "70ccb75bb90e65be",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "  FAHRZEUG "
+    },
+    "rt_ms": 22294,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "vorahnung"
+    },
+    "rt_ms": 23091,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "ineszat"
+    },
+    "rt_ms": 17292,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "mruetaa"
+    },
+    "rt_ms": 14297,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "bindung"
+    },
+    "rt_ms": 21094,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "kerlchen"
+    },
+    "rt_ms": 10886,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "telegramm"
+    },
+    "rt_ms": 19176,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "usebnzget"
+    },
+    "rt_ms": 9508,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "alenger"
+    },
+    "rt_ms": 5632,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "tetnetmas"
+    },
+    "rt_ms": 7490,
+    "presented_ms": null,
+    "correct": false
+   }
+  ],
+  "expected": 1055,
+  "theoreticalMax": 2750
+ },
+ {
+  "name": "ranked-0-seed-4000",
+  "config": {
+   "minLen": 5,
+   "maxLen": 7,
+   "deadlineMs": 30000,
+   "trials": 10
+  },
+  "configHash": "b2df3e72a3b87aad",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "hignwe"
+    },
+    "rt_ms": 16543,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "eptaud"
+    },
+    "rt_ms": 26194,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "  AUFRUF "
+    },
+    "rt_ms": 12712,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "brunch"
+    },
+    "rt_ms": 2224,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "  BONUS "
+    },
+    "rt_ms": 16514,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "festung"
+    },
+    "rt_ms": 23385,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "falle"
+    },
+    "rt_ms": 13253,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "rekord"
+    },
+    "rt_ms": 18301,
+    "presented_ms": null,
+    "correct": true
+   }
+  ],
+  "expected": 1192,
+  "theoreticalMax": 2450
+ },
+ {
+  "name": "ranked-0-seed-4001",
+  "config": {
+   "minLen": 5,
+   "maxLen": 7,
+   "deadlineMs": 30000,
+   "trials": 10
+  },
+  "configHash": "b2df3e72a3b87aad",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "gesit"
+    },
+    "rt_ms": 11540,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "image"
+    },
+    "rt_ms": 12213,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "abstand"
+    },
+    "rt_ms": 12218,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "  WIRTIN "
+    },
+    "rt_ms": 21006,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "konzept"
+    },
+    "rt_ms": 32121,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "horror"
+    },
+    "rt_ms": 14844,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "kthei"
+    },
+    "rt_ms": 23143,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "stalker"
+    },
+    "rt_ms": 23076,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "taucher"
+    },
+    "rt_ms": 3734,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "happen"
+    },
+    "rt_ms": 3066,
+    "presented_ms": null,
+    "correct": true
+   }
+  ],
+  "expected": 1646,
+  "theoreticalMax": 2450
+ },
+ {
+  "name": "ranked-0-seed-4002",
+  "config": {
+   "minLen": 5,
+   "maxLen": 7,
+   "deadlineMs": 30000,
+   "trials": 10
+  },
+  "configHash": "b2df3e72a3b87aad",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "pudding"
+    },
+    "rt_ms": 20678,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "brunnen"
+    },
+    "rt_ms": 23630,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "bikini"
+    },
+    "rt_ms": 24465,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "igeam"
+    },
+    "rt_ms": 32663,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "imbiss"
+    },
+    "rt_ms": 21137,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "  ATLAS "
+    },
+    "rt_ms": 23262,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "adimeml"
+    },
+    "rt_ms": 21237,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "komplex"
+    },
+    "rt_ms": 23675,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "cello"
+    },
+    "rt_ms": 4035,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "wecker"
+    },
+    "rt_ms": 10497,
+    "presented_ms": null,
+    "correct": true
+   }
+  ],
+  "expected": 1553,
+  "theoreticalMax": 2450
+ },
+ {
+  "name": "ranked-1-seed-5000",
+  "config": {
+   "minLen": 6,
+   "maxLen": 8,
+   "deadlineMs": 30000,
+   "trials": 10
+  },
+  "configHash": "76ceacc46ae76fc1",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "perfekt"
+    },
+    "rt_ms": 28314,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "izkesz"
+    },
+    "rt_ms": 11015,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "darlehen"
+    },
+    "rt_ms": 21368,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "distanz"
+    },
+    "rt_ms": 2166,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "qttiunug"
+    },
+    "rt_ms": 10937,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "anblick"
+    },
+    "rt_ms": 14174,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "hesrcpa"
+    },
+    "rt_ms": 20105,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "ersatz"
+    },
+    "rt_ms": 29123,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "drittel"
+    },
+    "rt_ms": 25789,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "original"
+    },
+    "rt_ms": 32048,
+    "presented_ms": null,
+    "correct": true
+   }
+  ],
+  "expected": 1428,
+  "theoreticalMax": 2600
+ },
+ {
+  "name": "ranked-1-seed-5001",
+  "config": {
+   "minLen": 6,
+   "maxLen": 8,
+   "deadlineMs": 30000,
+   "trials": 10
+  },
+  "configHash": "76ceacc46ae76fc1",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "ampulle"
+    },
+    "rt_ms": 3324,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "august"
+    },
+    "rt_ms": 29100,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "thpfcli"
+    },
+    "rt_ms": 16865,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "komfort"
+    },
+    "rt_ms": 11806,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "senator"
+    },
+    "rt_ms": 18929,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "mensch"
+    },
+    "rt_ms": 21434,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "kreide"
+    },
+    "rt_ms": 23647,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "eaelnkrd"
+    },
+    "rt_ms": 21694,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "guildenk"
+    },
+    "rt_ms": 2157,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "smiley"
+    },
+    "rt_ms": 11106,
+    "presented_ms": null,
+    "correct": true
+   }
+  ],
+  "expected": 1416,
+  "theoreticalMax": 2600
+ },
+ {
+  "name": "ranked-1-seed-5002",
+  "config": {
+   "minLen": 6,
+   "maxLen": 8,
+   "deadlineMs": 30000,
+   "trials": 10
+  },
+  "configHash": "76ceacc46ae76fc1",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "tjkorep"
+    },
+    "rt_ms": 31601,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "schraube"
+    },
+    "rt_ms": 7111,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "cgeuhr"
+    },
+    "rt_ms": 30592,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "  DESIGN "
+    },
+    "rt_ms": 10593,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "  KOMPASS "
+    },
+    "rt_ms": 5455,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "schlucht"
+    },
+    "rt_ms": 22222,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "  KONSOLE "
+    },
+    "rt_ms": 6924,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "  SCHLICH "
+    },
+    "rt_ms": 29653,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "albtraum"
+    },
+    "rt_ms": 2691,
+    "presented_ms": null,
+    "correct": true
+   }
+  ],
+  "expected": 1577,
+  "theoreticalMax": 2600
+ },
+ {
+  "name": "ranked-2-seed-6000",
+  "config": {
+   "minLen": 5,
+   "maxLen": 7,
+   "deadlineMs": 25000,
+   "trials": 10
+  },
+  "configHash": "cd72d9caf7414a93",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "  BENZIN "
+    },
+    "rt_ms": 7986,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "puder"
+    },
+    "rt_ms": 3114,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "  ZEUGIN "
+    },
+    "rt_ms": 18130,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "neatrc"
+    },
+    "rt_ms": 26762,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "terrain"
+    },
+    "rt_ms": 12652,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "friseur"
+    },
+    "rt_ms": 19832,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "pickel"
+    },
+    "rt_ms": 23086,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "glied"
+    },
+    "rt_ms": 18229,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "arsch"
+    },
+    "rt_ms": 7609,
+    "presented_ms": null,
+    "correct": true
+   }
+  ],
+  "expected": 1560,
+  "theoreticalMax": 2450
+ },
+ {
+  "name": "ranked-2-seed-6001",
+  "config": {
+   "minLen": 5,
+   "maxLen": 7,
+   "deadlineMs": 25000,
+   "trials": 10
+  },
+  "configHash": "cd72d9caf7414a93",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "  ORGAN "
+    },
+    "rt_ms": 24158,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "chaes"
+    },
+    "rt_ms": 26399,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "nupgini"
+    },
+    "rt_ms": 23649,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "antrag"
+    },
+    "rt_ms": 27192,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "  TERROR "
+    },
+    "rt_ms": 15806,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "panther"
+    },
+    "rt_ms": 29608,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "essig"
+    },
+    "rt_ms": 22980,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "islam"
+    },
+    "rt_ms": 13988,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "retror"
+    },
+    "rt_ms": 16925,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "einfall"
+    },
+    "rt_ms": 19355,
+    "presented_ms": null,
+    "correct": true
+   }
+  ],
+  "expected": 1244,
+  "theoreticalMax": 2450
+ },
+ {
+  "name": "ranked-2-seed-6002",
+  "config": {
+   "minLen": 5,
+   "maxLen": 7,
+   "deadlineMs": 25000,
+   "trials": 10
+  },
+  "configHash": "cd72d9caf7414a93",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "spatz"
+    },
+    "rt_ms": 26981,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "kmeal"
+    },
+    "rt_ms": 6700,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "  KAMERAD "
+    },
+    "rt_ms": 20839,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "ettasl"
+    },
+    "rt_ms": 18726,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "aahrfdr"
+    },
+    "rt_ms": 5289,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "tionifk"
+    },
+    "rt_ms": 4445,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 6,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "gleock"
+    },
+    "rt_ms": 10661,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "irrtum"
+    },
+    "rt_ms": 11426,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "  BECKEN "
+    },
+    "rt_ms": 26530,
+    "presented_ms": null,
+    "correct": true
+   }
+  ],
+  "expected": 723,
+  "theoreticalMax": 2450
+ },
+ {
+  "name": "ranked-3-seed-7000",
+  "config": {
+   "minLen": 6,
+   "maxLen": 8,
+   "deadlineMs": 25000,
+   "trials": 10
+  },
+  "configHash": "ca4b928df0aa330e",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "fassung"
+    },
+    "rt_ms": 5390,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "mertehih"
+    },
+    "rt_ms": 27807,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "parkiap"
+    },
+    "rt_ms": 28540,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "experte"
+    },
+    "rt_ms": 3066,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "balken"
+    },
+    "rt_ms": 7482,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "genosse"
+    },
+    "rt_ms": 11122,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "trance"
+    },
+    "rt_ms": 28810,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "  GEWINN "
+    },
+    "rt_ms": 5258,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "wappen"
+    },
+    "rt_ms": 22980,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "ghetto"
+    },
+    "rt_ms": 14731,
+    "presented_ms": null,
+    "correct": true
+   }
+  ],
+  "expected": 1657,
+  "theoreticalMax": 2600
+ },
+ {
+  "name": "ranked-3-seed-7001",
+  "config": {
+   "minLen": 6,
+   "maxLen": 8,
+   "deadlineMs": 25000,
+   "trials": 10
+  },
+  "configHash": "ca4b928df0aa330e",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "aecsnhd"
+    },
+    "rt_ms": 24267,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "protest"
+    },
+    "rt_ms": 28712,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "ausflug"
+    },
+    "rt_ms": 18416,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "magazin"
+    },
+    "rt_ms": 11646,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "hlecsew"
+    },
+    "rt_ms": 26512,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "zement"
+    },
+    "rt_ms": 15498,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "gieaalx"
+    },
+    "rt_ms": 24253,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "  GERUCH "
+    },
+    "rt_ms": 27226,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "agribhe"
+    },
+    "rt_ms": 22497,
+    "presented_ms": null,
+    "correct": false
+   }
+  ],
+  "expected": 966,
+  "theoreticalMax": 2600
+ },
+ {
+  "name": "ranked-3-seed-7002",
+  "config": {
+   "minLen": 6,
+   "maxLen": 8,
+   "deadlineMs": 25000,
+   "trials": 10
+  },
+  "configHash": "ca4b928df0aa330e",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "text": "kaution"
+    },
+    "rt_ms": 13090,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "text": "abgnre"
+    },
+    "rt_ms": 21305,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "text": "  INVESTOR "
+    },
+    "rt_ms": 14119,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "text": "  KONZERN "
+    },
+    "rt_ms": 17988,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "text": "flieger"
+    },
+    "rt_ms": 2292,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "text": "pinsel"
+    },
+    "rt_ms": 8587,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "text": "tfhrac"
+    },
+    "rt_ms": 22136,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "text": "  STRESS "
+    },
+    "rt_ms": 19491,
+    "presented_ms": null,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "text": "tcrtha"
+    },
+    "rt_ms": 3261,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": {
+     "text": "gehirn"
+    },
+    "rt_ms": 13773,
+    "presented_ms": null,
+    "correct": true
+   }
+  ],
+  "expected": 1470,
+  "theoreticalMax": 2600
+ },
+ {
+  "name": "no-responses",
+  "config": {
+   "minLen": 4,
+   "maxLen": 6,
+   "deadlineMs": 37000,
+   "trials": 10
+  },
+  "configHash": "8cb1a53ac782de50",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 6,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 2300
+ }
+]

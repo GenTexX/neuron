@@ -1,0 +1,24 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "WITH d AS (\n             SELECT local_day,\n                    local_day - (ROW_NUMBER() OVER (ORDER BY local_day))::int AS grp\n             FROM daily_activity WHERE user_id = $1\n           )\n           SELECT count(*) as \"count!\" FROM d\n           WHERE grp = (SELECT grp FROM d ORDER BY local_day DESC LIMIT 1)\n             AND (SELECT max(local_day) FROM d) >= ((now() AT TIME ZONE $2)::date - 1)",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "count!",
+        "type_info": "Int8",
+        "origin": "Expression"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Uuid",
+        "Text"
+      ]
+    },
+    "nullable": [
+      null
+    ]
+  },
+  "hash": "4cd5d9d06e9a46a2b6bac06426490c6f50a991f52ad0b477deb9ebadbe7d2aab"
+}

@@ -1,0 +1,20 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "UPDATE run SET submitted_at = $2, client_duration_ms = $3, correct_count = $4,\n                          score = $5, valid = $6, invalid_reason = $7\n           WHERE id = $1",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Uuid",
+        "Timestamptz",
+        "Int4",
+        "Int4",
+        "Int4",
+        "Bool",
+        "Text"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "79437a1be893e143c3c95a47c447b5d3128acf0835f7463a60d00629d9a8ab93"
+}

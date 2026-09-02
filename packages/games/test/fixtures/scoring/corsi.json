@@ -1,0 +1,4005 @@
+[
+ {
+  "name": "level-1-seed-0",
+  "config": {
+   "blocks": 9,
+   "startLength": 2,
+   "flashMs": 860,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "057c23bc090b5858",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 2220,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 2220,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      5,
+      2,
+      1
+     ]
+    },
+    "rt_ms": 2530,
+    "presented_ms": 3330,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      8,
+      1,
+      4
+     ]
+    },
+    "rt_ms": 1285,
+    "presented_ms": 3330,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      8,
+      5,
+      0,
+      8
+     ]
+    },
+    "rt_ms": 1625,
+    "presented_ms": 4440,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      8,
+      6,
+      8,
+      6
+     ]
+    },
+    "rt_ms": 2624,
+    "presented_ms": 4440,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      1,
+      8,
+      5,
+      7,
+      3
+     ]
+    },
+    "rt_ms": 4042,
+    "presented_ms": 5550,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      4,
+      0,
+      3,
+      2,
+      1
+     ]
+    },
+    "rt_ms": 3633,
+    "presented_ms": 5550,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      0,
+      8,
+      1,
+      4,
+      6,
+      5
+     ]
+    },
+    "rt_ms": 4024,
+    "presented_ms": 6660,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      7,
+      5,
+      6,
+      1,
+      4
+     ]
+    },
+    "rt_ms": 2495,
+    "presented_ms": 6660,
+    "correct": false
+   }
+  ],
+  "expected": 1270,
+  "theoreticalMax": 1800
+ },
+ {
+  "name": "level-1-seed-1",
+  "config": {
+   "blocks": 9,
+   "startLength": 2,
+   "flashMs": 860,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "057c23bc090b5858",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      7,
+      0
+     ]
+    },
+    "rt_ms": 1618,
+    "presented_ms": 2220,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      8,
+      5
+     ]
+    },
+    "rt_ms": 1589,
+    "presented_ms": 2220,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      6,
+      7,
+      8
+     ]
+    },
+    "rt_ms": 1304,
+    "presented_ms": 3330,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      4,
+      7
+     ]
+    },
+    "rt_ms": 1642,
+    "presented_ms": 3330,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      6,
+      4,
+      1,
+      4
+     ]
+    },
+    "rt_ms": 2199,
+    "presented_ms": 4440,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      4,
+      7,
+      1,
+      8
+     ]
+    },
+    "rt_ms": 2670,
+    "presented_ms": 4440,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      0,
+      5,
+      0,
+      2,
+      6
+     ]
+    },
+    "rt_ms": 2903,
+    "presented_ms": 5550,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      6,
+      3,
+      6,
+      2,
+      0
+     ]
+    },
+    "rt_ms": 2228,
+    "presented_ms": 5550,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      0,
+      5,
+      1,
+      8,
+      2,
+      5
+     ]
+    },
+    "rt_ms": 3125,
+    "presented_ms": 6660,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      8,
+      3,
+      8,
+      1,
+      5,
+      1
+     ]
+    },
+    "rt_ms": 3853,
+    "presented_ms": 6660,
+    "correct": true
+   }
+  ],
+  "expected": 1710,
+  "theoreticalMax": 1800
+ },
+ {
+  "name": "level-1-seed-2",
+  "config": {
+   "blocks": 9,
+   "startLength": 2,
+   "flashMs": 860,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "057c23bc090b5858",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      2,
+      0
+     ]
+    },
+    "rt_ms": 1062,
+    "presented_ms": 2220,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      7,
+      8
+     ]
+    },
+    "rt_ms": 1427,
+    "presented_ms": 2220,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      5,
+      2,
+      4
+     ]
+    },
+    "rt_ms": 1676,
+    "presented_ms": 3330,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      3,
+      0,
+      5
+     ]
+    },
+    "rt_ms": 1217,
+    "presented_ms": 3330,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      4,
+      1,
+      0,
+      2
+     ]
+    },
+    "rt_ms": 3552,
+    "presented_ms": 4440,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      2,
+      3,
+      8,
+      0
+     ]
+    },
+    "rt_ms": 2594,
+    "presented_ms": 4440,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      2,
+      6,
+      0,
+      6,
+      8
+     ]
+    },
+    "rt_ms": 3650,
+    "presented_ms": 5550,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      7,
+      3,
+      4,
+      6,
+      7
+     ]
+    },
+    "rt_ms": 4292,
+    "presented_ms": 5550,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      8,
+      5,
+      1,
+      3,
+      7,
+      8
+     ]
+    },
+    "rt_ms": 2488,
+    "presented_ms": 6660,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      1,
+      4,
+      8,
+      3,
+      6,
+      5
+     ]
+    },
+    "rt_ms": 4250,
+    "presented_ms": 6660,
+    "correct": true
+   }
+  ],
+  "expected": 1800,
+  "theoreticalMax": 1800
+ },
+ {
+  "name": "level-3-seed-1000",
+  "config": {
+   "blocks": 9,
+   "startLength": 3,
+   "flashMs": 780,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "501082e7dfa799db",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      1,
+      5
+     ]
+    },
+    "rt_ms": 1697,
+    "presented_ms": 3090,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      7,
+      0,
+      4
+     ]
+    },
+    "rt_ms": 1638,
+    "presented_ms": 3090,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 4120,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      1,
+      7,
+      6,
+      3
+     ]
+    },
+    "rt_ms": 3219,
+    "presented_ms": 4120,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      5,
+      2,
+      4,
+      7,
+      2
+     ]
+    },
+    "rt_ms": 4227,
+    "presented_ms": 5150,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      8,
+      3,
+      7,
+      8,
+      4
+     ]
+    },
+    "rt_ms": 2863,
+    "presented_ms": 5150,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      4,
+      5,
+      8,
+      0,
+      3,
+      1
+     ]
+    },
+    "rt_ms": 3869,
+    "presented_ms": 6180,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      7,
+      8,
+      5,
+      2,
+      1,
+      2
+     ]
+    },
+    "rt_ms": 3246,
+    "presented_ms": 6180,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      3,
+      7,
+      6,
+      4,
+      1,
+      2,
+      0
+     ]
+    },
+    "rt_ms": 3163,
+    "presented_ms": 7210,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      6,
+      4,
+      1,
+      5,
+      6,
+      0,
+      4
+     ]
+    },
+    "rt_ms": 4006,
+    "presented_ms": 7210,
+    "correct": false
+   }
+  ],
+  "expected": 1600,
+  "theoreticalMax": 2700
+ },
+ {
+  "name": "level-3-seed-1001",
+  "config": {
+   "blocks": 9,
+   "startLength": 3,
+   "flashMs": 780,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "501082e7dfa799db",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      0,
+      8,
+      2
+     ]
+    },
+    "rt_ms": 2252,
+    "presented_ms": 3090,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      7,
+      0,
+      5
+     ]
+    },
+    "rt_ms": 1387,
+    "presented_ms": 3090,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      2,
+      4,
+      0,
+      2
+     ]
+    },
+    "rt_ms": 3264,
+    "presented_ms": 4120,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      4,
+      1,
+      0,
+      7
+     ]
+    },
+    "rt_ms": 3203,
+    "presented_ms": 4120,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      4,
+      3,
+      7,
+      1
+     ]
+    },
+    "rt_ms": 4398,
+    "presented_ms": 5150,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      4,
+      6,
+      0,
+      8,
+      4
+     ]
+    },
+    "rt_ms": 4405,
+    "presented_ms": 5150,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      6,
+      3,
+      2,
+      4,
+      8,
+      5
+     ]
+    },
+    "rt_ms": 2554,
+    "presented_ms": 6180,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      2,
+      7,
+      4,
+      7,
+      4,
+      5
+     ]
+    },
+    "rt_ms": 3790,
+    "presented_ms": 6180,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      8,
+      7,
+      6,
+      2,
+      4,
+      1,
+      3
+     ]
+    },
+    "rt_ms": 3043,
+    "presented_ms": 7210,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      6,
+      4,
+      0,
+      2,
+      3,
+      0,
+      3
+     ]
+    },
+    "rt_ms": 3117,
+    "presented_ms": 7210,
+    "correct": true
+   }
+  ],
+  "expected": 2450,
+  "theoreticalMax": 2700
+ },
+ {
+  "name": "level-3-seed-1002",
+  "config": {
+   "blocks": 9,
+   "startLength": 3,
+   "flashMs": 780,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "501082e7dfa799db",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      0,
+      8,
+      4
+     ]
+    },
+    "rt_ms": 1491,
+    "presented_ms": 3090,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      5,
+      1,
+      0
+     ]
+    },
+    "rt_ms": 1893,
+    "presented_ms": 3090,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      5,
+      0,
+      3,
+      4
+     ]
+    },
+    "rt_ms": 2311,
+    "presented_ms": 4120,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      1,
+      2,
+      8,
+      7
+     ]
+    },
+    "rt_ms": 3140,
+    "presented_ms": 4120,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 5150,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      4,
+      6,
+      0,
+      2,
+      5
+     ]
+    },
+    "rt_ms": 3598,
+    "presented_ms": 5150,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      4,
+      5,
+      6,
+      3,
+      4,
+      1
+     ]
+    },
+    "rt_ms": 4586,
+    "presented_ms": 6180,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      8,
+      0,
+      5,
+      7,
+      0,
+      3
+     ]
+    },
+    "rt_ms": 2869,
+    "presented_ms": 6180,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      1,
+      4,
+      7,
+      5,
+      4,
+      1,
+      7
+     ]
+    },
+    "rt_ms": 3539,
+    "presented_ms": 7210,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      2,
+      3,
+      8,
+      7,
+      6,
+      8,
+      2
+     ]
+    },
+    "rt_ms": 3266,
+    "presented_ms": 7210,
+    "correct": true
+   }
+  ],
+  "expected": 2450,
+  "theoreticalMax": 2700
+ },
+ {
+  "name": "level-6-seed-2000",
+  "config": {
+   "blocks": 9,
+   "startLength": 4,
+   "flashMs": 660,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "8405f39c55deedd3",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 3640,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      4,
+      3,
+      6,
+      1
+     ]
+    },
+    "rt_ms": 3427,
+    "presented_ms": 3640,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 4550,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      4,
+      3,
+      2,
+      4,
+      3
+     ]
+    },
+    "rt_ms": 2581,
+    "presented_ms": 4550,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      1,
+      3,
+      7,
+      1,
+      0,
+      8
+     ]
+    },
+    "rt_ms": 3321,
+    "presented_ms": 5460,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      0,
+      5,
+      3,
+      7,
+      0,
+      7
+     ]
+    },
+    "rt_ms": 3250,
+    "presented_ms": 5460,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      4,
+      2,
+      7,
+      1,
+      5,
+      3,
+      6
+     ]
+    },
+    "rt_ms": 3387,
+    "presented_ms": 6370,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      7,
+      2,
+      8,
+      2,
+      0,
+      1,
+      5
+     ]
+    },
+    "rt_ms": 4137,
+    "presented_ms": 6370,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 7280,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      0,
+      1,
+      4,
+      0,
+      4,
+      0,
+      2,
+      3
+     ]
+    },
+    "rt_ms": 6711,
+    "presented_ms": 7280,
+    "correct": true
+   }
+  ],
+  "expected": 1900,
+  "theoreticalMax": 3800
+ },
+ {
+  "name": "level-6-seed-2001",
+  "config": {
+   "blocks": 9,
+   "startLength": 4,
+   "flashMs": 660,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "8405f39c55deedd3",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      6,
+      2,
+      5,
+      4
+     ]
+    },
+    "rt_ms": 3543,
+    "presented_ms": 3640,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      4,
+      0,
+      7,
+      0
+     ]
+    },
+    "rt_ms": 3453,
+    "presented_ms": 3640,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      1,
+      6,
+      0,
+      4,
+      5
+     ]
+    },
+    "rt_ms": 3316,
+    "presented_ms": 4550,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      0,
+      1,
+      6,
+      7,
+      6
+     ]
+    },
+    "rt_ms": 2255,
+    "presented_ms": 4550,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      1,
+      0,
+      1,
+      3,
+      6,
+      3
+     ]
+    },
+    "rt_ms": 3393,
+    "presented_ms": 5460,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      6,
+      0,
+      4,
+      8,
+      5,
+      1
+     ]
+    },
+    "rt_ms": 3547,
+    "presented_ms": 5460,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      3,
+      4,
+      2,
+      7,
+      0,
+      3,
+      2
+     ]
+    },
+    "rt_ms": 6199,
+    "presented_ms": 6370,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      6,
+      4,
+      1,
+      8,
+      1,
+      0,
+      6
+     ]
+    },
+    "rt_ms": 6088,
+    "presented_ms": 6370,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      8,
+      3,
+      6,
+      0,
+      6,
+      4,
+      8,
+      6
+     ]
+    },
+    "rt_ms": 4687,
+    "presented_ms": 7280,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      3,
+      5,
+      2,
+      5,
+      7,
+      0,
+      5,
+      8
+     ]
+    },
+    "rt_ms": 6658,
+    "presented_ms": 7280,
+    "correct": true
+   }
+  ],
+  "expected": 2670,
+  "theoreticalMax": 3800
+ },
+ {
+  "name": "level-6-seed-2002",
+  "config": {
+   "blocks": 9,
+   "startLength": 4,
+   "flashMs": 660,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "8405f39c55deedd3",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      3,
+      8,
+      7,
+      4
+     ]
+    },
+    "rt_ms": 2089,
+    "presented_ms": 3640,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      6,
+      4,
+      1,
+      8
+     ]
+    },
+    "rt_ms": 1672,
+    "presented_ms": 3640,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      2,
+      8,
+      6,
+      3,
+      5
+     ]
+    },
+    "rt_ms": 4084,
+    "presented_ms": 4550,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      1,
+      3,
+      0,
+      6,
+      7
+     ]
+    },
+    "rt_ms": 3382,
+    "presented_ms": 4550,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      5,
+      7,
+      3,
+      0,
+      7,
+      5
+     ]
+    },
+    "rt_ms": 5212,
+    "presented_ms": 5460,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      8,
+      5,
+      3,
+      6,
+      1,
+      0
+     ]
+    },
+    "rt_ms": 4385,
+    "presented_ms": 5460,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      2,
+      1,
+      0,
+      2,
+      5,
+      1,
+      4
+     ]
+    },
+    "rt_ms": 3457,
+    "presented_ms": 6370,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      2,
+      7,
+      5,
+      0,
+      5,
+      6,
+      5
+     ]
+    },
+    "rt_ms": 4799,
+    "presented_ms": 6370,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      6,
+      2,
+      1,
+      7,
+      2,
+      8,
+      5,
+      0
+     ]
+    },
+    "rt_ms": 7000,
+    "presented_ms": 7280,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      8,
+      0,
+      4,
+      0,
+      7,
+      4,
+      6,
+      5
+     ]
+    },
+    "rt_ms": 6381,
+    "presented_ms": 7280,
+    "correct": true
+   }
+  ],
+  "expected": 3640,
+  "theoreticalMax": 3800
+ },
+ {
+  "name": "level-12-seed-3000",
+  "config": {
+   "blocks": 9,
+   "startLength": 6,
+   "flashMs": 420,
+   "gapMs": 250,
+   "reverse": true,
+   "trials": 10
+  },
+  "configHash": "54933ccf161cfe7f",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      4,
+      5,
+      6,
+      0,
+      5,
+      0
+     ]
+    },
+    "rt_ms": 3072,
+    "presented_ms": 4020,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 4020,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      8,
+      5,
+      1,
+      3,
+      8,
+      7
+     ]
+    },
+    "rt_ms": 3753,
+    "presented_ms": 4690,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 4690,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      1,
+      5,
+      0,
+      8,
+      4,
+      5,
+      1
+     ]
+    },
+    "rt_ms": 4636,
+    "presented_ms": 5360,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      6,
+      7,
+      2,
+      6,
+      5,
+      4,
+      8,
+      7
+     ]
+    },
+    "rt_ms": 5597,
+    "presented_ms": 5360,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      5,
+      4,
+      6,
+      3,
+      8,
+      3,
+      4,
+      0,
+      5
+     ]
+    },
+    "rt_ms": 7591,
+    "presented_ms": 6030,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      6,
+      4,
+      7,
+      5,
+      7,
+      5,
+      8,
+      3,
+      0
+     ]
+    },
+    "rt_ms": 6971,
+    "presented_ms": 6030,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      4,
+      8,
+      2,
+      0,
+      6,
+      1,
+      3,
+      5,
+      4,
+      2
+     ]
+    },
+    "rt_ms": 8913,
+    "presented_ms": 6700,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      1,
+      4,
+      6,
+      2,
+      1,
+      5,
+      2,
+      0,
+      7,
+      0
+     ]
+    },
+    "rt_ms": 6017,
+    "presented_ms": 6700,
+    "correct": true
+   }
+  ],
+  "expected": 4620,
+  "theoreticalMax": 6600
+ },
+ {
+  "name": "level-12-seed-3001",
+  "config": {
+   "blocks": 9,
+   "startLength": 6,
+   "flashMs": 420,
+   "gapMs": 250,
+   "reverse": true,
+   "trials": 10
+  },
+  "configHash": "54933ccf161cfe7f",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      5,
+      7,
+      3,
+      7,
+      2,
+      1
+     ]
+    },
+    "rt_ms": 2735,
+    "presented_ms": 4020,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 4020,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      1,
+      6,
+      2,
+      4,
+      8,
+      3,
+      0
+     ]
+    },
+    "rt_ms": 5594,
+    "presented_ms": 4690,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      2,
+      7,
+      2,
+      6,
+      7,
+      3,
+      7
+     ]
+    },
+    "rt_ms": 5305,
+    "presented_ms": 4690,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      2,
+      0,
+      8,
+      1,
+      5,
+      7,
+      8,
+      7
+     ]
+    },
+    "rt_ms": 6519,
+    "presented_ms": 5360,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      5,
+      2,
+      1,
+      7,
+      1,
+      5,
+      2,
+      1
+     ]
+    },
+    "rt_ms": 4192,
+    "presented_ms": 5360,
+    "correct": false
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      4,
+      6,
+      2,
+      3,
+      0,
+      3,
+      1,
+      3
+     ]
+    },
+    "rt_ms": 6784,
+    "presented_ms": 6030,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      0,
+      4,
+      0,
+      4,
+      8,
+      3,
+      8,
+      0
+     ]
+    },
+    "rt_ms": 5154,
+    "presented_ms": 6030,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      6,
+      4,
+      1,
+      3,
+      2,
+      8,
+      4,
+      2,
+      0,
+      2
+     ]
+    },
+    "rt_ms": 5753,
+    "presented_ms": 6700,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      2,
+      7,
+      1,
+      7,
+      0,
+      4,
+      0,
+      6,
+      5
+     ]
+    },
+    "rt_ms": 6034,
+    "presented_ms": 6700,
+    "correct": false
+   }
+  ],
+  "expected": 1980,
+  "theoreticalMax": 6600
+ },
+ {
+  "name": "level-12-seed-3002",
+  "config": {
+   "blocks": 9,
+   "startLength": 6,
+   "flashMs": 420,
+   "gapMs": 250,
+   "reverse": true,
+   "trials": 10
+  },
+  "configHash": "54933ccf161cfe7f",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      5,
+      8,
+      2,
+      8,
+      0,
+      1
+     ]
+    },
+    "rt_ms": 4552,
+    "presented_ms": 4020,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      6,
+      0,
+      3,
+      6,
+      3,
+      2
+     ]
+    },
+    "rt_ms": 3245,
+    "presented_ms": 4020,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      6,
+      5,
+      2,
+      7,
+      4,
+      1,
+      4
+     ]
+    },
+    "rt_ms": 3750,
+    "presented_ms": 4690,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      3,
+      2,
+      6,
+      3,
+      6,
+      2,
+      1
+     ]
+    },
+    "rt_ms": 6247,
+    "presented_ms": 4690,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      6,
+      0,
+      2,
+      5,
+      2,
+      8,
+      0,
+      3
+     ]
+    },
+    "rt_ms": 3456,
+    "presented_ms": 5360,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      4,
+      6,
+      4,
+      1,
+      7,
+      6,
+      5,
+      4
+     ]
+    },
+    "rt_ms": 7052,
+    "presented_ms": 5360,
+    "correct": false
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      5,
+      2,
+      4,
+      6,
+      0,
+      4,
+      3,
+      5,
+      8
+     ]
+    },
+    "rt_ms": 6928,
+    "presented_ms": 6030,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      8,
+      6,
+      8,
+      6,
+      5,
+      6,
+      7,
+      6,
+      3
+     ]
+    },
+    "rt_ms": 7495,
+    "presented_ms": 6030,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      5,
+      7,
+      0,
+      5,
+      6,
+      0,
+      5,
+      0,
+      3,
+      7
+     ]
+    },
+    "rt_ms": 4099,
+    "presented_ms": 6700,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      6,
+      7,
+      2,
+      3,
+      4,
+      0,
+      6,
+      5,
+      7
+     ]
+    },
+    "rt_ms": 7578,
+    "presented_ms": 6700,
+    "correct": false
+   }
+  ],
+  "expected": 4470,
+  "theoreticalMax": 6600
+ },
+ {
+  "name": "ranked-0-seed-4000",
+  "config": {
+   "blocks": 9,
+   "startLength": 3,
+   "flashMs": 700,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "808af9e340a51130",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      2,
+      3,
+      2
+     ]
+    },
+    "rt_ms": 1970,
+    "presented_ms": 2850,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      3,
+      2,
+      6
+     ]
+    },
+    "rt_ms": 1343,
+    "presented_ms": 2850,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 3800,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      6,
+      3,
+      6,
+      4
+     ]
+    },
+    "rt_ms": 1688,
+    "presented_ms": 3800,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      3,
+      6,
+      5,
+      7
+     ]
+    },
+    "rt_ms": 4496,
+    "presented_ms": 4750,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      4,
+      2,
+      7,
+      2,
+      7
+     ]
+    },
+    "rt_ms": 2962,
+    "presented_ms": 4750,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      7,
+      4,
+      6,
+      8,
+      4,
+      6
+     ]
+    },
+    "rt_ms": 3885,
+    "presented_ms": 5700,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      7,
+      1,
+      3,
+      8,
+      7,
+      0
+     ]
+    },
+    "rt_ms": 5191,
+    "presented_ms": 5700,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 6650,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 6650,
+    "correct": false
+   }
+  ],
+  "expected": 1310,
+  "theoreticalMax": 2700
+ },
+ {
+  "name": "ranked-0-seed-4001",
+  "config": {
+   "blocks": 9,
+   "startLength": 3,
+   "flashMs": 700,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "808af9e340a51130",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      0,
+      7
+     ]
+    },
+    "rt_ms": 1448,
+    "presented_ms": 2850,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      2,
+      8,
+      3
+     ]
+    },
+    "rt_ms": 2093,
+    "presented_ms": 2850,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      6,
+      5,
+      0,
+      5
+     ]
+    },
+    "rt_ms": 3576,
+    "presented_ms": 3800,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      0,
+      4,
+      1,
+      3
+     ]
+    },
+    "rt_ms": 2834,
+    "presented_ms": 3800,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      7,
+      3,
+      5,
+      4,
+      1
+     ]
+    },
+    "rt_ms": 2645,
+    "presented_ms": 4750,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      7,
+      2,
+      5,
+      1
+     ]
+    },
+    "rt_ms": 3756,
+    "presented_ms": 4750,
+    "correct": false
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      1,
+      7,
+      3,
+      7,
+      8,
+      1
+     ]
+    },
+    "rt_ms": 5177,
+    "presented_ms": 5700,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      1,
+      6,
+      3,
+      5,
+      7,
+      6
+     ]
+    },
+    "rt_ms": 3840,
+    "presented_ms": 5700,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      3,
+      2,
+      7,
+      2,
+      2,
+      4,
+      2
+     ]
+    },
+    "rt_ms": 4971,
+    "presented_ms": 6650,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      3,
+      2,
+      5,
+      7,
+      4,
+      1,
+      4
+     ]
+    },
+    "rt_ms": 6196,
+    "presented_ms": 6650,
+    "correct": true
+   }
+  ],
+  "expected": 1870,
+  "theoreticalMax": 2700
+ },
+ {
+  "name": "ranked-0-seed-4002",
+  "config": {
+   "blocks": 9,
+   "startLength": 3,
+   "flashMs": 700,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "808af9e340a51130",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      6,
+      8,
+      4
+     ]
+    },
+    "rt_ms": 2119,
+    "presented_ms": 2850,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 2850,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      6,
+      0,
+      8,
+      7
+     ]
+    },
+    "rt_ms": 1958,
+    "presented_ms": 3800,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      3,
+      5,
+      2,
+      5
+     ]
+    },
+    "rt_ms": 2745,
+    "presented_ms": 3800,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      2,
+      1,
+      7,
+      0
+     ]
+    },
+    "rt_ms": 4263,
+    "presented_ms": 4750,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      0,
+      8,
+      7,
+      5,
+      8
+     ]
+    },
+    "rt_ms": 2202,
+    "presented_ms": 4750,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      4,
+      5,
+      3,
+      5,
+      1
+     ]
+    },
+    "rt_ms": 5028,
+    "presented_ms": 5700,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      1,
+      4,
+      1,
+      7,
+      1,
+      7
+     ]
+    },
+    "rt_ms": 3008,
+    "presented_ms": 5700,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      8,
+      5,
+      1,
+      5,
+      4,
+      5,
+      2
+     ]
+    },
+    "rt_ms": 3489,
+    "presented_ms": 6650,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 6650,
+    "correct": false
+   }
+  ],
+  "expected": 1510,
+  "theoreticalMax": 2700
+ },
+ {
+  "name": "ranked-1-seed-5000",
+  "config": {
+   "blocks": 9,
+   "startLength": 3,
+   "flashMs": 600,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "6e35bba8c7302ed2",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      1,
+      2,
+      0
+     ]
+    },
+    "rt_ms": 1646,
+    "presented_ms": 2550,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      6,
+      4,
+      7
+     ]
+    },
+    "rt_ms": 1370,
+    "presented_ms": 2550,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      6,
+      1,
+      8
+     ]
+    },
+    "rt_ms": 2547,
+    "presented_ms": 3400,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 3400,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      3,
+      4,
+      0,
+      5,
+      7
+     ]
+    },
+    "rt_ms": 3902,
+    "presented_ms": 4250,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      6,
+      4,
+      0,
+      8,
+      5
+     ]
+    },
+    "rt_ms": 2386,
+    "presented_ms": 4250,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      2,
+      7,
+      8,
+      0,
+      7,
+      6
+     ]
+    },
+    "rt_ms": 3489,
+    "presented_ms": 5100,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      6,
+      1,
+      8,
+      6,
+      3,
+      7
+     ]
+    },
+    "rt_ms": 4760,
+    "presented_ms": 5100,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      2,
+      5,
+      7,
+      5,
+      7,
+      5,
+      8
+     ]
+    },
+    "rt_ms": 3688,
+    "presented_ms": 5950,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      0,
+      2,
+      8,
+      6,
+      0,
+      8,
+      4
+     ]
+    },
+    "rt_ms": 4027,
+    "presented_ms": 5950,
+    "correct": true
+   }
+  ],
+  "expected": 1890,
+  "theoreticalMax": 2700
+ },
+ {
+  "name": "ranked-1-seed-5001",
+  "config": {
+   "blocks": 9,
+   "startLength": 3,
+   "flashMs": 600,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "6e35bba8c7302ed2",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      8,
+      1,
+      5
+     ]
+    },
+    "rt_ms": 2652,
+    "presented_ms": 2550,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      7,
+      2,
+      5
+     ]
+    },
+    "rt_ms": 1849,
+    "presented_ms": 2550,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      6,
+      5,
+      4,
+      0
+     ]
+    },
+    "rt_ms": 2317,
+    "presented_ms": 3400,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      7,
+      4,
+      2,
+      4
+     ]
+    },
+    "rt_ms": 2201,
+    "presented_ms": 3400,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      7,
+      1,
+      4,
+      1,
+      2
+     ]
+    },
+    "rt_ms": 3896,
+    "presented_ms": 4250,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      0,
+      5,
+      2,
+      5,
+      3
+     ]
+    },
+    "rt_ms": 3229,
+    "presented_ms": 4250,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      4,
+      0,
+      2,
+      5,
+      6,
+      3
+     ]
+    },
+    "rt_ms": 2476,
+    "presented_ms": 5100,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      8,
+      1,
+      7,
+      3,
+      4,
+      3
+     ]
+    },
+    "rt_ms": 4416,
+    "presented_ms": 5100,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      7,
+      5,
+      4,
+      8,
+      4,
+      3,
+      8
+     ]
+    },
+    "rt_ms": 3296,
+    "presented_ms": 5950,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 5950,
+    "correct": false
+   }
+  ],
+  "expected": 1760,
+  "theoreticalMax": 2700
+ },
+ {
+  "name": "ranked-1-seed-5002",
+  "config": {
+   "blocks": 9,
+   "startLength": 3,
+   "flashMs": 600,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "6e35bba8c7302ed2",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      5,
+      7,
+      1
+     ]
+    },
+    "rt_ms": 1720,
+    "presented_ms": 2550,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      7,
+      1
+     ]
+    },
+    "rt_ms": 2388,
+    "presented_ms": 2550,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      6,
+      8,
+      1,
+      2
+     ]
+    },
+    "rt_ms": 2371,
+    "presented_ms": 3400,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      8,
+      4,
+      8,
+      7
+     ]
+    },
+    "rt_ms": 2280,
+    "presented_ms": 3400,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      0,
+      2,
+      6,
+      4,
+      2
+     ]
+    },
+    "rt_ms": 4416,
+    "presented_ms": 4250,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      4,
+      8,
+      3,
+      5,
+      3
+     ]
+    },
+    "rt_ms": 3610,
+    "presented_ms": 4250,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 5100,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      5,
+      0,
+      5,
+      2,
+      0,
+      7
+     ]
+    },
+    "rt_ms": 4256,
+    "presented_ms": 5100,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      1,
+      2,
+      4,
+      1,
+      5,
+      3,
+      6
+     ]
+    },
+    "rt_ms": 5056,
+    "presented_ms": 5950,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      5,
+      1,
+      6,
+      0,
+      6,
+      5,
+      1
+     ]
+    },
+    "rt_ms": 3631,
+    "presented_ms": 5950,
+    "correct": true
+   }
+  ],
+  "expected": 2160,
+  "theoreticalMax": 2700
+ },
+ {
+  "name": "ranked-2-seed-6000",
+  "config": {
+   "blocks": 9,
+   "startLength": 3,
+   "flashMs": 700,
+   "gapMs": 250,
+   "reverse": true,
+   "trials": 10
+  },
+  "configHash": "a18031dba0a95e24",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      3,
+      8,
+      6
+     ]
+    },
+    "rt_ms": 2415,
+    "presented_ms": 2850,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      8,
+      3
+     ]
+    },
+    "rt_ms": 1724,
+    "presented_ms": 2850,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      2,
+      7,
+      2,
+      1
+     ]
+    },
+    "rt_ms": 1847,
+    "presented_ms": 3800,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      4,
+      0,
+      4,
+      1
+     ]
+    },
+    "rt_ms": 1847,
+    "presented_ms": 3800,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      3,
+      7,
+      4,
+      2,
+      7
+     ]
+    },
+    "rt_ms": 3106,
+    "presented_ms": 4750,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      4,
+      3,
+      8,
+      6,
+      1
+     ]
+    },
+    "rt_ms": 4418,
+    "presented_ms": 4750,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      5,
+      8,
+      4,
+      6,
+      3,
+      0
+     ]
+    },
+    "rt_ms": 2695,
+    "presented_ms": 5700,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      4,
+      8,
+      3,
+      8,
+      3,
+      4
+     ]
+    },
+    "rt_ms": 3947,
+    "presented_ms": 5700,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      6,
+      4,
+      8,
+      6,
+      2,
+      7
+     ]
+    },
+    "rt_ms": 6169,
+    "presented_ms": 6650,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      7,
+      0,
+      2,
+      3,
+      7,
+      8,
+      1
+     ]
+    },
+    "rt_ms": 6257,
+    "presented_ms": 6650,
+    "correct": true
+   }
+  ],
+  "expected": 1760,
+  "theoreticalMax": 2700
+ },
+ {
+  "name": "ranked-2-seed-6001",
+  "config": {
+   "blocks": 9,
+   "startLength": 3,
+   "flashMs": 700,
+   "gapMs": 250,
+   "reverse": true,
+   "trials": 10
+  },
+  "configHash": "a18031dba0a95e24",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      8,
+      1,
+      2
+     ]
+    },
+    "rt_ms": 1396,
+    "presented_ms": 2850,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 2850,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      5,
+      7,
+      0,
+      5
+     ]
+    },
+    "rt_ms": 1703,
+    "presented_ms": 3800,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      1,
+      3,
+      7,
+      1
+     ]
+    },
+    "rt_ms": 2979,
+    "presented_ms": 3800,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      7,
+      4,
+      1,
+      7,
+      3
+     ]
+    },
+    "rt_ms": 3909,
+    "presented_ms": 4750,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      5,
+      1,
+      0,
+      3,
+      2
+     ]
+    },
+    "rt_ms": 4170,
+    "presented_ms": 4750,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      0,
+      3,
+      8,
+      2,
+      1,
+      2
+     ]
+    },
+    "rt_ms": 3365,
+    "presented_ms": 5700,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 5700,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      4,
+      0,
+      5,
+      8,
+      7,
+      5,
+      1
+     ]
+    },
+    "rt_ms": 4551,
+    "presented_ms": 6650,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      4,
+      0,
+      8,
+      6,
+      2,
+      4,
+      8
+     ]
+    },
+    "rt_ms": 5594,
+    "presented_ms": 6650,
+    "correct": true
+   }
+  ],
+  "expected": 2250,
+  "theoreticalMax": 2700
+ },
+ {
+  "name": "ranked-2-seed-6002",
+  "config": {
+   "blocks": 9,
+   "startLength": 3,
+   "flashMs": 700,
+   "gapMs": 250,
+   "reverse": true,
+   "trials": 10
+  },
+  "configHash": "a18031dba0a95e24",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      2,
+      4,
+      7
+     ]
+    },
+    "rt_ms": 2194,
+    "presented_ms": 2850,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      2,
+      6,
+      5
+     ]
+    },
+    "rt_ms": 1305,
+    "presented_ms": 2850,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      1,
+      7,
+      2
+     ]
+    },
+    "rt_ms": 3098,
+    "presented_ms": 3800,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      0,
+      6,
+      8,
+      6
+     ]
+    },
+    "rt_ms": 3229,
+    "presented_ms": 3800,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      4,
+      7,
+      5,
+      0,
+      5
+     ]
+    },
+    "rt_ms": 4266,
+    "presented_ms": 4750,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      0,
+      1,
+      3,
+      2,
+      5
+     ]
+    },
+    "rt_ms": 4103,
+    "presented_ms": 4750,
+    "correct": false
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      6,
+      4,
+      8,
+      7,
+      8,
+      2
+     ]
+    },
+    "rt_ms": 4041,
+    "presented_ms": 5700,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      7,
+      4,
+      5,
+      7,
+      3
+     ]
+    },
+    "rt_ms": 3000,
+    "presented_ms": 5700,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      8,
+      0,
+      7,
+      2,
+      5,
+      8,
+      6
+     ]
+    },
+    "rt_ms": 2913,
+    "presented_ms": 6650,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      0,
+      6,
+      0,
+      7,
+      4,
+      7,
+      0
+     ]
+    },
+    "rt_ms": 6143,
+    "presented_ms": 6650,
+    "correct": true
+   }
+  ],
+  "expected": 1930,
+  "theoreticalMax": 2700
+ },
+ {
+  "name": "ranked-3-seed-7000",
+  "config": {
+   "blocks": 9,
+   "startLength": 4,
+   "flashMs": 600,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "8d52d2b9b7f4ef4b",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      1,
+      8,
+      4,
+      8
+     ]
+    },
+    "rt_ms": 2526,
+    "presented_ms": 3400,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      0,
+      8,
+      5,
+      7
+     ]
+    },
+    "rt_ms": 2113,
+    "presented_ms": 3400,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      1,
+      8,
+      7,
+      4
+     ]
+    },
+    "rt_ms": 2630,
+    "presented_ms": 4250,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      7,
+      6,
+      8,
+      0,
+      4
+     ]
+    },
+    "rt_ms": 3240,
+    "presented_ms": 4250,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      3,
+      0,
+      7,
+      8,
+      3,
+      0
+     ]
+    },
+    "rt_ms": 2658,
+    "presented_ms": 5100,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      4,
+      6,
+      3,
+      4,
+      7,
+      3
+     ]
+    },
+    "rt_ms": 3804,
+    "presented_ms": 5100,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      0,
+      4,
+      2,
+      0,
+      1,
+      3,
+      5
+     ]
+    },
+    "rt_ms": 4836,
+    "presented_ms": 5950,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      0,
+      6,
+      5,
+      2,
+      1,
+      7,
+      5
+     ]
+    },
+    "rt_ms": 6098,
+    "presented_ms": 5950,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      5,
+      6,
+      8,
+      1,
+      4,
+      5,
+      6
+     ]
+    },
+    "rt_ms": 6990,
+    "presented_ms": 6800,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": {
+     "taps": [
+      3,
+      2,
+      8,
+      2,
+      6,
+      0,
+      2
+     ]
+    },
+    "rt_ms": 4090,
+    "presented_ms": 6800,
+    "correct": false
+   }
+  ],
+  "expected": 2270,
+  "theoreticalMax": 3800
+ },
+ {
+  "name": "ranked-3-seed-7001",
+  "config": {
+   "blocks": 9,
+   "startLength": 4,
+   "flashMs": 600,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "8d52d2b9b7f4ef4b",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      7,
+      8,
+      7
+     ]
+    },
+    "rt_ms": 3479,
+    "presented_ms": 3400,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      8,
+      7,
+      4,
+      5
+     ]
+    },
+    "rt_ms": 2831,
+    "presented_ms": 3400,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      8,
+      3,
+      8,
+      3,
+      2
+     ]
+    },
+    "rt_ms": 2941,
+    "presented_ms": 4250,
+    "correct": true
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      8,
+      7,
+      1,
+      4,
+      8
+     ]
+    },
+    "rt_ms": 2599,
+    "presented_ms": 4250,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      5,
+      1,
+      5,
+      1,
+      6,
+      2
+     ]
+    },
+    "rt_ms": 3465,
+    "presented_ms": 5100,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      0,
+      8,
+      7,
+      5,
+      6
+     ]
+    },
+    "rt_ms": 2463,
+    "presented_ms": 5100,
+    "correct": false
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      2,
+      1,
+      4,
+      8,
+      4,
+      7,
+      6
+     ]
+    },
+    "rt_ms": 4441,
+    "presented_ms": 5950,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      3,
+      6,
+      1,
+      3,
+      2,
+      7,
+      5
+     ]
+    },
+    "rt_ms": 3720,
+    "presented_ms": 5950,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      6,
+      8,
+      1,
+      6,
+      1,
+      7,
+      0,
+      5
+     ]
+    },
+    "rt_ms": 4445,
+    "presented_ms": 6800,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 6800,
+    "correct": false
+   }
+  ],
+  "expected": 2000,
+  "theoreticalMax": 3800
+ },
+ {
+  "name": "ranked-3-seed-7002",
+  "config": {
+   "blocks": 9,
+   "startLength": 4,
+   "flashMs": 600,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "8d52d2b9b7f4ef4b",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": {
+     "taps": [
+      6,
+      8,
+      5,
+      2
+     ]
+    },
+    "rt_ms": 2443,
+    "presented_ms": 3400,
+    "correct": true
+   },
+   {
+    "idx": 1,
+    "response": {
+     "taps": [
+      6,
+      1,
+      2,
+      7
+     ]
+    },
+    "rt_ms": 2441,
+    "presented_ms": 3400,
+    "correct": true
+   },
+   {
+    "idx": 2,
+    "response": {
+     "taps": [
+      6,
+      8,
+      7,
+      4
+     ]
+    },
+    "rt_ms": 2167,
+    "presented_ms": 4250,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": {
+     "taps": [
+      2,
+      6,
+      5,
+      8,
+      2
+     ]
+    },
+    "rt_ms": 2075,
+    "presented_ms": 4250,
+    "correct": true
+   },
+   {
+    "idx": 4,
+    "response": {
+     "taps": [
+      2,
+      5,
+      1,
+      8,
+      5,
+      2
+     ]
+    },
+    "rt_ms": 2817,
+    "presented_ms": 5100,
+    "correct": true
+   },
+   {
+    "idx": 5,
+    "response": {
+     "taps": [
+      4,
+      3,
+      1,
+      8,
+      0,
+      2
+     ]
+    },
+    "rt_ms": 2865,
+    "presented_ms": 5100,
+    "correct": true
+   },
+   {
+    "idx": 6,
+    "response": {
+     "taps": [
+      1,
+      7,
+      0,
+      4,
+      7,
+      2,
+      8
+     ]
+    },
+    "rt_ms": 3513,
+    "presented_ms": 5950,
+    "correct": true
+   },
+   {
+    "idx": 7,
+    "response": {
+     "taps": [
+      7,
+      0,
+      7,
+      5,
+      3,
+      7,
+      1
+     ]
+    },
+    "rt_ms": 3452,
+    "presented_ms": 5950,
+    "correct": true
+   },
+   {
+    "idx": 8,
+    "response": {
+     "taps": [
+      8,
+      7,
+      1,
+      6,
+      2,
+      3,
+      4,
+      0
+     ]
+    },
+    "rt_ms": 7174,
+    "presented_ms": 6800,
+    "correct": true
+   },
+   {
+    "idx": 9,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": 6800,
+    "correct": false
+   }
+  ],
+  "expected": 2910,
+  "theoreticalMax": 3800
+ },
+ {
+  "name": "no-responses",
+  "config": {
+   "blocks": 9,
+   "startLength": 2,
+   "flashMs": 820,
+   "gapMs": 250,
+   "reverse": false,
+   "trials": 10
+  },
+  "configHash": "0358c370b1456c4d",
+  "trialCount": 10,
+  "rows": [
+   {
+    "idx": 0,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 1,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 2,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 3,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 4,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 5,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 6,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 7,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 8,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   },
+   {
+    "idx": 9,
+    "response": null,
+    "rt_ms": null,
+    "presented_ms": null,
+    "correct": false
+   }
+  ],
+  "expected": 0,
+  "theoreticalMax": 1800
+ }
+]

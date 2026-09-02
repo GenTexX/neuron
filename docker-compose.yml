@@ -1,0 +1,40 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: neuron
+      POSTGRES_PASSWORD: neuron
+      POSTGRES_DB: neuron
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U neuron -d neuron']
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    ports:
+      - '127.0.0.1:5432:5432'
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgres://neuron:neuron@postgres:5432/neuron
+      JWT_SECRET: ${JWT_SECRET:?JWT_SECRET muss gesetzt sein}
+      BIND_ADDR: 0.0.0.0:8080
+      STATIC_DIR: /app/static
+      RUST_LOG: ${RUST_LOG:-info,neuron_api=info}
+      COOKIE_DOMAIN: ${COOKIE_DOMAIN:-localhost}
+      COOKIE_SECURE: ${COOKIE_SECURE:-true}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:8080}
+    ports:
+      - '8080:8080'
+
+volumes:
+  pgdata:
