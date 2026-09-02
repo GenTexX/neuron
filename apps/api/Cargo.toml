@@ -21,6 +21,7 @@ axum-extra = { version = "0.10", features = ["cookie", "typed-header"] }
 base64 = "0.22"
 chrono = { version = "0.4", features = ["serde"] }
 chrono-tz = "0.10"
+dotenvy = "0.15.7"
 figment = { version = "0.10", features = ["env"] }
 jsonwebtoken = "9"
 rand = "0.8"

@@ -19,12 +19,15 @@ Voraussetzungen: Node 22, pnpm 10, Rust 1.94, PostgreSQL 16 (oder Docker).
 
 ```sh
 pnpm install
-cp .env.example .env            # anpassen
+cp .env.example apps/api/.env   # anpassen; die API sucht die .env ab dem
+                                # Arbeitsverzeichnis aufwärts
 docker compose up -d postgres   # oder eigene DB
-cd apps/api && sqlx migrate run # oder: API startet Migrationen selbst
-cargo run                       # API auf :8080
+cd apps/api && cargo run        # API auf :8080, Migrationen laufen beim Start
 pnpm dev                        # Web auf :5173, /api wird an :8080 weitergeleitet
 ```
+
+Gesetzte Umgebungsvariablen haben Vorrang vor der `.env`. Fehlt eine Pflichtvariable, nennt die
+API sie beim Start und bricht ab.
 
 Tests und Prüfungen:
 

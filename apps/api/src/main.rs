@@ -1,11 +1,25 @@
 use neuron_api::{
-    app_state, build_router, config::Config, connect, db::games::sync_games, jobs, MIGRATOR,
+    app_state, build_router,
+    config::{load_dotenv, Config},
+    connect,
+    db::games::sync_games,
+    jobs, MIGRATOR,
 };
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt, EnvFilter};
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
-    let config = Config::from_env()?;
+    // Vor dem Einlesen der Konfiguration, damit eine .env-Datei greift.
+    let dotenv_path = load_dotenv();
+    // Ein Konfigurationsfehler ist ein Bedienfehler, kein Absturz: die Meldung
+    // erklärt sich selbst, ein Backtrace wäre nur Rauschen.
+    let config = match Config::from_env() {
+        Ok(config) => config,
+        Err(err) => {
+            eprintln!("{err}");
+            std::process::exit(1);
+        }
+    };
 
     let filter = EnvFilter::try_new(&config.rust_log).unwrap_or_else(|_| EnvFilter::new("info"));
     let registry = tracing_subscriber::registry().with(filter);
@@ -15,6 +29,10 @@ async fn main() -> anyhow::Result<()> {
             .init();
     } else {
         registry.with(tracing_subscriber::fmt::layer()).init();
+    }
+
+    if let Some(path) = dotenv_path {
+        tracing::info!(path = %path.display(), "Konfiguration aus .env ergänzt");
     }
 
     let pool = connect(&config.database_url).await?;

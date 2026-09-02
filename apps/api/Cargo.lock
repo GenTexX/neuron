@@ -1226,6 +1226,7 @@ dependencies = [
  "base64",
  "chrono",
  "chrono-tz",
+ "dotenvy",
  "figment",
  "http-body-util",
  "jsonwebtoken",
