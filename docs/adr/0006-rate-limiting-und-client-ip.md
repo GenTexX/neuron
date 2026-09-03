@@ -29,6 +29,20 @@ Fenster bleibt bei 15 Minuten, die Nachfüllrate ergibt sich als `900 / burst`. 
 durch die E2E-Suite, die rund 15 Nutzer von derselben IP registriert; nützlich ist es auch für
 Installationen, bei denen viele Leute hinter einer NAT-Adresse sitzen.
 
+## Wie der Proxy den Header setzen muss
+
+Die Bibliothek nimmt den **ersten** parsebaren Eintrag aus `X-Forwarded-For`. Das ist richtig für
+eine Kette vertrauenswürdiger Proxys, macht aber die naheliegende nginx-Zeile
+`proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;` gefährlich: sie hängt an, was der
+Client geschickt hat, also steht dessen Wert vorne. Gemessen: mit dieser Zeile kamen zwölf
+Anmeldeversuche mit je erfundener IP allesamt durch, ohne ein einziges 429.
+
+Deshalb schreibt `docs/DEPLOY.md` `proxy_set_header X-Forwarded-For $remote_addr;` vor – der
+Header wird ersetzt, nicht ergänzt. Damit greift das Limit wieder nach zehn Versuchen.
+
+Caddy verhält sich hier von Haus aus richtig: es verwirft einen vom Client mitgeschickten Wert
+und trägt die tatsächliche Gegenstelle ein.
+
 ## Konsequenzen
 
 Die API muss mit `into_make_service_with_connect_info::<SocketAddr>()` ausgeliefert werden, sonst

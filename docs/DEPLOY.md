@@ -216,6 +216,24 @@ Postgres ist bereits nur auf `127.0.0.1` veröffentlicht.
 
 ## 6. nginx und HTTPS
 
+> **Läuft auf Port 80 schon etwas?** Erst nachsehen, sonst startet nginx nicht:
+>
+> ```sh
+> sudo ss -tlnp '( sport = :80 or sport = :443 )'
+> systemctl is-active caddy apache2 nginx lighttpd 2>/dev/null
+> ```
+>
+> Belegt ein anderer Dienst den Port, hast du zwei Möglichkeiten:
+>
+> - **Der Dienst wird gebraucht** (etwa Caddy mit anderen Seiten) → nimm
+>   [Variante mit Caddy](#variante-mit-caddy) statt nginx und lass ihn laufen.
+> - **Der Dienst wird nicht gebraucht** → abschalten:
+>   `sudo systemctl disable --now caddy` (bzw. `apache2`), dann hier weiter.
+>
+> Symptom eines übersehenen Konflikts: `nginx -t` sagt „successful", aber
+> `systemctl start nginx` scheitert mit
+> `bind() to 0.0.0.0:80 failed (98: Address already in use)`.
+
 ```sh
 sudo apt install -y nginx
 ```
@@ -236,11 +254,16 @@ server {
         proxy_http_version 1.1;
 
         # Ohne diese vier Zeilen sieht die API nur nginx: das Rate Limiting
-        # der Anmeldung würde alle Nutzer in einen Topf werfen, und die
-        # Cookie-Einstellung passt nicht zum tatsächlichen Protokoll.
+        # der Anmeldung würde alle Nutzer in einen Topf werfen.
+        #
+        # X-Forwarded-For wird bewusst auf $remote_addr gesetzt und NICHT auf
+        # $proxy_add_x_forwarded_for: Letzteres hängt an, was der Client selbst
+        # geschickt hat. Da die API den ersten Eintrag der Liste als Client-IP
+        # nimmt, könnte sich sonst jeder mit einem eigenen X-Forwarded-For eine
+        # fremde IP voranstellen und das Limit umgehen.
         proxy_set_header Host              $host;
         proxy_set_header X-Real-IP         $remote_addr;
-        proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-For   $remote_addr;
         proxy_set_header X-Forwarded-Proto $scheme;
 
         proxy_read_timeout 60s;
@@ -373,6 +396,11 @@ Siehe Kasten in Abschnitt 3.
 scheinbar grundlos an, prüfe `TRUST_PROXY_HEADERS` und die vier `proxy_set_header`-Zeilen —
 ohne sie sehen alle Nutzer für die API wie eine einzige IP aus.
 
+**`bind() to 0.0.0.0:80 failed (98: Address already in use)`** — ein anderer Dienst hat den
+Port. `sudo ss -tlnp '( sport = :80 )'` zeigt welcher; siehe den Kasten am Anfang von
+Abschnitt 6. Beachte, dass `nginx -t` diesen Fehler **nicht** findet: es prüft nur die Syntax,
+nicht ob der Port frei ist.
+
 **502 Bad Gateway von nginx** — die App läuft nicht oder hört woanders.
 `docker compose ps` und `docker compose logs api` ansehen.
 
@@ -414,6 +442,43 @@ docker save neuron-api | gzip | ssh benutzer@server 'gunzip | docker load'
 
 Dann auf dem Server in `docker-compose.yml` den `build:`-Block durch `image: neuron-api`
 ersetzen.
+
+---
+
+## Variante mit Caddy
+
+Wenn auf dem Server schon Caddy läuft — oder du dir certbot sparen willst — ersetzt das
+Abschnitt 6 und 7 vollständig. Caddy holt und erneuert die Zertifikate selbst.
+
+```sh
+sudo apt install -y caddy      # falls noch nicht vorhanden
+```
+
+An `/etc/caddy/Caddyfile` anhängen (bestehende Blöcke unangetastet lassen):
+
+```caddyfile
+neuron.example.org {
+	encode zstd gzip
+	reverse_proxy 127.0.0.1:8080
+}
+```
+
+```sh
+sudo caddy validate --config /etc/caddy/Caddyfile
+sudo systemctl reload caddy
+```
+
+**Kontrolle:** `curl -I https://neuron.example.org` liefert `HTTP/2 200`.
+
+Caddy setzt `X-Forwarded-For` von sich aus auf die tatsächliche Gegenstelle und **verwirft einen
+vom Client mitgeschickten Wert** — anders als nginx, das dafür die Zeile aus Abschnitt 6 braucht.
+`TRUST_PROXY_HEADERS=true` ist damit sicher.
+
+Läuft parallel noch nginx, schalte es ab, sonst streiten sich beide um Port 80:
+
+```sh
+sudo systemctl disable --now nginx
+```
 
 ---
 
