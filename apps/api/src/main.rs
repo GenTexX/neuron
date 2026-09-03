@@ -34,6 +34,17 @@ async fn main() -> anyhow::Result<()> {
     if let Some(path) = dotenv_path {
         tracing::info!(path = %path.display(), "Konfiguration aus .env ergänzt");
     }
+    if config.cookie_secure {
+        tracing::info!(
+            "Refresh-Cookie mit Secure-Flag: die App muss über HTTPS erreichbar sein, \
+             sonst verwirft der Browser das Cookie und die Anmeldung hält nicht."
+        );
+    } else {
+        tracing::warn!(
+            "COOKIE_SECURE=false: das Refresh-Cookie wird auch unverschlüsselt gesendet. \
+             Nur für lokale Entwicklung oder ein privates Netz vertretbar."
+        );
+    }
 
     let pool = connect(&config.database_url).await?;
     if config.run_migrations {
