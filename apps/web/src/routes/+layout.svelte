@@ -123,7 +123,8 @@
     gap: var(--space-4);
     max-width: var(--content-width);
     margin: 0 auto;
-    padding: var(--space-3) var(--space-4);
+    padding: calc(var(--space-3) + var(--safe-top)) calc(var(--space-4) + var(--safe-right))
+      var(--space-3) calc(var(--space-4) + var(--safe-left));
   }
 
   .brand {
@@ -147,7 +148,7 @@
   .link {
     display: inline-flex;
     align-items: center;
-    min-height: 2.5rem;
+    min-height: var(--hit-nav);
     padding: 0 var(--space-3);
     border-radius: var(--radius-sm);
     color: var(--color-text-muted);
@@ -184,7 +185,8 @@
   main {
     max-width: var(--content-width);
     margin: 0 auto;
-    padding: var(--space-5) var(--space-4) var(--space-8);
+    padding: var(--space-5) calc(var(--space-4) + var(--safe-right))
+      calc(var(--space-8) + var(--safe-bottom)) calc(var(--space-4) + var(--safe-left));
   }
 
   @media (width <= 40rem) {

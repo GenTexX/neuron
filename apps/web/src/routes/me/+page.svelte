@@ -242,6 +242,13 @@
     padding: 0;
   }
 
+  .games li a,
+  .history li a {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--hit-nav);
+  }
+
   .games li {
     display: grid;
     grid-template-columns: 10rem 8rem 6rem 4rem 4rem auto;
@@ -368,7 +375,7 @@
   }
 
   .switches button {
-    min-height: 2.5rem;
+    min-height: var(--hit-nav);
     padding: 0 var(--space-3);
     background: var(--color-surface);
     border: 1px solid var(--color-border);
@@ -390,12 +397,12 @@
     flex-direction: row;
     align-items: center;
     gap: var(--space-2);
-    min-height: 2.5rem;
+    min-height: var(--hit-nav);
   }
 
   .toggle input {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .muted {

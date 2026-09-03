@@ -93,6 +93,9 @@
   }
 
   .back {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--hit-nav);
     font-size: var(--text-sm);
     color: var(--color-text-muted);
   }
@@ -104,7 +107,7 @@
   }
 
   .periods button {
-    min-height: 2.5rem;
+    min-height: var(--hit-nav);
     padding: 0 var(--space-3);
     background: var(--color-surface);
     border: 1px solid var(--color-border);

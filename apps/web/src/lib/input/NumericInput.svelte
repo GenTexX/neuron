@@ -125,6 +125,28 @@
     gap: var(--space-3);
     width: 100%;
     max-width: 20rem;
+    flex: none;
+  }
+
+  /*
+   * Auf niedrigen Schirmen würden Bühne und Ziffernfeld zusammen nicht mehr
+   * passen. Die Tasten geben dann Höhe ab – die Breite (rund ein Drittel des
+   * Schirms) bleibt ohnehin weit über jeder Mindestgröße.
+   */
+  @media (height <= 44rem) {
+    .numeric {
+      gap: var(--space-2);
+    }
+
+    .display {
+      min-height: 2.75rem;
+      font-size: var(--text-lg);
+      line-height: 1.75rem;
+    }
+
+    .key {
+      min-height: 2.75rem;
+    }
   }
 
   .numeric.disabled {
@@ -134,6 +156,7 @@
   .display {
     display: block;
     min-height: 3.5rem;
+    flex: none;
     padding: var(--space-2) var(--space-4);
     background: var(--color-surface);
     border: 2px solid var(--color-border);

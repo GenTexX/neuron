@@ -159,4 +159,9 @@
     font-size: var(--text-sm);
     color: var(--color-text-muted);
   }
+
+  .alt a {
+    display: inline-block;
+    padding: var(--space-2) 0;
+  }
 </style>

@@ -61,7 +61,14 @@
   }
 
   input {
-    flex: 1;
+    flex: 1 1 auto;
+    /*
+     * Ohne `min-width: 0` schrumpft ein Flex-Element nie unter seine
+     * intrinsische Breite – und ein <input> bringt rund 20 Zeichen mit.
+     * Auf schmalen Schirmen wurde der Bestätigen-Knopf dadurch rechts aus
+     * dem Bild gedrückt und die ganze Seite breiter als der Viewport.
+     */
+    min-width: 0;
     min-height: var(--hit-min);
     padding: var(--space-2) var(--space-4);
     background: var(--color-surface);
@@ -69,12 +76,14 @@
     border: 2px solid var(--color-border);
     border-radius: var(--radius-md);
     font-family: var(--font-stimulus);
+    /* Unter 16px zoomt iOS beim Fokussieren automatisch hinein. */
     font-size: var(--text-lg);
     letter-spacing: 0.05em;
     touch-action: manipulation;
   }
 
   button {
+    flex: 0 0 auto;
     min-height: var(--hit-min);
     padding: 0 var(--space-4);
     background: var(--color-accent);

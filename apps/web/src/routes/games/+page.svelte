@@ -65,7 +65,7 @@
   }
 
   .filters button {
-    min-height: 2.5rem;
+    min-height: var(--hit-nav);
     padding: 0 var(--space-3);
     background: var(--color-surface);
     border: 1px solid var(--color-border);

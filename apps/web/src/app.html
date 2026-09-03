@@ -2,7 +2,16 @@
 <html lang="de">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <!--
+      interactive-widget=resizes-content: die Bildschirmtastatur verkleinert das
+      Layout-Viewport, statt nur den sichtbaren Ausschnitt zu verschieben. Nur so
+      kann 100dvh reagieren und die Spielansicht der Tastatur Platz machen,
+      anstatt dass der Browser blind zum Eingabefeld scrollt.
+    -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
+    />
     <meta name="theme-color" content="#0f1117" />
     <link rel="icon" href="%sveltekit.assets%/favicon.svg" type="image/svg+xml" />
     <link rel="manifest" href="%sveltekit.assets%/manifest.webmanifest" />

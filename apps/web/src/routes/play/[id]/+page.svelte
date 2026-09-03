@@ -37,7 +37,7 @@
 <svelte:head><title>{gameName(gameId)} – {t('app.name')}</title></svelte:head>
 
 <!-- §13.1: eigene, aufgeräumte Vollbild-Ansicht ohne Navigation. -->
-<div class="play">
+<div class="play" class:running={play?.phase === 'running'}>
   {#if !play || play.phase === 'loading'}
     <p class="status">{t('play.loading')}</p>
   {:else if play.phase === 'error'}
@@ -79,18 +79,20 @@
       </span>
       <button class="ghost" onclick={confirmAbort}>{t('play.abort')}</button>
     </div>
-    <play.view.default
-      trialIndex={runner.trialIndex}
-      phaseName={runner.phaseName}
-      acceptsInput={runner.acceptsInput}
-      trials={play.trials}
-      config={play.run?.config}
-      respond={(response, atMs) => runner.submitResponse(response, atMs)}
-      update={(response) => runner.updateResponse(response)}
-      complete={() => runner.completeTrial()}
-      elapsed={(atMs) => runner.elapsedSinceInputOnset(atMs)}
-      lastCorrect={play.lastCorrect}
-    />
+    <div class="view-slot">
+      <play.view.default
+        trialIndex={runner.trialIndex}
+        phaseName={runner.phaseName}
+        acceptsInput={runner.acceptsInput}
+        trials={play.trials}
+        config={play.run?.config}
+        respond={(response, atMs) => runner.submitResponse(response, atMs)}
+        update={(response) => runner.updateResponse(response)}
+        complete={() => runner.completeTrial()}
+        elapsed={(atMs) => runner.elapsedSinceInputOnset(atMs)}
+        lastCorrect={play.lastCorrect}
+      />
+    </div>
   {:else if play.phase === 'submitting'}
     <p class="status">{t('play.submitting')}</p>
   {:else if play.phase === 'result' && play.result}
@@ -117,9 +119,56 @@
     justify-content: center;
     gap: var(--space-4);
     min-height: 100dvh;
-    padding: var(--space-4);
+    padding: calc(var(--space-4) + var(--safe-top)) calc(var(--space-4) + var(--safe-right))
+      calc(var(--space-4) + var(--safe-bottom)) calc(var(--space-4) + var(--safe-left));
     /* §13.4: neutraler, konstanter Hintergrund während eines Runs. */
     background: var(--color-bg);
+    /*
+     * Beim schnellen Tippen (schulte, go-nogo, n-back) darf weder der
+     * Doppeltipp-Zoom auslösen noch Text markiert werden – beides
+     * unterbricht das Spiel und verfälscht die Reaktionszeiten.
+     */
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /*
+   * Während eines Runs darf nicht gescrollt werden: eine feste Höhe zwingt
+   * Bühne und Eingabe dazu, sich den Platz zu teilen. Intro und Ergebnis
+   * dürfen dagegen länger werden als der Bildschirm.
+   */
+  .play.running {
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  .view-slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+  }
+
+  /*
+   * Alle zehn Spielansichten sind Flex-Spalten gleicher Bauart. Sie sollen den
+   * Platz des Slots einnehmen, damit die StimulusStage darin flexen kann.
+   * `min-height: 0` hebt die Vorgabe auf, dass ein Flex-Element nicht unter
+   * seinen Inhalt schrumpft – ohne das würde die Bühne den Slot sprengen.
+   */
+  .view-slot > :global(*) {
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+    /*
+     * Deckelt die Bühne ihre Höhe (auf niedrigen Schirmen 45vh), bleibt Platz
+     * übrig. Der wird gleichmäßig verteilt, statt als tote Fläche unten zu
+     * hängen – die Eingabe rückt damit näher an den Daumen.
+     */
+    justify-content: center;
   }
 
   .status {
@@ -186,6 +235,10 @@
   }
 
   .back {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--hit-nav);
+    padding: 0 var(--space-2);
     color: var(--color-text-muted);
     font-size: var(--text-sm);
   }
@@ -203,7 +256,8 @@
     background: none;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-sm);
-    padding: var(--space-1) var(--space-3);
+    min-height: var(--hit-nav);
+    padding: 0 var(--space-3);
     color: var(--color-text-muted);
     cursor: pointer;
     touch-action: manipulation;
