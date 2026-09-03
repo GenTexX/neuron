@@ -59,6 +59,11 @@ export class TrialRunner<R> {
    * Trial ab; ein Zwischenstand darf sie nicht blockieren.
    */
   private responded = false;
+  /**
+   * Bewertung des laufenden Trials, sobald sie feststeht. `null` heißt: das
+   * Eingabefenster ist noch offen.
+   */
+  private judged: boolean | null = null;
   private rafId: number | null = null;
   private lastFrameTs = 0;
   private runStart = 0;
@@ -181,6 +186,7 @@ export class TrialRunner<R> {
     this.response = null;
     this.responseRt = null;
     this.responded = false;
+    this.judged = null;
     this.applyPhase();
   }
 
@@ -204,11 +210,42 @@ export class TrialRunner<R> {
     if (!phase || this.phaseOnset === null) return;
     const now = performance.now();
     const presented = now - this.phaseOnset;
-    this.phaseRecords.push({ name: phase.name, onsetMs: this.phaseOnset, presentedMs: presented });
-    this.presentedMs += presented;
-    this.plannedMs += presented;
+    this.closePhase(phase, presented, presented);
+  }
+
+  /**
+   * Schließt die laufende Phase ab und rückt weiter.
+   *
+   * `plannedMs` ist die Dauer, die für die Drift-Prüfung (§6.2) als Soll zählt:
+   * bei Zeitablauf die Soll-Dauer der Phase, bei einer Antwort die tatsächliche
+   * (die Verkürzung war beabsichtigt, keine Störung).
+   */
+  private closePhase(phase: Phase, presentedMs: number, plannedMs: number) {
+    this.phaseRecords.push({
+      name: phase.name,
+      onsetMs: this.phaseOnset ?? 0,
+      presentedMs,
+    });
+    this.presentedMs += presentedMs;
+    this.plannedMs += plannedMs;
     this.phaseIndex++;
     this.applyPhase();
+
+    // Nimmt keine der verbleibenden Phasen mehr Eingaben an, steht die Antwort
+    // fest – und damit die Bewertung. Sie muss hier fallen, nicht erst am Ende
+    // des Trials: sonst zeigt eine Feedback-Phase noch das Ergebnis des
+    // vorherigen Trials.
+    if (!this.phases.slice(this.phaseIndex).some((p) => p.acceptsInput)) {
+      this.finalizeJudgement();
+    }
+  }
+
+  /** Ruft `onTrialEnd` genau einmal je Trial und merkt sich das Ergebnis. */
+  private finalizeJudgement(): boolean {
+    if (this.judged === null) {
+      this.judged = this.options.onTrialEnd(this.trialIndex, this.response, this.responseRt);
+    }
+    return this.judged;
   }
 
   private frame(ts: number) {
@@ -226,16 +263,7 @@ export class TrialRunner<R> {
         this.phaseOnset = ts;
         if (phase.acceptsInput && this.inputOnset === null) this.inputOnset = ts;
       } else if (phase.durationMs !== null && ts - this.phaseOnset >= phase.durationMs) {
-        const presented = ts - this.phaseOnset;
-        this.phaseRecords.push({
-          name: phase.name,
-          onsetMs: this.phaseOnset,
-          presentedMs: presented,
-        });
-        this.presentedMs += presented;
-        this.plannedMs += phase.durationMs;
-        this.phaseIndex++;
-        this.applyPhase();
+        this.closePhase(phase, ts - this.phaseOnset, phase.durationMs);
       }
     }
 
@@ -248,7 +276,7 @@ export class TrialRunner<R> {
   }
 
   private advance(ts: number) {
-    const correct = this.options.onTrialEnd(this.trialIndex, this.response, this.responseRt);
+    const correct = this.finalizeJudgement();
     this.records.push({
       index: this.trialIndex,
       response: this.response,

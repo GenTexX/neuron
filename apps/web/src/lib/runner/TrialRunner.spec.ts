@@ -55,6 +55,7 @@ function buildOptions(o: {
   timingSensitive?: boolean;
   onFinish?: (records: unknown[], durationMs: number) => void;
   correct?: boolean;
+  onTrialEnd?: (index: number, response: { choice: number } | null, rtMs: number | null) => boolean;
   shouldStopEarly?: (index: number) => boolean;
 }) {
   return {
@@ -66,7 +67,7 @@ function buildOptions(o: {
         { name: 'stimulus', durationMs: 500, acceptsInput: true },
       ]),
     timingSensitive: o.timingSensitive ?? true,
-    onTrialEnd: () => o.correct ?? true,
+    onTrialEnd: o.onTrialEnd ?? (() => o.correct ?? true),
     onFinish: o.onFinish ?? (() => {}),
     shouldStopEarly: o.shouldStopEarly,
   };
@@ -260,5 +261,91 @@ describe('TrialRunner – Abbruchbedingungen (§6.2)', () => {
     expect(records).toHaveLength(5);
     expect(runner.records[4].response).toBeNull();
     expect(runner.records[4].correct).toBe(false);
+  });
+});
+
+/**
+ * Die Bewertung muss fallen, sobald keine Phase mehr Eingaben annimmt – nicht
+ * erst am Ende des Trials.
+ *
+ * Sonst zeigt eine Feedback-Phase noch das Ergebnis des *vorherigen* Trials:
+ * Der erste Trial blieb ohne Rückmeldung, jeder weitere bekam die des
+ * Vorgängers. Betroffen waren alle Spiele mit Feedback-Phase (anagram, corsi,
+ * mental-rotation, number-sequence, stroop); gewertet wurde immer richtig, nur
+ * die Anzeige log.
+ */
+describe('TrialRunner – Zeitpunkt der Bewertung', () => {
+  const withFeedback = (): Phase[] => [
+    { name: 'stimulus', durationMs: null, acceptsInput: true },
+    { name: 'feedback', durationMs: 300, acceptsInput: false },
+  ];
+
+  it('bewertet vor der Feedback-Phase, nicht erst danach', () => {
+    const calls: { index: number; response: { choice: number } | null }[] = [];
+    const runner = new TrialRunner<{ choice: number }>(
+      buildOptions({
+        trialCount: 2,
+        phases: withFeedback,
+        onTrialEnd: (index, response) => {
+          calls.push({ index, response });
+          return response !== null;
+        },
+      }),
+    );
+    runner.start();
+    clock.frames(2, 16);
+    expect(runner.phaseName).toBe('stimulus');
+    expect(calls).toEqual([]);
+
+    runner.submitResponse({ choice: 7 });
+    clock.frame(16);
+    expect(runner.phaseName).toBe('feedback');
+    // Zum Zeitpunkt der Feedback-Anzeige liegt die Bewertung dieses Trials vor.
+    expect(calls).toEqual([{ index: 0, response: { choice: 7 } }]);
+  });
+
+  it('bewertet jeden Trial genau einmal', () => {
+    const calls: number[] = [];
+    const runner = new TrialRunner<{ choice: number }>(
+      buildOptions({
+        trialCount: 3,
+        phases: withFeedback,
+        onTrialEnd: (index) => {
+          calls.push(index);
+          return true;
+        },
+      }),
+    );
+    runner.start();
+    for (let i = 0; i < 3; i++) {
+      clock.frames(2, 16);
+      runner.submitResponse({ choice: i });
+      clock.frames(30, 16);
+    }
+    expect(calls).toEqual([0, 1, 2]);
+    expect(runner.records.map((r) => r.correct)).toEqual([true, true, true]);
+  });
+
+  it('bewertet eine ausbleibende Antwort mit dem Ablauf der Eingabephase', () => {
+    const calls: ({ choice: number } | null)[] = [];
+    const runner = new TrialRunner<{ choice: number }>(
+      buildOptions({
+        trialCount: 1,
+        phases: () => [
+          { name: 'stimulus', durationMs: 200, acceptsInput: true },
+          { name: 'feedback', durationMs: 300, acceptsInput: false },
+        ],
+        onTrialEnd: (_index, response) => {
+          calls.push(response);
+          return false;
+        },
+      }),
+    );
+    runner.start();
+    clock.frames(3, 16);
+    expect(calls).toEqual([]);
+    clock.frames(12, 16); // Deadline verstreichen lassen
+    expect(runner.phaseName).toBe('feedback');
+    expect(calls).toEqual([null]);
   });
 });
