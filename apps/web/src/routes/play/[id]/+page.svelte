@@ -67,6 +67,10 @@
           <dd>{mode === 'ranked' ? t('game.mode.ranked') : t('game.mode.training')}</dd>
         </div>
       </dl>
+      {#if mode === 'training'}
+        <!-- §7.4: die Aufstiegsregel stand nirgends – ohne sie wirkt das Level willkürlich. -->
+        <p class="staircase">{t('play.intro.staircase')}</p>
+      {/if}
       <button class="primary" onclick={() => play?.begin()}>{t('play.intro.start')}</button>
       <a class="back" href="/games/{gameId}">{t('common.back')}</a>
     </section>
@@ -101,6 +105,8 @@
       {gameId}
       {mode}
       abortReason={play.abortReason}
+      trialCount={play.trials.length}
+      soloJudgement={play.soloJudgement}
       onagain={() => {
         const s = new PlaySession(gameId, mode);
         play?.destroy();
@@ -194,6 +200,13 @@
 
   .rules {
     margin: 0;
+    color: var(--color-text-muted);
+  }
+
+  .staircase {
+    max-width: 32rem;
+    margin: 0;
+    font-size: var(--text-sm);
     color: var(--color-text-muted);
   }
 

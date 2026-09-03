@@ -149,6 +149,14 @@ pub struct LevelChange {
     pub before: i32,
     pub after: i32,
     pub changed: bool,
+    /// Gute Runs in Folge nach diesem Run (§7.4). Zusammen mit `ups_required`
+    /// kann der Client sagen, wie weit es noch bis zum Aufstieg ist – ohne das
+    /// bleibt die 3-up-1-down-Regel für den Nutzer unsichtbar.
+    pub consecutive_up: i32,
+    /// Wie viele gute Runs in Folge das Level heben (§7.4: 3).
+    pub ups_required: i32,
+    /// Höchstes Level dieses Spiels; auf dem Gipfel gibt es nichts mehr zu steigen.
+    pub max_level: i32,
 }
 
 #[derive(Serialize)]
@@ -303,6 +311,9 @@ async fn submit_run(
                 before,
                 after: next.level,
                 changed: next.level != before,
+                consecutive_up: next.consecutive_up,
+                ups_required: staircase::UPS_REQUIRED,
+                max_level: def.max_level,
             });
         }
         runs_db::record_daily_activity(&mut tx, user.id, submitted_at).await?;
@@ -317,6 +328,9 @@ async fn submit_run(
             before,
             after: gs.level,
             changed: false,
+            consecutive_up: gs.consecutive_up,
+            ups_required: staircase::UPS_REQUIRED,
+            max_level: def.max_level,
         });
     }
 

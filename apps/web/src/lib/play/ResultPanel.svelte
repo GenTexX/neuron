@@ -2,18 +2,73 @@
   import type { SubmitResponse } from '$lib/api/types';
   import { gameName, t } from '$lib/i18n';
   import type { AbortReason } from '$lib/runner';
+  import { SUCCESS_THRESHOLD, type Judgement } from '@neuron/engine';
 
   type Props = {
     result: SubmitResponse;
     gameId: string;
     mode: 'training' | 'ranked';
     abortReason: AbortReason | null;
+    /** Aufgaben in diesem Run. Bei genau einer sagt eine Prozentzahl nichts. */
+    trialCount: number;
+    /** Bewertung des einzigen Trials, sonst null. */
+    soloJudgement: Judgement | null;
     onagain: () => void;
   };
 
-  const { result, gameId, mode, abortReason, onagain }: Props = $props();
+  const { result, gameId, mode, abortReason, trialCount, soloJudgement, onagain }: Props = $props();
 
   const accuracyPercent = $derived(Math.round(result.accuracy * 100));
+
+  /**
+   * Besteht ein Run aus einer einzigen Aufgabe (schulte, lights-out), ist die
+   * Genauigkeit `correctCount / trialCount` immer 0 % oder 100 %. Bei Schulte
+   * stand deshalb auch nach mehreren Fehltipps „100 %“ – richtig gerechnet,
+   * aber nichtssagend. Statt der Quote steht dort, was den Run unterscheidet.
+   */
+  const singleTask = $derived(trialCount === 1);
+
+  const num = (key: string): number | null => {
+    const value = soloJudgement?.[key];
+    return typeof value === 'number' ? value : null;
+  };
+
+  const details = $derived.by((): { label: string; value: string }[] => {
+    if (!singleTask || !soloJudgement) return [];
+    const out: { label: string; value: string }[] = [];
+    const wrongTaps = num('wrongTaps');
+    if (wrongTaps !== null) out.push({ label: t('result.wrongTaps'), value: String(wrongTaps) });
+    const moves = num('moveCount');
+    const optimal = num('optimalMoves');
+    if (moves !== null) {
+      out.push({
+        label: t('game.lights-out.moves'),
+        value: optimal === null ? String(moves) : t('result.movesUsed', { moves, optimal }),
+      });
+    }
+    return out;
+  });
+
+  /**
+   * §7.4: drei Runs in Folge über 80 % heben das Level, einer darunter senkt
+   * es. Ohne diese Zeile blieb die Regel für den Nutzer unsichtbar – nach
+   * einem Run stand nur „Level 1“, ohne zu verraten, wie weit es noch ist.
+   */
+  const levelProgress = $derived.by((): string | null => {
+    const level = result.level;
+    if (!level || !result.valid || mode !== 'training') return null;
+    if (level.after >= level.max_level) return t('result.levelMax');
+    const missing = Math.max(1, level.ups_required - level.consecutive_up);
+    const next = t(missing === 1 ? 'result.levelProgressOne' : 'result.levelProgress', {
+      runs: missing,
+      level: level.after + 1,
+    });
+    // Lag der Run unter der Schwelle, ist der zurückgesetzte Zähler die
+    // wichtigere Auskunft als die reine Restzahl – sonst wirkt es, als sei
+    // nichts passiert.
+    return result.accuracy < SUCCESS_THRESHOLD ? `${t('result.levelProgressReset')} ${next}` : next;
+  });
+
   const percentilePercent = $derived(
     result.percentile === undefined || result.percentile === null
       ? null
@@ -78,14 +133,27 @@
   {/if}
 
   <dl class="facts">
-    <div>
-      <dt>{t('result.accuracy')}</dt>
-      <dd>{accuracyPercent} %</dd>
-    </div>
-    <div>
-      <dt>{t('result.correct')}</dt>
-      <dd>{result.correct_count}</dd>
-    </div>
+    {#if singleTask}
+      <div>
+        <dt>{t('result.completed')}</dt>
+        <dd>{result.correct_count > 0 ? t('result.completedYes') : t('result.completedNo')}</dd>
+      </div>
+      {#each details as detail (detail.label)}
+        <div>
+          <dt>{detail.label}</dt>
+          <dd>{detail.value}</dd>
+        </div>
+      {/each}
+    {:else}
+      <div>
+        <dt>{t('result.accuracy')}</dt>
+        <dd>{accuracyPercent} %</dd>
+      </div>
+      <div>
+        <dt>{t('result.correct')}</dt>
+        <dd>{result.correct_count}</dd>
+      </div>
+    {/if}
     {#if levelText}
       <div>
         <dt>{t('play.intro.level')}</dt>
@@ -110,6 +178,10 @@
     </div>
   </dl>
 
+  {#if levelProgress}
+    <p class="level-progress">{levelProgress}</p>
+  {/if}
+
   <div class="actions">
     {#if mode === 'training'}
       <button class="primary" onclick={onagain}>{t('result.again')}</button>
@@ -120,6 +192,12 @@
 </section>
 
 <style>
+  .level-progress {
+    margin: 0;
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
   .eyebrow {
     margin: 0;
     font-size: var(--text-xs);

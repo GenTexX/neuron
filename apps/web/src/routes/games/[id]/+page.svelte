@@ -13,6 +13,19 @@
   let loading = $state(true);
   let notFound = $state(false);
 
+  /**
+   * §7.4: wie viele gute Runs (>= 80 %) noch bis zum nächsten Level fehlen.
+   * Ohne diese Zeile ist die 3-up-1-down-Regel für den Nutzer unsichtbar.
+   */
+  const levelProgress = $derived.by((): string | null => {
+    if (!game || game.level === undefined || game.level >= game.max_level) return null;
+    const missing = Math.max(1, game.ups_required - (game.consecutive_up ?? 0));
+    return t(missing === 1 ? 'games.levelProgressOne' : 'games.levelProgress', {
+      runs: missing,
+      level: game.level + 1,
+    });
+  });
+
   $effect(() => {
     if (session.loading) return;
     const id = gameId;
@@ -70,6 +83,9 @@
         <p class="hint">{t('game.mode.trainingHint')}</p>
         {#if game.level !== undefined}
           <p class="level">{t('games.level')} {game.level} / {game.max_level}</p>
+          {#if levelProgress}
+            <p class="hint">{levelProgress}</p>
+          {/if}
         {/if}
         <a class="primary" href="/play/{game.id}?mode=training">{t('game.startTraining')}</a>
       </article>

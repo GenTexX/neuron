@@ -14,7 +14,7 @@ use crate::{
         leaderboard::{self, Period},
         runs as runs_db, stats,
     },
-    domain::table::TABLE,
+    domain::{staircase, table::TABLE},
     error::{AppError, AppResult},
     state::AppState,
 };
@@ -54,6 +54,11 @@ pub struct GameInfo {
     pub level: Option<i32>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub runs_played: Option<i32>,
+    /// Gute Runs in Folge (§7.4). Zeigt an, wie weit es bis zum Aufstieg ist.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub consecutive_up: Option<i32>,
+    /// Wie viele gute Runs in Folge das Level heben (§7.4: 3).
+    pub ups_required: i32,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub personal_best: Option<PersonalBestInfo>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -126,6 +131,8 @@ async fn list_games(
             max_level: def.max_level,
             level: gs.map(|s| s.level).or(user.as_ref().map(|_| 1)),
             runs_played: gs.map(|s| s.runs_played).or(user.as_ref().map(|_| 0)),
+            consecutive_up: gs.map(|s| s.consecutive_up).or(user.as_ref().map(|_| 0)),
+            ups_required: staircase::UPS_REQUIRED,
             personal_best,
             ranked_round,
         });

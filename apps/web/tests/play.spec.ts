@@ -108,6 +108,48 @@ test('Ranked-Run erscheint danach in der Bestenliste und ist gesperrt', async ({
   await expect(page.getByText('Heute schon gespielt')).toBeVisible();
 });
 
+test('Schulte: das Ergebnis zeigt Fehltipps statt einer nichtssagenden Quote', async ({ page }) => {
+  await register(page, uniqueUser('schulte'));
+
+  /*
+   * Ein Schulte-Run besteht aus einer einzigen Aufgabe (§12.6). Die Genauigkeit
+   * `correctCount / trialCount` ist damit immer 0 % oder 100 % – nach drei
+   * Fehltipps stand trotzdem „100 %“. Richtig gerechnet, aber nichtssagend.
+   */
+  await page.goto('/play/schulte?mode=training');
+  // §7.4 steht jetzt im Intro, damit das Level nicht willkürlich wirkt.
+  await expect(page.getByText(/Drei Runs in Folge/)).toBeVisible({ timeout: 20_000 });
+  await page.getByRole('button', { name: 'Start' }).click();
+
+  const cells = page.getByRole('group').getByRole('button');
+  await expect(cells.first()).toBeVisible({ timeout: 20_000 });
+  const count = await cells.count();
+  const labels: string[] = [];
+  for (let i = 0; i < count; i++) labels.push(((await cells.nth(i).innerText()) ?? '').trim());
+
+  // Zwei bewusste Fehltipps, dann die Tabelle korrekt zu Ende.
+  let wrong = 0;
+  for (let n = 1; n <= count; n++) {
+    const want = String(n);
+    if (wrong < 2) {
+      await cells.nth(labels.findIndex((l) => l !== want)).click();
+      wrong++;
+      await page.waitForTimeout(120);
+    }
+    await cells.nth(labels.indexOf(want)).click();
+    await page.waitForTimeout(120);
+  }
+
+  await expect(page.getByTestId('result')).toBeVisible({ timeout: 30_000 });
+  await expect(page.getByText('Genauigkeit')).toHaveCount(0);
+  await expect(page.getByText('Geschafft')).toBeVisible();
+  await expect(page.getByText('Fehltipps')).toBeVisible();
+  // §7.4: der Weg zum nächsten Level muss sichtbar sein.
+  await expect(page.getByText(/Noch 2 Runs mit mindestens 80 %/)).toBeVisible();
+  await page.goto('/games/schulte');
+  await expect(page.getByText(/Noch 2 Runs mit mindestens 80 %/)).toBeVisible({ timeout: 20_000 });
+});
+
 test('Der Verlauf zeigt den gespielten Run im Profil', async ({ page }) => {
   await register(page, uniqueUser('history'));
 

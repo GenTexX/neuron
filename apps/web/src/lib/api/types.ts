@@ -37,6 +37,10 @@ export type GameInfo = {
   max_level: number;
   level?: number;
   runs_played?: number;
+  /** Gute Runs in Folge (§7.4) – wie weit es bis zum nächsten Level ist. */
+  consecutive_up?: number;
+  /** Wie viele gute Runs in Folge das Level heben (§7.4: 3). */
+  ups_required: number;
   personal_best?: { score: number; config_hash: string };
   ranked_round?: RankedRoundInfo;
 };
@@ -78,7 +82,14 @@ export type SubmitResponse = {
   invalid_reason: string | null;
   personal_best: boolean;
   previous_best: number | null;
-  level?: { before: number; after: number; changed: boolean };
+  level?: {
+    before: number;
+    after: number;
+    changed: boolean;
+    consecutive_up: number;
+    ups_required: number;
+    max_level: number;
+  };
   rank?: { daily: number; of: number };
   percentile?: number;
   streak: { current: number; extended_today: boolean };

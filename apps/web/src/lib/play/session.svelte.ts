@@ -29,6 +29,13 @@ export class PlaySession {
   runner = $state<TrialRunner<unknown> | null>(null);
   /** Bewertung des zuletzt beendeten Trials, für die Feedback-Phase. */
   lastCorrect = $state<boolean | null>(null);
+  /**
+   * Bewertung des einzigen Trials, wenn ein Run aus genau einem besteht
+   * (schulte, lights-out). Dort ist die Genauigkeit als Anteil richtiger
+   * Aufgaben immer 0 % oder 100 % und sagt nichts – die Ergebnisseite zeigt
+   * stattdessen, was sich tatsächlich unterscheidet (Fehltipps, Züge).
+   */
+  soloJudgement = $state<Judgement | null>(null);
 
   /** Nur in Development: lokal gerechneter Score für den Paritätsabgleich (§9.3). */
   localScore: number | null = null;
@@ -144,6 +151,7 @@ export class PlaySession {
     if (!game || !run || !runner) return;
 
     this.abortReason = runner.abortReason;
+    this.soloJudgement = this.trials.length === 1 ? (this.judgements[0] ?? null) : null;
     this.phase = 'submitting';
 
     const rows: TrialRowPayload[] = [];

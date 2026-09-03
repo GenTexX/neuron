@@ -232,6 +232,14 @@ async fn staircase_raises_level_after_three_successes(pool: PgPool) {
     assert_eq!(last["level"]["before"], 1);
     assert_eq!(last["level"]["after"], 2);
     assert_eq!(last["level"]["changed"], true);
+    // Der Fortschritt zum nächsten Level muss mitkommen, sonst bleibt die
+    // 3-up-1-down-Regel für den Nutzer unsichtbar (§7.4).
+    assert_eq!(
+        last["level"]["consecutive_up"], 0,
+        "nach dem Aufstieg beginnt der Zähler von vorn"
+    );
+    assert_eq!(last["level"]["ups_required"], 3);
+    assert_eq!(last["level"]["max_level"], 15, "stroop: maxLevel 15");
 
     // Der nächste Run läuft auf Level 2 mit der zugehörigen Config.
     let (_, _, body) = start_run(&app, &token, "stroop", "training").await;
@@ -279,6 +287,24 @@ async fn staircase_lowers_level_after_a_failure(pool: PgPool) {
     assert_eq!(res.body["level"]["before"], 2);
     assert_eq!(res.body["level"]["after"], 1);
     assert_eq!(res.body["level"]["changed"], true);
+    assert_eq!(
+        res.body["level"]["consecutive_up"], 0,
+        "ein Run unter der Schwelle setzt den Zähler zurück"
+    );
+
+    // Die Spieleliste meldet denselben Fortschritt, damit die Spielseite ihn
+    // ohne einen weiteren Run anzeigen kann.
+    let games = request(&app, "GET", "/api/games", Some(&token), None, None).await;
+    let stroop = games
+        .body
+        .as_array()
+        .unwrap()
+        .iter()
+        .find(|g| g["id"] == "stroop")
+        .expect("stroop");
+    assert_eq!(stroop["level"], 1);
+    assert_eq!(stroop["consecutive_up"], 0);
+    assert_eq!(stroop["ups_required"], 3);
 }
 
 #[sqlx::test(migrations = "./migrations")]
