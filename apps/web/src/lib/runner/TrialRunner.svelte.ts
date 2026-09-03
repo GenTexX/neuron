@@ -65,7 +65,12 @@ export class TrialRunner<R> {
    */
   private judged: boolean | null = null;
   private rafId: number | null = null;
-  private lastFrameTs = 0;
+  /**
+   * Zeitstempel des zuletzt gerenderten Frames. `null` vor dem ersten Frame –
+   * ein Frame-Abstand braucht zwei Frames, und der erste Frame nach `start()`
+   * trägt noch das erstmalige Mounten der Spielansicht in sich (§6.2).
+   */
+  private lastFrameTs: number | null = null;
   private runStart = 0;
   private plannedMs = 0;
   private presentedMs = 0;
@@ -84,7 +89,7 @@ export class TrialRunner<R> {
     this.plannedMs = 0;
     this.presentedMs = 0;
     this.runStart = performance.now();
-    this.lastFrameTs = this.runStart;
+    this.lastFrameTs = null;
     this.attachGuards();
     this.beginTrial(0);
     this.rafId = requestAnimationFrame((ts) => this.frame(ts));
@@ -251,9 +256,27 @@ export class TrialRunner<R> {
   private frame(ts: number) {
     if (this.status !== 'running') return;
 
-    // §6.2: ein einzelner Frame-Abstand > 250 ms macht den Run ungültig.
-    const gap = ts - this.lastFrameTs;
-    if (gap > MAX_FRAME_GAP_MS) this.markInvalid('frameGap');
+    /*
+     * §6.2: ein einzelner Frame-Abstand > 250 ms macht den Run ungültig.
+     *
+     * Zwei Einschränkungen, beide aus dem Zweck der Regel heraus:
+     *
+     * 1. Vor dem ersten Frame gibt es keinen Abstand. `start()` läuft, bevor
+     *    Svelte die Spielansicht überhaupt gemountet hat – die Messung gegen
+     *    den Startzeitpunkt hätte das erste Rendern der Ansicht als Ruckler
+     *    gewertet und auf langsamen Geräten jeden Run gleich zu Beginn
+     *    verworfen.
+     * 2. Nur bei zeitkritischen Spielen. Ein Ruckler verfälscht die
+     *    Präsentationsdauer; wo die Dauer nicht in die Wertung eingeht
+     *    (`timingSensitive: false`), gibt es nichts zu verfälschen. In
+     *    Anagrammen etwa reicht das Aufklappen der Bildschirmtastatur für
+     *    einen Aussetzer über 250 ms – der Run war damit verloren, ohne dass
+     *    irgendetwas am Ergebnis falsch gewesen wäre. Die Dauer-Abweichung
+     *    (Regel 4) wird aus demselben Grund nur dort geprüft.
+     */
+    if (this.options.timingSensitive && this.lastFrameTs !== null) {
+      if (ts - this.lastFrameTs > MAX_FRAME_GAP_MS) this.markInvalid('frameGap');
+    }
     this.lastFrameTs = ts;
 
     const phase = this.phases[this.phaseIndex];

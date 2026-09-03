@@ -194,6 +194,29 @@ describe('TrialRunner – Abbruchbedingungen (§6.2)', () => {
     expect(runner.abortReason).toBe('frameGap');
   });
 
+  it('wertet den ersten Frame nach dem Start nicht als Aussetzer', () => {
+    // `start()` läuft, bevor Svelte die Spielansicht gemountet hat. Der erste
+    // Frame trägt dieses erste Rendern in sich; auf langsamen Geräten dauerte
+    // das über 250 ms und verwarf den Run, bevor der erste Reiz stand.
+    const runner = makeRunner({ trialCount: 1 });
+    runner.start();
+    clock.frame(400);
+    expect(runner.abortReason).toBeNull();
+    // Ein Aussetzer zwischen zwei echten Frames schlägt weiterhin an.
+    clock.frame(400);
+    expect(runner.abortReason).toBe('frameGap');
+  });
+
+  it('prüft Aussetzer nur bei zeitkritischen Spielen', () => {
+    // Ohne Zeitdruck geht die Präsentationsdauer nicht in die Wertung ein –
+    // in Anagrammen reicht das Aufklappen der Tastatur für einen Aussetzer.
+    const runner = makeRunner({ trialCount: 1, timingSensitive: false });
+    runner.start();
+    clock.frame(16);
+    clock.frame(600);
+    expect(runner.abortReason).toBeNull();
+  });
+
   it('lässt Frame-Abstände unter der Schwelle unangetastet', () => {
     const runner = makeRunner({ trialCount: 1 });
     runner.start();

@@ -35,6 +35,11 @@ export class PlaySession {
 
   private outcomes: TrialOutcome<unknown>[] = [];
   private judgements: Judgement[] = [];
+  /**
+   * Wanduhr-Zeitpunkt, zu dem der Server den Run angelegt hat (Eintreffen der
+   * Antwort auf POST /runs). Bezugspunkt für `client_duration_ms`.
+   */
+  private createdAtMs = 0;
 
   constructor(
     readonly gameId: string,
@@ -52,6 +57,8 @@ export class PlaySession {
         loadView(this.gameId),
       ]);
       // Der Server vergibt Seed und Config; der Client fragt sie nicht selbst (§4.1).
+      // Ab hier läuft die Serveruhr (`server_started_at`); siehe `submit`.
+      this.createdAtMs = Date.now();
       const trials = game.generateRun(new Rng(run.seed), run.config, run.trial_count) as unknown[];
       this.game = game;
       this.run = run;
@@ -96,12 +103,12 @@ export class PlaySession {
         return judgement.correct;
       },
       shouldStopEarly: (index) => this.stopEarly(index),
-      onFinish: (records, durationMs) => {
+      onFinish: (records) => {
         records.forEach((record, i) => {
           const outcome = this.outcomes[i];
           if (outcome) outcome.rtMs = record.rtMs;
         });
-        void this.submit(durationMs);
+        void this.submit();
       },
     });
 
@@ -130,7 +137,7 @@ export class PlaySession {
     );
   }
 
-  private async submit(durationMs: number) {
+  private async submit() {
     const game = this.game;
     const run = this.run;
     const runner = this.runner;
@@ -155,9 +162,19 @@ export class PlaySession {
     if (import.meta.env.DEV) this.localScore = game.scoreRows(run.config, rows) as number;
 
     try {
+      /*
+       * §9.2 vergleicht `client_duration_ms` mit `submitted_at -
+       * server_started_at`. Damit dieser Vergleich etwas aussagt, muss der
+       * Client *dieselbe* Spanne messen: vom Anlegen des Runs bis zur Abgabe.
+       *
+       * Vorher wurde nur die reine Spielzeit gemeldet. Die Serverspanne
+       * enthält aber auch die Zeit im Intro und den Countdown – wer die Regeln
+       * in Ruhe las, überschritt die 25 %-Toleranz und bekam den Run
+       * aberkannt. Bei kurzen Trainingsruns auf Level 1 traf das fast immer zu.
+       */
       const result = await api.submitRun(run.run_id, {
         nonce: run.nonce,
-        client_duration_ms: Math.round(durationMs),
+        client_duration_ms: Math.max(0, Date.now() - this.createdAtMs),
         client_aborted: runner.abortReason !== null,
         trials: rows,
       });

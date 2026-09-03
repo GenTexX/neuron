@@ -30,6 +30,27 @@ test('Stroop im Training: Intro, Countdown, Run, Ergebnis (discrete)', async ({ 
   await expect(page.getByText(/Tage in Folge/)).toBeVisible();
 });
 
+test('Ein Training bleibt gültig, auch wenn man die Regeln in Ruhe liest', async ({ page }) => {
+  test.slow();
+  await register(page, uniqueUser('dwell'));
+
+  /*
+   * §9.2 vergleicht `client_duration_ms` mit `submitted_at - server_started_at`.
+   * Die Serveruhr läuft ab dem Anlegen des Runs – also schon im Intro. Meldete
+   * der Client nur die reine Spielzeit, sprengte jede längere Lesepause die
+   * 25 %-Toleranz und der Run zählte nicht (`duration_mismatch`).
+   */
+  await page.goto('/play/stroop?mode=training');
+  await expect(page.getByRole('button', { name: 'Start' })).toBeVisible({ timeout: 20_000 });
+  await page.waitForTimeout(15_000);
+  await page.getByRole('button', { name: 'Start' }).click();
+
+  await playStroop(page, 30, true);
+
+  await expect(page.getByTestId('result')).toBeVisible({ timeout: 30_000 });
+  await expect(page.getByRole('alert')).toHaveCount(0);
+});
+
 test('Go/No-Go im Training: kontinuierlicher Strom bis zum Ergebnis (continuous)', async ({
   page,
 }) => {

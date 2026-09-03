@@ -24,12 +24,18 @@ export async function register(page: Page, user: ReturnType<typeof uniqueUser>) 
  * eine Antwort. Die Richtigkeit ist für die Suite unerheblich — geprüft wird
  * der Weg bis zum Ergebnis.
  */
-export async function playStroop(page: Page, trials: number) {
+export async function playStroop(page: Page, trials: number, humanLike = false) {
   const buttons = page.getByRole('group', { name: 'Antwort wählen' }).getByRole('button');
   for (let i = 1; i <= trials; i++) {
     // Auf genau diesen Trial warten, statt auf feste Zeiten zu setzen.
     await expect(page.getByText(`Aufgabe ${i} von ${trials}`)).toBeVisible({ timeout: 20_000 });
     await expect(buttons.first()).toBeEnabled({ timeout: 20_000 });
+    /*
+     * `humanLike` wartet vor dem Tippen. Ohne das liegen die Reaktionszeiten
+     * unter 120 ms und der Server verwirft den Run als `superhuman_rt` – für
+     * die reinen Wegtests egal, für Prüfungen auf `valid` nicht.
+     */
+    if (humanLike) await page.waitForTimeout(300 + Math.floor(Math.random() * 400));
     await buttons.first().click();
   }
 }
