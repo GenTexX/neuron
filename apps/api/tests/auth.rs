@@ -213,3 +213,97 @@ async fn patch_me_updates_profile(pool: PgPool) {
     .await;
     assert_eq!(bad_name.status, StatusCode::UNPROCESSABLE_ENTITY);
 }
+
+#[sqlx::test(migrations = "./migrations")]
+async fn login_attempts_are_rate_limited_per_ip(pool: PgPool) {
+    let app = app(pool).await;
+    register(&app, "anna@example.org", "Anna").await; // verbraucht einen Versuch
+
+    let attempt = |email: &'static str| json!({ "email": email, "password": "falsches-passwort" });
+
+    // §8: 10 Anfragen pro IP und 15 Minuten – die Registrierung zählt mit.
+    let mut statuses = Vec::new();
+    for _ in 0..12 {
+        let res = request(
+            &app,
+            "POST",
+            "/api/auth/login",
+            None,
+            None,
+            Some(attempt("anna@example.org")),
+        )
+        .await;
+        statuses.push(res.status);
+    }
+
+    assert!(
+        statuses.contains(&StatusCode::TOO_MANY_REQUESTS),
+        "die Bremse greift nicht: {statuses:?}"
+    );
+    let allowed = statuses
+        .iter()
+        .filter(|s| **s == StatusCode::UNAUTHORIZED)
+        .count();
+    assert_eq!(allowed, 9, "nach der Registrierung bleiben neun Versuche");
+
+    // Der Fehler kommt im einheitlichen Format (§11).
+    let blocked = request(
+        &app,
+        "POST",
+        "/api/auth/login",
+        None,
+        None,
+        Some(attempt("anna@example.org")),
+    )
+    .await;
+    assert_eq!(blocked.status, StatusCode::TOO_MANY_REQUESTS);
+    assert_eq!(blocked.body["error"]["code"], "rate_limited");
+}
+
+#[sqlx::test(migrations = "./migrations")]
+async fn the_limit_is_per_ip_not_global(pool: PgPool) {
+    let app = app(pool).await;
+
+    // Eine IP schöpft ihr Kontingent aus …
+    for _ in 0..12 {
+        common::request_from(
+            &app,
+            "POST",
+            "/api/auth/login",
+            None,
+            None,
+            Some(json!({ "email": "a@example.org", "password": "falsches-passwort" })),
+            "198.51.100.1:1000",
+        )
+        .await;
+    }
+
+    // … eine andere darf weiterhin.
+    let other = common::request_from(
+        &app,
+        "POST",
+        "/api/auth/login",
+        None,
+        None,
+        Some(json!({ "email": "a@example.org", "password": "falsches-passwort" })),
+        "198.51.100.2:1000",
+    )
+    .await;
+    assert_eq!(
+        other.status,
+        StatusCode::UNAUTHORIZED,
+        "fremde IP wird mitbestraft"
+    );
+}
+
+#[sqlx::test(migrations = "./migrations")]
+async fn rate_limiting_does_not_touch_other_endpoints(pool: PgPool) {
+    let app = app(pool).await;
+    let (token, _, _) = register(&app, "anna@example.org", "Anna").await;
+
+    // /me ist nicht gedrosselt – nur die beiden Auth-Endpunkte sind es (§8).
+    for _ in 0..20 {
+        let res = request(&app, "GET", "/api/me", Some(&token), None, None).await;
+        assert_eq!(res.status, StatusCode::OK);
+    }
+}

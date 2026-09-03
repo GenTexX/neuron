@@ -47,6 +47,9 @@ export default async function globalSetup() {
       COOKIE_DOMAIN: 'localhost',
       COOKIE_SECURE: 'false',
       CORS_ORIGINS: `http://127.0.0.1:${PORT}`,
+      // Die Suite registriert rund 15 Nutzer von derselben IP. Mit der
+      // §8-Vorgabe (10 pro 15 Minuten) würde sie sich selbst aussperren.
+      AUTH_RATE_LIMIT_BURST: '1000',
     },
     stdio: ['ignore', 'pipe', 'pipe'],
   });

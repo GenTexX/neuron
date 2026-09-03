@@ -4,6 +4,7 @@
 
 use axum::{
     body::Body,
+    extract::ConnectInfo,
     http::{header, Request, StatusCode},
     Router,
 };
@@ -26,6 +27,8 @@ pub fn test_config() -> Config {
         cors_origins: "http://localhost:5173".into(),
         cookie_secure: false,
         run_migrations: false,
+        trust_proxy_headers: false,
+        auth_rate_limit_burst: neuron_api::auth::rate_limit::DEFAULT_BURST_SIZE,
     }
 }
 
@@ -49,6 +52,10 @@ impl Response {
     }
 }
 
+/// Die Test-IP. Das Rate Limiting (§8) braucht eine Peer-Adresse; `oneshot`
+/// liefert von sich aus keine, deshalb wird sie hier gesetzt.
+pub const TEST_PEER: &str = "203.0.113.7:40000";
+
 pub async fn request(
     app: &Router,
     method: &str,
@@ -57,6 +64,19 @@ pub async fn request(
     cookie: Option<&str>,
     body: Option<Value>,
 ) -> Response {
+    request_from(app, method, uri, token, cookie, body, TEST_PEER).await
+}
+
+#[allow(clippy::too_many_arguments)]
+pub async fn request_from(
+    app: &Router,
+    method: &str,
+    uri: &str,
+    token: Option<&str>,
+    cookie: Option<&str>,
+    body: Option<Value>,
+    peer: &str,
+) -> Response {
     let mut builder = Request::builder().method(method).uri(uri);
     if let Some(t) = token {
         builder = builder.header(header::AUTHORIZATION, format!("Bearer {t}"));
@@ -64,13 +84,17 @@ pub async fn request(
     if let Some(c) = cookie {
         builder = builder.header(header::COOKIE, c);
     }
-    let req = match body {
+    let mut req = match body {
         Some(v) => builder
             .header(header::CONTENT_TYPE, "application/json")
             .body(Body::from(serde_json::to_vec(&v).unwrap()))
             .unwrap(),
         None => builder.body(Body::empty()).unwrap(),
     };
+    req.extensions_mut().insert(ConnectInfo(
+        peer.parse::<std::net::SocketAddr>()
+            .expect("gültige Peer-Adresse"),
+    ));
     let res = app.clone().oneshot(req).await.expect("request");
     let status = res.status();
     let cookies = res

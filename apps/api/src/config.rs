@@ -20,7 +20,13 @@ const REQUIRED: &[&str] = &[
     "CORS_ORIGINS",
 ];
 
-const OPTIONAL: &[&str] = &["RUST_LOG", "COOKIE_SECURE", "RUN_MIGRATIONS"];
+const OPTIONAL: &[&str] = &[
+    "RUST_LOG",
+    "COOKIE_SECURE",
+    "RUN_MIGRATIONS",
+    "TRUST_PROXY_HEADERS",
+    "AUTH_RATE_LIMIT_BURST",
+];
 
 #[derive(Debug, Clone, Deserialize)]
 pub struct Config {
@@ -38,6 +44,15 @@ pub struct Config {
     /// Optional: Migrationen beim Start ausführen (Default: true).
     #[serde(default = "default_true")]
     pub run_migrations: bool,
+    /// Optional: erlaubte Auth-Versuche je IP und 15 Minuten (§8: 10).
+    /// Höher setzen, wenn viele Nutzer hinter derselben IP sitzen (NAT).
+    #[serde(default = "default_auth_rate_limit_burst")]
+    pub auth_rate_limit_burst: u32,
+    /// Optional: `X-Forwarded-For` & Co. für das Rate Limiting auswerten.
+    /// Nur einschalten, wenn ausschließlich ein Reverse Proxy die API erreicht
+    /// (siehe `auth::rate_limit`). Standard: aus.
+    #[serde(default)]
+    pub trust_proxy_headers: bool,
 }
 
 fn default_true() -> bool {
@@ -46,6 +61,10 @@ fn default_true() -> bool {
 
 fn default_rust_log() -> String {
     "info".to_string()
+}
+
+fn default_auth_rate_limit_burst() -> u32 {
+    crate::auth::rate_limit::DEFAULT_BURST_SIZE
 }
 
 /// Lädt eine `.env`-Datei, gesucht ab dem aktuellen Verzeichnis aufwärts.
@@ -72,6 +91,9 @@ impl Config {
         let cfg: Config = figment
             .extract()
             .map_err(|err| missing_config_error(&figment, err))?;
+        if cfg.auth_rate_limit_burst == 0 {
+            anyhow::bail!("AUTH_RATE_LIMIT_BURST muss mindestens 1 sein.");
+        }
         if cfg.jwt_secret.len() < 32 {
             anyhow::bail!(
                 "JWT_SECRET muss mindestens 32 Zeichen lang sein (aktuell {}).",
@@ -139,24 +161,27 @@ fn missing_config_error(figment: &Figment, err: figment::Error) -> anyhow::Error
 mod tests {
     use super::*;
     use figment::providers::Serialized;
-    use std::collections::BTreeMap;
+    use serde_json::{json, Map, Value};
 
-    fn full() -> BTreeMap<&'static str, String> {
-        BTreeMap::from([
-            ("database_url", "postgres://localhost/neuron".to_string()),
-            ("jwt_secret", "a".repeat(32)),
-            ("bind_addr", "0.0.0.0:8080".to_string()),
-            ("static_dir", "./build".to_string()),
-            ("cookie_domain", "localhost".to_string()),
-            (
-                "cors_origins",
-                "http://localhost:5173, http://localhost:8080".to_string(),
-            ),
-        ])
+    /// Die Werte werden als JSON-Objekt aufgebaut, damit Zahlen Zahlen bleiben.
+    /// (Echte Umgebungsvariablen sind Strings, die figments `Env`-Provider
+    /// selbst umwandelt – das deckt die E2E-Suite ab.)
+    fn full() -> Map<String, Value> {
+        let mut map = Map::new();
+        map.insert("database_url".into(), json!("postgres://localhost/neuron"));
+        map.insert("jwt_secret".into(), json!("a".repeat(32)));
+        map.insert("bind_addr".into(), json!("0.0.0.0:8080"));
+        map.insert("static_dir".into(), json!("./build"));
+        map.insert("cookie_domain".into(), json!("localhost"));
+        map.insert(
+            "cors_origins".into(),
+            json!("http://localhost:5173, http://localhost:8080"),
+        );
+        map
     }
 
-    fn from(map: BTreeMap<&'static str, String>) -> anyhow::Result<Config> {
-        Config::from_figment(Figment::from(Serialized::defaults(map)))
+    fn from(map: Map<String, Value>) -> anyhow::Result<Config> {
+        Config::from_figment(Figment::from(Serialized::defaults(Value::Object(map))))
     }
 
     #[test]
@@ -167,6 +192,11 @@ mod tests {
         assert_eq!(cfg.rust_log, "info");
         assert!(cfg.cookie_secure);
         assert!(cfg.run_migrations);
+        assert!(
+            !cfg.trust_proxy_headers,
+            "Proxy-Header werden nur bewusst vertraut"
+        );
+        assert_eq!(cfg.auth_rate_limit_burst, 10, "§8-Vorgabe als Standard");
     }
 
     #[test]
@@ -199,9 +229,31 @@ mod tests {
     }
 
     #[test]
+    fn accepts_a_raised_rate_limit() {
+        let mut map = full();
+        map.insert("auth_rate_limit_burst".into(), json!(30));
+        assert_eq!(from(map).unwrap().auth_rate_limit_burst, 30);
+    }
+
+    #[test]
+    fn rejects_a_zero_rate_limit() {
+        let mut map = full();
+        map.insert("auth_rate_limit_burst".into(), json!(0));
+        let err = from(map).unwrap_err().to_string();
+        assert!(err.contains("mindestens 1"), "{err}");
+    }
+
+    #[test]
+    fn proxy_trust_is_opt_in() {
+        let mut map = full();
+        map.insert("trust_proxy_headers".into(), json!(true));
+        assert!(from(map).unwrap().trust_proxy_headers);
+    }
+
+    #[test]
     fn rejects_a_short_jwt_secret() {
         let mut map = full();
-        map.insert("jwt_secret", "zu-kurz".to_string());
+        map.insert("jwt_secret".into(), json!("zu-kurz"));
         let err = from(map).unwrap_err().to_string();
         assert!(err.contains("mindestens 32 Zeichen"), "{err}");
     }

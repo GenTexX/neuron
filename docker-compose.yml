@@ -33,6 +33,11 @@ services:
       COOKIE_DOMAIN: ${COOKIE_DOMAIN:-localhost}
       COOKIE_SECURE: ${COOKIE_SECURE:-true}
       CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:8080}
+      # Nur einschalten, wenn ausschließlich ein Reverse Proxy die API erreicht.
+      TRUST_PROXY_HEADERS: ${TRUST_PROXY_HEADERS:-false}
+      # §8: 10 Auth-Versuche je IP und 15 Minuten. Höher, wenn viele Nutzer
+      # hinter derselben IP sitzen.
+      AUTH_RATE_LIMIT_BURST: ${AUTH_RATE_LIMIT_BURST:-10}
     ports:
       - '8080:8080'
 

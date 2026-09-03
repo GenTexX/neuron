@@ -34,6 +34,12 @@ async fn main() -> anyhow::Result<()> {
     if let Some(path) = dotenv_path {
         tracing::info!(path = %path.display(), "Konfiguration aus .env ergänzt");
     }
+    if config.trust_proxy_headers {
+        tracing::info!(
+            "TRUST_PROXY_HEADERS=true: Rate Limiting nutzt X-Forwarded-For. \
+             Die API darf dann nur über den Reverse Proxy erreichbar sein."
+        );
+    }
     if config.cookie_secure {
         tracing::info!(
             "Refresh-Cookie mit Secure-Flag: die App muss über HTTPS erreichbar sein, \
@@ -61,6 +67,11 @@ async fn main() -> anyhow::Result<()> {
 
     let listener = tokio::net::TcpListener::bind(&bind).await?;
     tracing::info!(addr = %bind, "neuron-api listening");
-    axum::serve(listener, app).await?;
+    // ConnectInfo wird für das IP-basierte Rate Limiting gebraucht (§8).
+    axum::serve(
+        listener,
+        app.into_make_service_with_connect_info::<std::net::SocketAddr>(),
+    )
+    .await?;
     Ok(())
 }

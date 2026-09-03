@@ -7,6 +7,7 @@ use crate::{
     auth::{
         jwt::JwtKeys,
         password::{hash_password, verify_password},
+        rate_limit,
         refresh::{generate_token, token_hash},
         ACCESS_TTL_SECONDS, REFRESH_COOKIE, REFRESH_COOKIE_PATH, REFRESH_TTL_DAYS,
     },
@@ -15,12 +16,24 @@ use crate::{
     state::AppState,
 };
 
-pub fn router() -> Router<AppState> {
+pub fn router(state: &AppState) -> Router<AppState> {
     Router::new()
-        .route("/auth/register", post(register))
-        .route("/auth/login", post(login))
         .route("/auth/refresh", post(refresh))
         .route("/auth/logout", post(logout))
+        .merge(throttled_routes(state))
+}
+
+/// Registrierung und Anmeldung sind die einzigen Endpunkte mit Rate Limiting
+/// (§8) – sie sind die einzigen, die ohne Anmeldung Argon2 rechnen lassen.
+fn throttled_routes(state: &AppState) -> Router<AppState> {
+    let routes = Router::new()
+        .route("/auth/register", post(register))
+        .route("/auth/login", post(login));
+    rate_limit::throttled(
+        routes,
+        state.config.trust_proxy_headers,
+        state.config.auth_rate_limit_burst,
+    )
 }
 
 #[derive(Deserialize)]

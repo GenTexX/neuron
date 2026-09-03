@@ -3,6 +3,7 @@
 pub mod extractor;
 pub mod jwt;
 pub mod password;
+pub mod rate_limit;
 pub mod refresh;
 
 pub const ACCESS_TTL_SECONDS: i64 = 15 * 60;

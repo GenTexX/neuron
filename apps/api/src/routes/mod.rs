@@ -13,7 +13,7 @@ use crate::state::AppState;
 pub fn api_router(state: AppState) -> Router<AppState> {
     Router::new()
         .route("/health", get(health))
-        .merge(auth::router())
+        .merge(auth::router(&state))
         .merge(games::router())
         .merge(runs::router())
         .merge(me::router())
