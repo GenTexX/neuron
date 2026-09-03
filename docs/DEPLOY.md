@@ -380,6 +380,123 @@ Nach dem nächsten Anmelden gilt die Rolle.
 
 ---
 
+## Domain wechseln
+
+Beispiel: von `paramind.at` auf `neuron.paramind.at`. Die Reihenfolge ist wichtig — DNS zuerst,
+sonst kann das Zertifikat nicht ausgestellt werden.
+
+### 1. DNS-Eintrag anlegen
+
+Beim DNS-Anbieter einen **A-Record** für `neuron` auf die Server-IP setzen (und einen
+`AAAA`-Record, falls der Server IPv6 hat). Ein `CNAME` auf die Hauptdomain geht auch, ein
+A-Record ist aber eindeutiger.
+
+**Kontrolle** — muss die Server-IP zeigen, bevor du weitermachst:
+
+```sh
+dig +short neuron.paramind.at
+```
+
+Kommt nichts, warte ein paar Minuten; manche Anbieter brauchen länger.
+
+### 2. Proxy umstellen
+
+Welchen Proxy du nutzt:
+
+```sh
+systemctl is-active nginx caddy 2>/dev/null
+```
+
+**Bei nginx** — in `/etc/nginx/sites-available/neuron` den `server_name` ändern:
+
+```nginx
+server_name neuron.paramind.at;
+```
+
+Dann das Zertifikat für den neuen Namen holen; certbot passt die Datei selbst an:
+
+```sh
+sudo nginx -t && sudo systemctl reload nginx
+sudo certbot --nginx -d neuron.paramind.at
+```
+
+**Bei Caddy** — in `/etc/caddy/Caddyfile` den Namen des Blocks ändern:
+
+```caddyfile
+neuron.paramind.at {
+	encode zstd gzip
+	reverse_proxy 127.0.0.1:8080
+}
+```
+
+```sh
+sudo caddy validate --config /etc/caddy/Caddyfile
+sudo systemctl reload caddy
+```
+
+Das Zertifikat holt Caddy beim ersten Aufruf selbst.
+
+### 3. App-Konfiguration nachziehen
+
+In `/opt/neuron/.env`:
+
+```ini
+COOKIE_DOMAIN=neuron.paramind.at
+CORS_ORIGINS=https://neuron.paramind.at
+```
+
+```sh
+cd /opt/neuron
+docker compose up -d          # kein --build nötig, es ändert sich nur die Konfiguration
+```
+
+**Kontrolle:**
+
+```sh
+curl -I https://neuron.paramind.at
+curl -s https://neuron.paramind.at/api/health        # -> ok
+```
+
+> **Warum `COOKIE_DOMAIN` mitziehen muss.** Der Wert landet unverändert im `Domain`-Attribut des
+> Refresh-Cookies. Steht dort die alte Domain, verwirft der Browser das Cookie auf der neuen
+> Adresse — die Anmeldung hält dann nur bis zum Neuladen.
+>
+> Der Wert bestimmt außerdem, wie weit das Cookie reicht: `paramind.at` schickt es an **alle**
+> Subdomains, `neuron.paramind.at` nur noch an diesen Host und dessen Unterdomains. Wenn auf dem
+> Server weitere Dienste unter anderen Subdomains laufen, ist der engere Wert der richtige.
+> (Trägst du gar nichts ein, wird kein `Domain`-Attribut gesetzt und das Cookie gilt nur für
+> genau diesen Host — die engste Variante.)
+
+Alle angemeldeten Nutzer müssen sich einmal neu anmelden; die alten Cookies gelten für die alte
+Adresse. Die Konten und alle Ergebnisse bleiben unberührt.
+
+### 4. Alte Adresse aufräumen
+
+Soll die alte Adresse auf die neue weiterleiten:
+
+```nginx
+server {
+    listen 80;
+    server_name paramind.at;
+    return 301 https://neuron.paramind.at$request_uri;
+}
+```
+
+In Caddy:
+
+```caddyfile
+paramind.at {
+	redir https://neuron.paramind.at{uri} permanent
+}
+```
+
+Wird die alte Adresse für etwas anderes gebraucht, lass sie einfach in Ruhe und entferne nur den
+Neuron-Block. Das alte Zertifikat kannst du behalten; `sudo certbot certificates` zeigt, was
+vorhanden ist, `sudo certbot delete --cert-name paramind.at` räumt es weg — aber nur, wenn kein
+anderer Dienst es benutzt.
+
+---
+
 ## Fehlersuche
 
 **`JWT_SECRET muss gesetzt sein`** — die `.env` liegt nicht neben `docker-compose.yml`, oder die
