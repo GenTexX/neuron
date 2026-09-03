@@ -63,4 +63,4 @@ sqlx-Offline-Daten aktualisieren (nach Query-Änderungen): `cd apps/api && cargo
 `docker compose up -d --build` baut Web + API in einem Image; die API liefert das Static-Build
 aus. Vorher `.env.deploy.example` nach `.env` kopieren und `JWT_SECRET` setzen.
 
-Schritt für Schritt auf einem Ubuntu-Server: **[docs/DEPLOY.md](docs/DEPLOY.md)**.
+Schritt für Schritt auf einem Debian- oder Ubuntu-Server: **[docs/DEPLOY.md](docs/DEPLOY.md)**.

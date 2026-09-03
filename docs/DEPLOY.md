@@ -1,7 +1,8 @@
-# Neuron auf einem Ubuntu-Server — Schritt für Schritt
+# Neuron auf einem Debian- oder Ubuntu-Server — Schritt für Schritt
 
-Diese Anleitung führt von einem frischen Ubuntu-Server (22.04 oder 24.04) zu einer erreichbaren
-Installation mit nginx und HTTPS. Jeder Befehl ist zum Kopieren gedacht; nach jedem Abschnitt
+Diese Anleitung führt von einem frischen Server zu einer erreichbaren Installation mit nginx und
+HTTPS. Geprüft für **Debian 12/13** und **Ubuntu 22.04/24.04**; die Befehle erkennen die
+Distribution selbst. Jeder Befehl ist zum Kopieren gedacht; nach jedem Abschnitt
 steht, woran du erkennst, dass er geklappt hat.
 
 **Was wo läuft:** Docker baut zwei Dinge — das Frontend (SvelteKit) und die API (Rust). Die API
@@ -35,6 +36,15 @@ in Abschnitt 3.
 Ubuntus eigenes `docker.io`-Paket ist meist veraltet und bringt das `compose`-Plugin nicht mit.
 Nimm das offizielle Repository von Docker:
 
+Docker betreibt getrennte Repositories für Debian und Ubuntu. Welches gilt, leiten die folgenden
+zwei Variablen ab — damit passt der Rest ohne Nachdenken:
+
+```sh
+DISTRO=$(. /etc/os-release && echo "$ID")                              # debian oder ubuntu
+CODENAME=$(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
+echo "$DISTRO $CODENAME"        # z. B. "debian trixie" oder "ubuntu noble"
+```
+
 ```sh
 # Alte oder abweichende Pakete entfernen, falls vorhanden
 for p in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do
@@ -46,17 +56,22 @@ sudo apt install -y ca-certificates curl
 
 # Signaturschlüssel hinterlegen
 sudo install -m 0755 -d /etc/apt/keyrings
-sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo curl -fsSL "https://download.docker.com/linux/$DISTRO/gpg" -o /etc/apt/keyrings/docker.asc
 sudo chmod a+r /etc/apt/keyrings/docker.asc
 
 # Repository eintragen
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] \
-https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable" \
+https://download.docker.com/linux/$DISTRO $CODENAME stable" \
   | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
+
+> Nimmst du versehentlich das falsche Repository (etwa `linux/ubuntu` mit einem Debian-Codenamen),
+> quittiert `apt update` das mit `404 Not Found` und
+> `does not have a Release file`. Dann die beiden Variablen oben neu setzen und den
+> `echo … | sudo tee`-Befehl wiederholen — er überschreibt den alten Eintrag.
 
 Docker ohne `sudo` benutzen:
 
@@ -269,6 +284,7 @@ setzen und `docker compose up -d` ausführen.
 ## 7. Firewall
 
 ```sh
+sudo apt install -y ufw        # auf Debian nicht vorinstalliert
 sudo ufw allow OpenSSH
 sudo ufw allow 'Nginx Full'
 sudo ufw enable
@@ -407,7 +423,8 @@ Du hast pnpm, cargo und sqlx-cli schon — dann geht es auch direkt. Etwas mehr 
 kein Docker und ein deutlich sparsamerer Build.
 
 ```sh
-# Postgres aus den Ubuntu-Paketen
+# Postgres aus den Distributionspaketen (Debian 13: 17, Ubuntu 24.04: 16 –
+# beides erfüllt die Anforderung "16 oder neuer")
 sudo apt install -y postgresql
 sudo -u postgres psql -c "CREATE USER neuron WITH PASSWORD 'einsicheres-passwort';"
 sudo -u postgres psql -c "CREATE DATABASE neuron OWNER neuron;"
